@@ -9,66 +9,86 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
-         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
 
         p {
             font-size: 23px;
         }
 
-        body{
-        font-family: 'Anton', sans-serif;
-        font-family: 'David Libre', serif;
-        font-family: 'Gurajada', serif;   
-        
-         }
-         ::placeholder{
-             font-size: 23px;
-         }
-    .fa-facebook{
-        font-size: 25px;
-    }
-    .fa-youtube{
-        font-size: 25px;
-    }
-    .fa-pinterest{
-        font-size: 25px;
-    }
-    .fa-twitter{
-        font-size: 25px;
-    }
-    .fa-instagram{
-        font-size: 25px;
-    }
-    .zz{
-        font-size: 20px;
-    }
-    .zz:hover{
-        color: red;
-    }
-    .foot{
-        font-size: 15px;
-        color: rgb(4, 121, 255);
-    }
-    hr{
-        background-color: black;
-        height: 1px;
-    }
-    .footer{
-        background-color: bisque;
-    }
+        .glyphicon-user {
+            font-size: 14px;
 
-    .navbar-inverse{
-        border-radius: 0%;
-        font-family: "Raleway",sans-serif;
-    }
-        
+        }
 
+        .glyphicon-log-in {
+            font-size: 14px;
+        }
+
+
+
+        body {
+            font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+
+        }
+
+        ::placeholder {
+            font-size: 23px;
+        }
+
+        .fa-facebook {
+            font-size: 25px;
+        }
+
+        .fa-youtube {
+            font-size: 25px;
+        }
+
+        .fa-pinterest {
+            font-size: 25px;
+        }
+
+        .fa-twitter {
+            font-size: 25px;
+        }
+
+        .fa-instagram {
+            font-size: 25px;
+        }
+
+        .zz {
+            font-size: 20px;
+        }
+
+        .zz:hover {
+            color: red;
+        }
+
+        .foot {
+            font-size: 15px;
+            color: rgb(4, 121, 255);
+        }
+
+        hr {
+            background-color: black;
+            height: 1px;
+        }
+
+        .footer {
+            background-color: bisque;
+        }
+
+        .navbar-inverse {
+            border-radius: 0%;
+            font-family: "Raleway", sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse" >
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- this is opt1ional  -->
             <div class="navbar-header">
@@ -77,12 +97,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><span style="font-size: 28px; color: orangered;">P</span>ositive<span style="font-size: 28px;color: orangered;">S</span>och</a>            </div>
+                <a class="navbar-brand" href="index.html"><span
+                        style="font-size: 28px; color: orangered;">P</span>ositive<span
+                        style="font-size: 28px;color: orangered;">S</span>och</a>
+            </div>
             <div class="collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav">
                     <li><a href="home.html" target="_blank">Home</a></li>
-                    <li><a href="about.html" target="_blank">About us </a></li>
+                    <li class="active"><a href="about.html" target="_blank">About us </a></li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown"> Biographies
                             <span class="caret"></span>
                         </a>
@@ -94,12 +117,19 @@
                             <li><a href="biographies.html#ccc" target="_blank">Isaac Newton </a></li>
                             <li><a href="biographies.html#ddd" target="_blank">Albert Einstein </a></li>
                             <li><a href="biographies.html#eee" target="_blank"> Galileo Galilei </a></li>
-                        
+
+                        </ul>
+                    </li>
+                    <li><a href="positive_quotes.html" target="_blank">Positive Quotes</a></li>
+                    <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
                 </ul>
-                </li>
-                <li><a href="positive_quotes.html" target="_blank">Positive Quotes</a></li>
-                <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"> <span class="glyphicon glyphicon-user"><span style="font-family: Raleway;">
+                                    Sign-up</span> </span> </a></li>
+                    <li><a href="#"> <span class="glyphicon glyphicon-log-in"><span style="font-family: Raleway;">
+                                    Login</span> </span> </a></li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -108,7 +138,7 @@
             <h2 style="font-size:45px">
                 About us
             </h2>
-            <p align="justify" >
+            <p align="justify">
                 Hey I’m Mohit the founder of PositiveSoch My goal is to spread our knowledge, experience, and
                 positivity to
                 the rest of the world.
@@ -143,51 +173,52 @@
         <form class="form-inline" action="/action_page.php">
             <fieldset>
                 <legend align="center" style="font-size: 30px;"> Write A Comment</legend>
-            <div class="form-group">
+                <div class="form-group">
 
-                <input type="text" class="form-control" id="fname" placeholder="NAME" name="pwd" required="">
-            
-            </div>   
-            
-            <div class="form-group">
+                    <input type="text" class="form-control" id="fname" placeholder="NAME" name="pwd" required="">
 
-                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" required="">
-            </div>
+                </div>
 
-            <div class="form-group">
+                <div class="form-group">
 
-                <input type="url" class="form-control" id="url" placeholder="URL" name="url" required="">                
-            
-            </div>
-            
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" required="">
+                </div>
 
-            <div class="form-group">
-                
-                <textarea class="form-control" rows="1" cols="50" id="comment" placeholder="Enter your comment here.."></textarea>
-              
-            </div>
-<br>
-            
-            <button type="submit" class="btn btn-default" style="font-size: 30px;">Submit</button>
+                <div class="form-group">
+
+                    <input type="url" class="form-control" id="url" placeholder="URL" name="url" required="">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <textarea class="form-control" rows="1" cols="50" id="comment"
+                        placeholder="Enter your comment here.."></textarea>
+
+                </div>
+                <br>
+
+                <button type="submit" class="btn btn-default" style="font-size: 30px;">Submit</button>
             </fieldset>
         </form>
     </div>
-<div>
-    <br><br><br><br><br><br>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-    <div class="footer text-center"><br>
-        <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp;
-        <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
-        <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-pinterest"></i></a>&nbsp;&nbsp;
-        <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;
-        <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-twitter"></i></a><br><br>
-        <a href="about.html" class="zz" style="text-decoration: none;">ABOUT US </a> &nbsp;&nbsp;&nbsp;
-        <a href="about.html#zzz" class="zz" style="text-decoration: none;">WRITE FOR US </a><br><br>
-        <span class="foot">@2021 POSITIVE SOCH - ALL RIGHTS RESERVED</span>
-    <br><br>
+    <div>
+        <br><br><br><br><br><br>
     </div>
-</div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="footer text-center"><br>
+            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp;
+            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
+            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-pinterest"></i></a>&nbsp;&nbsp;
+            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;
+            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-twitter"></i></a><br><br>
+            <a href="about.html" class="zz" style="text-decoration: none;">ABOUT US </a> &nbsp;&nbsp;&nbsp;
+            <a href="about.html#zzz" class="zz" style="text-decoration: none;">WRITE FOR US </a><br><br>
+            <span class="foot">@2021 POSITIVE SOCH - ALL RIGHTS RESERVED</span>
+            <br><br>
+        </div>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
