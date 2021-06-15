@@ -17,9 +17,6 @@
         background-attachment: fixed;
 
     }
-    .ww{
-        padding-left: 20px;
-    }
 
     .content {
         background-color: #fff;
@@ -27,7 +24,6 @@
 
     }
 
-    img {}
 
     .signin-text {
         font-style: normal;
@@ -69,10 +65,22 @@
 
     }
 
+    .form-control{
+        margin-left: 20px;
+    }
 
     .btn-class:hover {
         background-color: #00ac96;
         color: #fff
+    }
+    #check{
+        margin-left: 20px;
+    }
+    button{
+        margin-left: 20px;
+    }
+    #sign{
+       margin-left: 20px;
     }
 </style>
 
@@ -88,12 +96,12 @@
         </div>
 
         <div class="col-md-6 col-xs-12 col-sm-12">
-            <div class="ww"><br>
-                <h2 class="signing-text "> Sign In</h2><br>
+            <br>
+                <h2 class="signing-text" id="sign"> Sign In</h2><br>
                 <form>
                     <div class="form-group">
-                        <i class="glyphicon glyphicon-alert"></i><input type="text" class="form-control" name="fname"
-                            placeholder="Username" required maxlength="25">
+                        <input type="text" class="form-control" name="fname"
+                            placeholder="Username" required maxlength="25" >
                     </div>
                     <br>
                     <div class="form-group">
@@ -113,7 +121,7 @@
                     <br>
                     <div class="form-group row">
                         <div class="col-md-12 col-xs-12 col-sm-12">
-                            <input type="checkbox" name="checkbox" required maxlength="8"> &nbsp;
+                            <input type="checkbox" name="checkbox" required maxlength="8" id="check"> &nbsp;
                             <label><small> I agree all statements in<a href="#"> Terms of
                                         service</u></a></small></label>
                         </div>
@@ -129,7 +137,7 @@
                 </form>
             </div>
         </div>
-    </div>
+
 
 
 
