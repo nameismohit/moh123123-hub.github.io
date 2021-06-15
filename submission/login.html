@@ -7,28 +7,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Login</title>
+    <title>Sign-up</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
     body {
-        background-image: linear-gradient(45deg,blue,green);
-        background-attachment: fixed;
         font-family: 'Poppins', sans-serif;
-        background-size: 1369px 730px;
-
+        background-attachment: fixed;
+        background-color:aliceblue
     }
 
     .content {
-        margin: 8%;
         background-color: #fff;
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
         box-shadow: 0 0 5pc 5px rgba(0, 0, 0, 0.05);
 
     }
 
-    img {}
 
     .signin-text {
         font-style: normal;
@@ -38,7 +33,7 @@
 
     .form-control {
         display: block;
-        width: 100%;
+        width: 60%;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
@@ -70,61 +65,84 @@
 
     }
 
+    .form-control{
+        margin-left: 20px;
+    }
 
     .btn-class:hover {
         background-color: #00ac96;
         color: #fff
     }
-
-
+    #check{
+        margin-left: 20px;
+    }
+    button{
+        margin-left: 20px;
+    }
+    #sign{
+       margin-left: 20px;
+    }
 </style>
 
 <body>
-    <div class="container">
-        <div class="row content">
-            <div class="col-md-6 mb-3 ">
-                <h2 class="text-center"> Welcome Back!</h2><br>
-                <p class="text-center">To keep connected with us please<br>
+    <br><br>
+    <h1</h1>
+    <div class="row content">
+        <div class="col-md-6 col-xs-12"><br>
+            <h2 class="text-center"> Welcome Back!</h2><br>
+            <p class="text-center">To keep connected with us please<br>
                 login with your personal info</p>
-                <img src="images/aa.jpg" class="img-fluid">
-                
-            </div>
+            <img src="images/aa.jpg" class="img-fluid"  style="height: 350px;width: 500px;">
 
-            <div class="col-md-6 ">
-                <div>
-                    <h2 class="signing-text mb-3"> Sign In</h2><br>
-                     <form>
-                        <div class="form-group">
-                            <i class="glyphicon glyphicon-alert"></i><input type="text" class="form-control"
-                                name="fname" placeholder="Username" required maxlength="25">
+        </div>
+
+        <div class="col-md-6 col-xs-12 col-sm-12">
+            <br>
+                <h2 class="signing-text" id="sign"> Sign In</h2><br>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="fname"
+                            placeholder="Username" required maxlength="25" >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required
+                            maxlength="30">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="pwd" placeholder="Password" required
+                            maxlength="8">
+                    </div>
+                    <br>
+                    <div class="form-group row">
+                        <div class="col-md-12 col-xs-12 col-sm-12">
+                            <input type="checkbox" name="checkbox" required  id="check"> &nbsp;
+                            <label> Remember Me<a href="#"> </label>
                         </div>
-<br>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email" required maxlength="30">
+                    </div>
+
+                    <div class="row">
+                        <div class=" col-md-12 col-xs-12 col-sm-12">
+                            <button class="btn btn-class">Login
+                            </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="login.html"><small> Forgot Password </small></a>
                         </div>
-<br>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="pwd" placeholder="Password" required maxlength="8">
                         </div>
-<br>
-    
-                        <div class="form-group">
-                            <input type="checkbox" name="checkbox" required maxlength="8" > &nbsp;<label> Remember me</label>
-                        <label></label>
-                        </div>
-                </div>
-                <button class="btn btn-class">Login </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#"><small> Forgot Password </small></a>
-          <br><br><br>  <label>Or login with </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"><img src="images/google.png" style="width: 19px;"></a>&nbsp;&nbsp;
-          <a href="https://twitter.com/login" target="blank"><img src="images/facebook.jpg" style="width: 19px;"></a>&nbsp;&nbsp;
-          <a href="https://www.facebook.com/" target="blank"><img src="images/twitter.png" style="width: 19px;"> </a> 
-            </form>
+                        <br>
+                        <label style="margin-left: 20px;">Or login with </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"><img src="images/google.png" style="width: 19px;"></a>&nbsp;&nbsp;
+                        <a href="https://twitter.com/login" target="blank"><img src="images/facebook.jpg" style="width: 19px;"></a>&nbsp;&nbsp;
+                        <a href="https://www.facebook.com/" target="blank"><img src="images/twitter.png" style="width: 19px;"> </a> 
+                   <br><br>
+                </form>
             </div>
         </div>
 
-    </div>
-    </div>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -133,3 +151,22 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
