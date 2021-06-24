@@ -8,12 +8,13 @@
     <title>About us</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylefooter.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
-
-        p {
-            font-size: 23px;
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');     
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');  
+                 p {
+            font-size: 17px;
         }
 
         .glyphicon-user {
@@ -25,60 +26,42 @@
             font-size: 14px;
         }
 
-
-
-        body {
+        h1{
+            color: rgb(25, 176, 247);
             font-family: 'Anton', sans-serif;
             font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
+            font-family: 'Gurajada', serif; 
+            font-size: 40px;            
+
+        }
+        h2{
+            font-size: 35px;
+            color: rgb(0, 174, 255);
+            font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif; 
+
+        }
+        body {
+            /* font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif; */
+            /* font-family:"Lato" , sans-serif */
+            font-family: 'Montserrat', sans-serif;
 
         }
 
         ::placeholder {
-            font-size: 23px;
+            font-size: 12px;
         }
 
-        .fa-facebook {
-            font-size: 25px;
-        }
-
-        .fa-youtube {
-            font-size: 25px;
-        }
-
-        .fa-pinterest {
-            font-size: 25px;
-        }
-
-        .fa-twitter {
-            font-size: 25px;
-        }
-
-        .fa-instagram {
-            font-size: 25px;
-        }
-
-        .zz {
-            font-size: 20px;
-        }
-
-        .zz:hover {
-            color: red;
-        }
-
-        .foot {
-            font-size: 15px;
-            color: rgb(4, 121, 255);
-        }
-
+        
         hr {
             background-color: black;
             height: 1px;
         }
 
-        .footer {
-            background-color: bisque;
-        }
+      
 
         .navbar-inverse {
             border-radius: 0%;
@@ -135,7 +118,7 @@
     </nav>
     <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 style="font-size:45px">
+            <h1>
                 About us
             </h2>
             <p align="justify">
@@ -144,7 +127,7 @@
                 the rest of the world.
             </p>
             <br>
-            <h1 style="font-size: 35px;">Our Mission</h1>
+            <h2>Our Mission</h1>
             <p align="justify">
 
                 In this day and age there’s no shortage of information out there that promises your self-improvement.
@@ -172,7 +155,7 @@
     <div class="container"><a id="zzz"></a>
         <form class="form-inline" action="/action_page.php">
             <fieldset>
-                <legend align="center" style="font-size: 30px;"> Write A Comment</legend>
+                <legend align="center" style="font-size: 25px;"> Write A Comment</legend>
                 <div class="form-group">
 
                     <input type="text" class="form-control" id="fname" placeholder="NAME" name="pwd" required="">
@@ -198,27 +181,198 @@
 
                 </div>
                 <br><br>
+<div class="container"><div class="col-md-12 col-xs-12 text-center"> 
+                   <button type="submit" class="btn btn-primary" style="font-size: 15px;">Submit</button>
+            </div></div>
 
-                <button type="submit" class="btn btn-default" style="font-size: 30px;">Submit</button>
             </fieldset>
         </form>
     </div>
     <div>
         <br><br><br><br><br><br>
     </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="footer text-center"><br>
-            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp;
-            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
-            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-pinterest"></i></a>&nbsp;&nbsp;
-            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;
-            <a href="#" target="blank" style="text-decoration: none;"><i class="fa fa-twitter"></i></a><br><br>
-            <a href="about.html" class="zz" style="text-decoration: none;">ABOUT US </a> &nbsp;&nbsp;&nbsp;
-            <a href="about.html#zzz" class="zz" style="text-decoration: none;">WRITE FOR US </a><br><br>
-            <span class="foot">@2021 POSITIVE SOCH - ALL RIGHTS RESERVED</span>
-            <br><br>
+    <div class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="footer-box-info">
+                        <a href="index.html" >
+                        <div class="heading">
+                            <span style="font-size: 28px; color: orangered;">P</span>ositive
+                            <span style="font-size: 28px;color: orangered;">S</span>och</a><br><br>              
+                        </div>
+                            <p class="footer-info-text" style=" line-height: 23px;font-size: 17px;">
+                                <a href="#">
+                            Reference site about Lorem Ipsum, giving information on its origins, as well as a random
+                            Lipsum generator.
+                        </a>
+                        </p><br>
+                        <div class="footer-social-link">
+                            <span class="firsth" style="color: #fff;">Follow us<span><br><br>
+                            <ul type="none">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="para">
+                        <p class="text-center">Best Positive Blogs 2021</p>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="glyphicon glyphicon-map-marker"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <span class="secondh" style="color: #fff;">Delhi India</span>
+                                    <p style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a></p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="glyphicon glyphicon-phone"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <span class="thirdh" style="color: #fff;">96 498 4 5480</span>
+                                    <p style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a call</a></p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class=" col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <span class="heading4" id="head4">Useful Links</span>
+                                    <span><hr align="left" style="width: 135px;height:3px;background-color: #007bff;margin-left: 40px;border: transparent;margin-bottom: -3px;"></span>
+
+                                <ul type="none">
+                                    <li>
+                                        <a href="about.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="biographies.html">Biographies</a>
+                                    </li>
+                                    <li>
+                                        <a href="positive_quotes.html">Quotes</a>
+                                    </li>
+                                    <li>
+                                        <a href="img_gallary.html">Gallary</a>
+                                    </li>
+                                </ul>
+
+                                <ul type="none">
+                                    <li>
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Faq</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-6">
+
+                            <span class="heading4">Subscribe</span>
+                            <span><hr align="left" style="width: 110px;height:3px;background-color: #007bff;border: transparent;margin-bottom: -18px;"></span>
+                            <p class="para2">
+                                Reference site about Positivity,giving info of its origins, as well as.
+                            </p>
+                            <form action="#">
+                                <div class="">
+                                    <input type="email" class="emailsend" placeholder="Email Address">
+                                    <button type="submit">
+                                        <i class="glyphicon glyphicon-send"></i>
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <span style="color: #9b9b9b;">Copyright © 2019, All Right Reserved Seobin</span>
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="copyright-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Copyright Container -->
+        </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
