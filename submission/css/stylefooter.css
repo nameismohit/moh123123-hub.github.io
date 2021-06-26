@@ -47,8 +47,10 @@
 .emailsend {
     padding: 14px 18px;
     border-radius: 50px;
-    background: #2E2E2E;
-    border: 1px solid #2E2E2E;
+    /* background: #2E2E2E; */
+    background-color: #080808;
+    /* border: 1px solid #2E2E2E; */
+    border: 1px solid #080808;
     height: 46px;
     width: 100%;
     line-height: px;
@@ -62,6 +64,7 @@
 
 ::placeholder {
     padding-left: 10px;
+    font-size: 17px;
     /* color: #fff; */
 }
 .footer-info-text :hover{
@@ -72,7 +75,7 @@
     color: #9b9b9b;
     text-decoration: none;
 }
-button {
+button.sendme {
     position: absolute;
     right: 15px;
     padding: 12px 24px 12px 17px;
@@ -97,9 +100,11 @@ p:hover{
 }
 
 .copyright {
-    background-color: #010211;
+    /* background-color: #010211; */
+    background-color: #080808;
     margin-top: 55px;
     padding: 28px 0px;
+    
 }
 
 .copyright-menu ul {
@@ -134,7 +139,7 @@ p:hover{
 .footer-box-info {
     /* position: ; */
     margin-top:-29px ;
-    background: #010211;
+    background:#080808 ;
     padding: 40px;
     height: 323px;
     /* z-index:2 ; */
