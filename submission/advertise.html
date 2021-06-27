@@ -5,106 +5,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Advertise</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylefooter.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-        
-        input.form-control{
-            height:40px;
-            background-color: #12111a;
-            color: #fff;
-            font-size: 16px;
+        input.writeinput{
+            width: 100%;
+            height: 40px;
+        }
+        textarea.writetextarea::placeholder{
+            color: #000;
         }
 
-        textarea.form-control{
-            background-color: #12111a;
-            color: #fff;
-            
+        .newsbox {
+            background-color: #f6f6f6;
+            padding: 20px 40px;
+            padding-bottom: 20px;
+
         }
-        textarea::placeholder{
-            padding-top: 10px;
+
+        .newsbox p {
+            line-height: 30px;
+            text-align: center;
+            font-size: 15.5px;
+
+        }
+
+        img.posts {
+            opacity: 0.90;
+
+        }
+
+        img.posts:hover {
+            opacity: 1;
+            transition: 1s ease;
+            box-shadow: 0 0 20px rgb(18, 187, 253);
+        }
+
+        a.postanchor {
+            text-decoration: none;
+            color: #000;
+        }
+
+
+        .newsemail {
+            width: 280px;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 45px;
+        }
+
+        .newssubscribe {
+            width: 280px;
+            background-color: #000;
             color: #fff;
-            
+            outline: 0;
+            border: #000;
+            font-size: 12px;
+            height: 45px;
+            font-weight: bold;
+        }
+
+        .newsheading {
+            text-align: center;
+            color: #001;
+            font-size: 21px;
+
+        }
+
+        hr.design {
+            background-color: #000;
+            height: 2px;
+            width: 30px;
+            margin-bottom: 40px;
+        }
+
+        .navbar-inverse {
+            font-family: "Raleway", sans-serif;
+        }
+
+        h5 {
+            font-size: 21px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, .74);
+
         }
 
         p {
-            font-size: 17px;
-        }
-
-        .glyphicon-user {
-            font-size: 14px;
-
-        }
-
-        .glyphicon-log-in {
-            font-size: 14px;
-        }
-
-        h1 {
-            color: rgb(25, 176, 247);
-            font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-            font-size: 40px;
+            font-size: 18px;
+            line-height: 30px;
+            word-spacing: 2px;
+            margin-right: 10px;
 
         }
 
+        h1,
         h2 {
-            font-size: 35px;
-            color: rgb(0, 174, 255);
-            font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-
-        }
-
-        body {
-            /* font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif; */
-            /* font-family:"Lato" , sans-serif */
-            font-family: 'Montserrat', sans-serif;
-
-        }
-
-        .form-control::placeholder {
-            font-size: 14px;
-            color: #fff;
-        }
-
-
-        hr {
-            background-color: black;
-            height: 1px;
-        }
-
-
-
-        .navbar-inverse {
-            border-radius: 0%;
-            font-family: "Raleway", sans-serif;
+            color: #111;
+            margin-right: 60px;
+            line-height: 50px;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
+
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- this is opt1ional  -->
             <div class="navbar-header">
-                
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+
                 <a class="navbar-brand" href="index.html"><span
                         style="font-size: 28px; color: orangered;">P</span>ositive<span
                         style="font-size: 28px;color: orangered;">S</span>och</a>
@@ -143,7 +167,7 @@
                     <li><a href="positive_quotes.html" target="_blank">Positive Quotes</a></li>
                     <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
                 </ul>
-                
+
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
                                     style="font-family: Raleway;">
@@ -156,96 +180,158 @@
 
         </div>
     </nav>
+
+
     <div class="container">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1>
-                About us
-                </h2>
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <h1><strong>Advertise</strong></h1>
+                <h1> <strong> Why you should advertise at Motivationgrid </strong></h1>
+                <h5><strong>1) Because our traffict converts</strong></h5>
                 <p align="justify">
-                    Hey I’m Mohit the founder of PositiveSoch My goal is to spread our knowledge, experience, and
-                    positivity to
-                    the rest of the world.
-                </p>
+                    Our traffic is premium traffic with 80% coming from the U.S.A, 7,5% From U.K & Canada and the
+                    additional 12,5% from all over the world.</p>
+                    
+                    <p>Over <strong>500 000 </strong>  page views monthly.</p>
+                    <strong>
+                    <p>30 % Google Traffic</p>
+                    <p>20 % Direct</p>
+                    <p>40 % Social Media</p>
+                    <p>10 % Referrals</p>
+                </strong>
                 <br>
-                <h2>Our Mission
-            </h1>
-            <p align="justify">
+                <h5><strong> 2) Motivationgrid offers affordable ad rates for companies of any size.</strong></h5>
+                <p>
+                    We offer different types of advertising ads which you can check below. We are also open to any
+                    advertising ideas you may have. We are sure that MotivationGrid will provide you with a superb arena
+                    for your advertising needs. With more than 500 000 monthly views MotivationGrid.com is the perfect
+                    place for you to advertise your business.
+                </p><br>
+                <h5> <strong> 3) We offer different placements to ensure that your advertisement gets seen by all of our
+                        visitiors</strong></h5>
+                <br>
+                <ul type="none" style="font-size: 18px;">
+                    <li>– Large Ad (728×90)*</li>
+                    <li>– Skyscraper Ad (160×600)*</li>
+                    <li>– Rectangle Ad (300×250)*</li>
+                    <li>– Wide Ad (990×75)*</li>
+                    <li>– Ad Button (125×125)*</li>
+                    <li>– Background Ad*</li>
+                    <li>– Pop-Up Ad</li>
+                </ul>
+                <br>
+                <h5>
+                    – WALLPAPER AD – We provide a wallpaper ad that has a unique CTR of over 2-3 %.
+                </h5>
+                <h5>
+                    Acceptable Ad Formats:</h5>
+                <p> GIF, JPEG, FLASH</p>
 
-                In this day and age there’s no shortage of information out there that promises your self-improvement.
-                There is
-                so much content available that finding something genuinely useful is really, really hard.<br><br>
-                That’s why our writers are focused on aggregating the most mind-blowing and actionable content in
-                concise, easy
-                to use posts.<br><br>
-                Let’s be real, we don’t have the time to sift through pages and pages of fluff.<br><br>
-                Our goal is to ignite a fire in you by giving you exactly what you need to change your life in a
-                positive
-                direction. We do that by giving you information, motivation in bite-sized pieces you can
-                swallow whole and implement immediately.<br><br>
+                <h5>
+                    Please contact info@motivationgrid.com directly to inquire about availability.
+                </h5>
 
-                We all have a vision of just how incredible our lives could be if only we knew how to make our dreams a
-                reality.<br><br>
+<br><br><br><br><br><br>
 
-                Here, you <strong> get the tools to make the ship that will carry you towards that vision, one day at a
-                    time.</strong>
-            </p>
+                <div id="respond" class="comment-respond">
+                    <h3 class="text-center">Write A Comment</h3><br>
+                    <form action="" method="post" id="commentform">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <input  class="form-control writeinput" type="text" placeholder="Name" required="">
+                            </div>
+
+                            <div class="col-md-4 col-xs-12">
+                                <input class="form-control writeinput" type="email" placeholder="Email" required="">
+                            </div>
+
+                            <div class="col-md-4 col-xs-12"> 
+                                <input class="form-control writeinput" type="website" placeholder="Website"
+                                    required=""><br> </div>
+
+
+                        </div>
+                        
+                        <textarea class="form-control writetextarea" placeholder="Enter your comment here.." rows="9"> </textarea>
+                        <br><input type="checkbox">  &nbsp; Save my name, email, and website in this browser for the next time I comment.
+
+<br><br>
+                        <button style="background-color: red;border: transparent;color: #fff;height: 40px;width: 160px;font-weight: 600;" type="submit">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="col-md-4 col-xs-12">
+                <div class="newsbox">
+                    <h3 class="newsheading"><strong> Newsletter</strong></h3>
+                    <hr class="design">
+                    </hr>
+                    <form method="post" action="" target="_blank">
+                        <div class="fields">
+                            <p class="message">Do you want to know how to achieve your wildest dreams in life? I will
+                                tell
+                                you the secret... Nobody knows how. If you want raw and honest tips, subscribe to my
+                                newsletter.</p>
+                            <p><input class="newsemail" type="email" name="EMAIL" placeholder="Your email address.."
+                                    required=""></p>
+                            <p><input class="newssubscribe" type="submit" value="SUBSCRIBE"></p>
+                        </div>
+                    </form>
+
+                </div>
+                <div>
+                    <span style="font-size: 20px; color:#000;line-height: 3.5;font-weight: 700;">Latest Posts</span>
+                    <hr style="margin-top: -20px;background-color: rgb(117, 102, 102);height: 1px;">
+                    <a class="postanchor" href="#" target="blank">
+                        <img class="posts" src="images/Dwayne.jpg" height="130px" width="150px"
+                            style="position: absolute;">
+                        <p style="padding-left: 170px; ;line-height: 1.5;font-size: 18.5px;">The Best Dwayne Johson
+                            Workout Video</p>
+                        <p
+                            style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 1px;padding-top: 20px;">
+                            JUNE 27, 2021</p>
+                    </a>
+                    <br><br><br>
+                    <a class="postanchor" href="#" target="blank">
+                        <img class="posts" src="images/Ronaldo.jpg" height="130px" width="150px"
+                            style="position: absolute;">
+                        <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 24 Most Motivating
+                            Cristiano Ronaldo Quotes</p>
+                        <p
+                            style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
+                            JUNE 25, 2021</p>
+                    </a>
+                    <br><br>
+                    <a class="postanchor" href="#" target="blank">
+                        <img class="posts" src="images/Marilyn.jpg" height="130px" width="150px"
+                            style="position: absolute;">
+                        <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 25 Greatest Marilyn
+                            Monroe Quotes</p>
+                        <p
+                            style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
+                            MAY 25, 2019</p>
+                    </a>
+                    <br><br>
+                    <a class="postanchor" href="#" target="blank">
+                        <img class="posts" src="images/TEMPLATE.jpg" height="130px" width="150px"
+                            style="position: absolute;">
+                        <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">19 Great Peter Jackson Quotes
+                            For Creative Success</p>
+                        <p
+                            style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;">
+                            MAY 10, 2021</p>
+                    </a>
+
+                </div>
+
+            </div>
         </div>
     </div>
-
-
-    <br><br><br><br>
-
-
-    <div align="center" class="container"><a id="zzz"></a>
-
-        <form action="/action_page.php">
-
-            <legend align="center" style="font-size: 25px;"> Write A Comment</legend>
-            <div class="row">
-                <div class="col-md-4 col-xs-0"></div>
-                <div class="col-md-4 col-xs-12">
-
-                    <input type="text" class="form-control" id="fname" placeholder="NAME" name="pwd" required="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-xs-0"></div>
-                <div class="col-md-4 col-xs-12">
-
-                    <input type="email" class="form-control" style="margin-top: 15px;" id="email" placeholder="EMAIL" name="email" required="">
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-xs-0"></div>
-                <div class="col-md-4 col-xs-12">
-
-                    <input type="url" class="form-control" style="margin-top: 15px;" id="url" placeholder="URL" name="url">
-
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-4 col-xs-0"></div>
-                <div class="col-md-4 col-xs-12">
-
-                    <textarea class="form-control" rows="9" id="comment" style="margin-top: 15px;" placeholder="Enter your comment here.."></textarea>
-
-                </div>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary" style="font-size: 15px;">Submit</button>
-
-    </form>
-    </div>
-    
-    <br>
-    <br>
-    <br>
-
+    <br><br><br>
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -311,7 +397,8 @@
                             <!-- End contact Icon -->
                             <div class="contact-info">
                                 <span class="secondh" style="color: #fff;">Delhi India</span>
-                                <p class="parahover" style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a></p>
+                                <p class="parahover" style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a>
+                                </p>
                             </div>
                             <!-- End Contact Info -->
                         </div>
@@ -324,7 +411,8 @@
                             <!-- End contact Icon -->
                             <div class="contact-info">
                                 <span class="thirdh" style="color: #fff;">96 498 4 5480</span>
-                                <p class="parahover" style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a call</a></p>
+                                <p class="parahover" style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a
+                                        call</a></p>
                             </div>
                             <!-- End Contact Info -->
                         </div>
@@ -401,8 +489,6 @@
         </div>
     </div>
 
-
-
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -434,8 +520,7 @@
         </div>
         <!-- End Copyright Container -->
     </div>
+
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </html>
