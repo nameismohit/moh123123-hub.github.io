@@ -86,7 +86,7 @@ button.sendme {
     color: #fff;
 }
 
-p:hover{
+.parahover:hover{
     color: #fff;
     transition: 0.9s;
 }
