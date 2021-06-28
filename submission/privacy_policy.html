@@ -16,9 +16,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-        input.writeinput{
-            width: 100%;
+        input.form-control {
+            
             height: 40px;
+            min-width: 247.3px;
+            
         }
 
 
@@ -138,17 +140,18 @@
                 <ul class="nav navbar-nav">
                     <li><a href="home.html" target="_blank">Home</a></li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
-                    </a>
+                        </a>
 
-                    <ul class="dropdown-menu" style="background-color:rgba(216, 208, 208, 0.9);
+                        <ul class="dropdown-menu" style="background-color:rgba(216, 208, 208, 0.9);
                     background-blend-mode: darken;">
-                        <li><a href="about.html" target="_blank">About</a></li>
-                        <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
-                        <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
-                        <li><a href="advertise.html" target="_blank">Advertise </a></li>
+                            <li><a href="about.html" target="_blank">About</a></li>
+                            <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
+                            <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
+                            <li><a href="advertise.html" target="_blank">Advertise </a></li>
 
-                    </ul>
-                </li>                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Biographies
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Biographies
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" style="background-color:rgba(216, 208, 208, 0.9);
@@ -198,7 +201,7 @@
                     privacy policy document describes in detail the types of personal information is collected and
                     recorded by www.motivationgrid.com and how we use it.
                 </p>
-<br>
+                <br>
                 <h5><strong>Log Files</strong></h5>
                 <p align="justify">Like many other Web sites, www.motivationgrid.com makes use of log files. These files
                     merely logs visitors to the site – usually a standard procedure for hosting companies and a part of
@@ -207,7 +210,7 @@
                     possibly the number of clicks. This information is used to analyze trends, administer the site,
                     track user’s movement around the site, and gather demographic information. IP addresses, and other
                     such information are not linked to any information that is personally identifiable. </p>
-                    <br>
+                <br>
                 <h5><strong> Cookies and Web Beacons </strong></h5>
                 <p align="justify">www.motivationgrid.com uses cookies to store information about visitors’ preferences,
                     to record user-specific information on which pages the site visitor accesses or visits, and to
@@ -297,7 +300,7 @@
                 <p align="justify">This policy does not apply to any information collected offline or via channels other
                     than this website.</p>
 
-                    <br>
+                <br>
 
                 <h5><strong>Consent</strong></h5>
 
@@ -314,32 +317,37 @@
                         here.
                     </i></p>
 
-                    <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
 
                 <div id="respond" class="comment-respond">
                     <h3 class="text-center">Write A Comment</h3><br>
                     <form action="" method="post" id="commentform">
-                        <div class="row">
-                            <div class="col-md-4 col-xs-12">
-                                <input  class="form-control writeinput" type="text" placeholder="Name" required="">
+                        <div class="form-inline ">
+                            <div class="form-group">
+                                <input class="form-control writeinput" type="text" placeholder="Name" required="">
                             </div>
 
-                            <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
                                 <input class="form-control writeinput" type="email" placeholder="Email" required="">
                             </div>
 
-                            <div class="col-md-4 col-xs-12"> 
+                            <div class="form-group">
                                 <input class="form-control writeinput" type="website" placeholder="Website"
-                                    required=""><br> </div>
-
+                                    required=""><br>
+                            </div>
 
                         </div>
-                        
-                        <textarea class="form-control writetextarea" placeholder="Enter your comment here.." rows="9"> </textarea>
-                        <br><input type="checkbox">  &nbsp; Save my name, email, and website in this browser for the next time I comment.
+                        <div class="form-group"></div>
+                        <textarea class="form-control writetextarea" placeholder="Enter your comment here.."
+                            rows="9"> </textarea>
+                        <br><input type="checkbox"> &nbsp; Save my name, email, and website in this browser for the next
+                        time I comment.
 
-<br><br>
-                        <button style="background-color: red;border: transparent;color: #fff;height: 40px;width: 160px;font-weight: 600;" type="submit">POST COMMENT</button>
+                        <br><br>
+                        <button
+                            style="background-color: red;border: transparent;color: #fff;height: 40px;width: 160px;font-weight: 600;"
+                            type="submit">POST COMMENT</button>
+                        <br><br><br><br><br>
                     </form>
                 </div>
 
@@ -384,8 +392,7 @@
                             style="position: absolute;">
                         <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 24 Most Motivating
                             Cristiano Ronaldo Quotes</p>
-                        <p
-                            style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
+                        <p style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
                             JUNE 25, 2021</p>
                     </a>
                     <br><br>
@@ -394,8 +401,7 @@
                             style="position: absolute;">
                         <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 25 Greatest Marilyn
                             Monroe Quotes</p>
-                        <p
-                            style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
+                        <p style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
                             MAY 25, 2019</p>
                     </a>
                     <br><br>
