@@ -21,8 +21,15 @@
             min-width: 247.3px;
 
         }
-        textarea.writetextarea::placeholder{
-            color: #000;
+
+        #comment-section{
+            height: 200px;
+            margin-top: 10px;
+        }
+        
+        #comment-section::placeholder{
+           position:absolute;
+           padding-top: 10px;
         }
 
         .newsbox {
@@ -252,9 +259,8 @@
                             </div>
 
                         </div>
-                        <div class="form-group"></div>
-                        <textarea class="form-control writetextarea" placeholder="Enter your comment here.."
-                            rows="9"> </textarea>
+                        
+                        <input class="form-control" id="comment-section" placeholder="Enter your comment here">   
                         <br><input type="checkbox"> &nbsp; Save my name, email, and website in this browser for the next
                         time I comment.
 
