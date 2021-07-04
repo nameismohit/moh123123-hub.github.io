@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creative visualization </title>
+    <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+        @media screen {
+
+            .dropdown:hover .dropdown-menu,
+            .btn-group:hover .dropdown-menu {
+                display: block;
+
+            }
+
+            .dropdown-menu {
+                margin: auto;
+
+            }
+
+            .dropdown-toggle {
+                margin: auto;
+
+            }
+
+            .navbar .dropdown-toggle,
+            .nav-tabs .dropdown-toggle {
+                margin: auto;
+
+            }
+        }
+
+        .carousel-inner>.item>img {
+            width: 1369px;
+            height: 460px;
+        }
+
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:focus,
+        .navbar-inverse .navbar-nav>.active>a:hover {
+            color: orangered;
+            background-color: transparent;
+
+        }
+
+        .paragraph {
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            line-height: 28px;
+
+        }
+
+        .glyphicon-user {
+            font-size: 14px;
+
+        }
+
+        .glyphicon-log-in {
+            font-size: 14px;
+        }
+
+
+        hr {
+            background-color: black;
+            height: 1px;
+        }
+
+        .navbar-inverse {
+            font-family: "Raleway", sans-serif;
+            border-radius: 0%;
+
+        }
+
+        .font-language {
+            /* font-family: 'Anton', sans-serif;
+        font-family: 'David Libre', serif;
+        font-family: 'Gurajada', serif;    */
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif
+        }
+
+        h1 {
+            color: #000;
+            font-size: 60px;
+            font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+        }
+
+        h3 {
+            color: #000;
+            /* color: rgb(25, 176, 247); */
+            font-size: 40px;
+            font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+
+        }
+
+        h5 {
+            font-size: 30px;
+            color: #000;
+            /* color: rgb(29, 148, 245);
+            font-family: 'Anton', sans-serif; */
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+        }
+
+        .font-language p {
+            font-size: 16.5px;
+            line-height: 25px;
+        }
+
+        a.contread {
+            color: #053dbf;
+            text-decoration: underline;
+        }
+
+        a.nextpage {
+            text-decoration: none;
+            color: #053dbf;
+        }
+
+        p.nextpagepara {
+            font-size: 17px;
+        }
+
+              /*  newslater 's css is present here */
+      .newsbox {
+            background-color: #f6f6f6;
+            padding: 20px 40px;
+            padding-bottom: 20px;
+
+        }
+
+        .newsbox p {
+            line-height: 30px;
+            text-align: center;
+            font-size: 15.5px;
+
+        }
+
+        img.posts {
+            opacity: 0.90;
+
+        }
+
+        img.posts:hover {
+            opacity: 1;
+            transition: 1s ease;
+            box-shadow: 0 0 20px rgb(18, 187, 253);
+        }
+
+        a.postanchor {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .newsemail {
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 45px;
+        }
+
+        .newsemail::placeholder {
+            padding-left: 20px;
+        }
+
+        .newssubscribe {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            outline: 0;
+            border: #000;
+            font-size: 12px;
+            height: 45px;
+            font-weight: bold;
+        }
+
+
+        .newsheading {
+            text-align: center;
+            color: #001;
+            font-size: 21px;
+
+        }
+
+        hr.design {
+            background-color: #000;
+            height: 2px;
+            width: 30px;
+            margin-bottom: 40px;
+        }
+/* here newsletter 's css has finished' */
+
+
+
+            </style>
+</head>
+
+<body>
+    <div class="font-language">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html"><span
+                            style="font-size: 28px; color: orangered;">P</span>ositive<span
+                            style="font-size: 28px;color: orangered;">S</span>och</a>
+
+                            
+
+
+                </div>
+                 
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav" style="font-size: 15px;">
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" style="    background-color: #ffffff;">
+                                <li><a href="about.html" target="_blank">About</a></li>
+                                <li><a href="contact_us.html" target="_blank">Contact us</a></li>
+                                <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
+                                <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
+                                <li><a href="advertise.html" target="_blank">Advertise </a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: #fff;">
+                                <li><a href="Willpower and Discipline.html" target="_blank">Willpower & Discipline</a></li>
+                                <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration </a></li>
+                                <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
+                                <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
+                                <li><a href="Motivation.html" target="_blank">Motivation </a></li>
+                                <li><a href="Success.html" target="_blank"> Success </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #fff;">
+                            <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
+                            <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization </a></li>
+                            <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
+                            <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
+                            <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+        
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #fff;">
+                      
+                        <li><a href="positive_quotes.html">Positive Quotes</a></li>
+                        <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
+                       
+                    </ul>
+                </li>
+
+                    </ul>
+
+                    
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        </li>
+                        <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
+                                        style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
+                        <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
+                                        style="font-family: Raleway;"> Login</span> </span> </a></li>
+                    </ul>
+
+                </div>
+
+                
+
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-xs-12">
+
+
+                    <h1>
+                        Creative Visualization
+                        
+                            </h1>
+                                            
+                                     
+                                            <br>
+                                            
+                        
+                        <p align="justify">
+                        Articles and guidance on creative visualization and how to use it successfully to make positive changes in your life.
+                        
+                        
+                        
+                                            </p>
+                        
+                                            <br>
+                        
+                                            <div class="row">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <img  class="img-responsive" src="images/cv1.jpg">
+                                                   
+                         <h3>
+                        How Habits and Vision Boards Can Make 2021 Your Best Year Yet
+                        
+                         </h3>
+                                                    
+                        
+                        <p align="justify">
+                        
+                        How habits and vision boards can make 2021 your best year yet. Vision boards can help you stick with your good habits and vice versa – having habits on your vision board can make your board more powerful. And help 
+                                                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                         </p>
+                        
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-xs-12">
+                        
+                                                    <img  class="img-responsive" src="images/cv2.jpg">
+                        <h3>
+                        
+                        Does Creative Visualization Work and Produce Results?
+                        
+                        
+                        </h3>
+                        
+                                                    <p align="justify">
+                        Does creative visualization work? Does it produce results? If you have read or heard about creative visualization, you have probably asked yourself this question. For those of you, who have never heard about it before, the short definition is: “The 
+                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                        <br><br><br>
+                        
+                        
+                                          <div class="row">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <img  class="img-responsive" src="images/cv3.jpg">
+                                                   
+                         <h3>
+                        Visualization and Imagination Create Your Reality
+                        
+                         </h3>
+                                                    
+                        
+                        <p align="justify">
+                        
+                        Visualization is an activity, which all of us do every day. We visualize, or more correctly, daydream about the things we wish to have in our life. We carry in our mind mental images of what we wish to have
+                                                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                         </p>
+                        
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-xs-12">
+                        
+                                                    <img  class="img-responsive" src="images/cv4.jpg">
+                        <h3>
+                        
+                        Creative Visualization Concise Guidelines
+                        
+                        
+                        </h3>
+                        
+                                                    <p align="justify">
+                        
+                        From Imagination to Reality – How to Make Creative Visualization Work In the article Creative Visualization – How to Attract Success, you have learned about creative visualization. In this article, I have gathered the main steps for making this power 
+                         … <a href="#" class="contread">Continue Reading</a>
+                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                        <br><br><br>
+                        
+                        
+                                          <div class="row">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <img  class="img-responsive" src="images/cv5.jpg">
+                                                   
+                         <h3>
+                        Creative Visualization – How to Attract Success
+                        
+                         </h3>
+                                                    
+                        
+                        <p align="justify">
+                        Creative visualization is a mental technique that uses the imagination, mental images, the power of thoughts and the law of attraction, to make dreams and goals come true. Used in the right way, creative visualization can improve your life and 
+                        
+                                                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                         </p>
+                        
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-xs-12">
+                        
+                                                    <img  class="img-responsive" src="images/cv6.jpg">
+                        <h3>
+                        
+                        Can You Lose Weight with Creative Visualization?
+                        
+                        
+                        </h3>
+                        
+                                                    <p align="justify">
+                        
+                        Do you know that visualization can help you lose weight? What you imagine in your mind affects your subconscious mind, and therefore, also affects your body. Visualizing yourself slimmer, as you want to look, can help you shape your body
+                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                        <br><br><br>
+                        
+                        
+                                          <div class="row">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <img  class="img-responsive" src="images/cv7.jpg">
+                                                   
+                         <h3>
+                        What Are The Benefits of Visualization?
+                        
+                         </h3>
+                                                    
+                        
+                        <p align="justify">
+                        
+                        What Are The Benefits of Visualization? What does it mean to visualize? You visualize when you use your imagination to build a mental scene in your mind. Visualization means seeing mental images or scenes of events, situations or people in 
+                                                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                         </p>
+                        
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-xs-12">
+                        
+                                                    <img  class="img-responsive" src="images/cv8.jpg">
+                        <h3>
+                        Your Imagination Is Your Key to Success
+                        
+                        
+                        </h3>
+                        
+                                                    <p align="justify">
+                        
+                        Imagination is mostly associated with daydreaming, wishing and illusion. Most people would not associate it with success, achievement and practical people. They most likely consider it as impractical. This is completely wrong. Imagination is one of the most important keys
+                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                        <br><br><br>
+                        
+                        
+                                          <div class="row">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <img  class="img-responsive" src="images/cv9.jpg">
+                                                   
+                         <h3>
+                        How to Make Your Daydreams Come True
+                        
+                         </h3>
+                                                    
+                        
+                        <p align="justify">
+                        
+                        All of us daydream, at least sometimes. In our daydreams, we live a different and better life, where we have love, money and the things we desire. The question is, do we go beyond daydreaming, and try to achieve our
+                                                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                         </p>
+                        
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-xs-12">
+                        
+                                                    <img  class="img-responsive" src="images/cv10.jpg">
+                        <h3>
+                        
+                        9 Reasons Why Your Visualization Is not Working
+                        
+                        
+                        </h3>
+                        
+                                                    <p align="justify">
+                        
+                        Have you tried to practice creative visualization, but did not get results? Did you try to visualize a certain goal, but after a while gave up, because nothing happened? Did you become frustrated, concluding that creative visualization does not work 
+                         … <a href="#" class="contread">Continue Reading</a>
+                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                        <br><br><br>
+                        
+                        
+                        
+                                          <div class="row">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <img  class="img-responsive" src="images/cv11.jpg">
+                                                   
+                         <h3>
+                        How to Energize Your Thoughts with Positive Emotions
+                        
+                         </h3>
+                                                    
+                        
+                        <p align="justify">
+                        
+                        You have most probably heard or read about creative visualization. Maybe, you have tried it. The idea is that by visualizing a mental image of a desired object or situation you can attract it into your life. In this way,
+                                                        
+                         … <a href="#" class="contread">Continue Reading</a>
+                         </p>
+                        
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-xs-12">
+                        
+                                                    <img  class="img-responsive" src="images/cv12.jpg">
+                        <h3>
+                        
+                        How Changing Your Thoughts Will Change Your Life
+                        
+                        
+                        </h3>
+                        
+                                                    <p align="justify">
+                        
+                        “Desire is the starting point of all achievement, not a hope, not a wish, but a keen pulsating desire which transcends everything.” – Napoleon Hill Did you know that thoughts that you repeat often, eventually, affect your behavior and actions, 
+                         … <a href="#" class="contread">Continue Reading</a>
+                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                        <br><br><br>
+                        
+                        
+                        
+                        
+
+
+
+                    <p class="nextpagepara">
+                        <b>1</b> &nbsp;<a href="#" class="nextpage"> 2&nbsp;</a><a href="#" class="nextpage">
+                            3 &nbsp;</a> <a href="#" class="nextpage"> NEXT →</a>
+                    </p>
+                </div>
+
+
+                <br>
+
+                <div class="col-md-4 col-xs-12">
+
+                    <h3>Popular Articles and Quotes</h3>
+                    <ul type="none" style="color: #0000ff;text-decoration: underline;line-height: 39px;word-spacing: 1px;">
+<li> <a href="#" style="color: #0000ff;" > What Is Personal Growth</a></li>
+<li> <a href="#" style="color: #0000ff;" > The Law of Attraction </a></li>
+<li><a href="#" style="color: #0000ff;" >Manifest Something You Want </a></li> 
+<li><a href="#" style="color: #0000ff;" >Sunflower Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Motivation Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Encouraging Quotes and Words </a> </li>
+<li><a href="#" style="color: #0000ff;" >Daily Positive Affirmations </a></li>
+<li><a href="#" style="color: #0000ff;" >What Is Positivity </a></li>
+<li><a href="#" style="color: #0000ff;" >6 Meditation Techniques </a></li>
+<li><a href="#" style="color: #0000ff;" >How to Manifest Anything </a></li>
+</ul>
+<br><br><br>
+
+    <div class="newsbox">
+        <h3 class="newsheading"><strong> Newsletter</strong></h3>
+        <hr class="design">
+        </hr>
+        <form method="post" action="" target="_blank">
+            <div class="fields">
+                <p class="message">Do you want to know how to achieve your wildest dreams in life? I will
+                    tell
+                    you the secret... Nobody knows how. If you want raw and honest tips, subscribe to my
+                    newsletter.</p>
+                <p><input class="newsemail" type="email" name="EMAIL" placeholder="Your email address.."
+                        required=""></p>
+                <p><input class="newssubscribe" type="submit" value="SUBSCRIBE"></p>
+            </div>
+        </form>
+
+    </div>
+    
+    <br><br><br>
+
+    <div>
+        <span style="font-size: 20px; color:#000;line-height: 3.5;font-weight: 700;">Latest Posts</span>
+        <hr style="margin-top: -20px;background-color: rgb(117, 102, 102);height: 1px;">
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Dwayne.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px; ;line-height: 1.5;font-size: 18.5px;">The Best Dwayne Johson
+                Workout Video</p>
+            <p
+                style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 1px;padding-top: 20px;">
+                JUNE 27, 2021</p>
+        </a>
+        <br><br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Ronaldo.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 24 Most Motivating
+                Cristiano Ronaldo Quotes</p>
+            <p
+                style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
+                JUNE 25, 2021</p>
+        </a>
+        <br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Marilyn.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 25 Greatest Marilyn
+                Monroe Quotes</p>
+            <p
+                style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
+                MAY 25, 2019</p>
+        </a>
+        <br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/TEMPLATE.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">19 Great Peter Jackson Quotes
+                For Creative Success</p>
+            <p
+                style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;">
+                MAY 10, 2021</p>
+        </a>
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div><br>
+
+    <br><br><br>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="footer-box-info">
+                        <a href="index.html">
+                            <div class="heading">
+                                <span style="font-size: 28px; color: orangered;">P</span>ositive
+                                <span style="font-size: 28px;color: orangered;">S</span>och
+                        </a><br><br>
+                    </div>
+                    <p class="parahover footer-info-text" style=" line-height: 23px;font-size: 17px;">
+                        <a href="#">
+                            Reference site about Lorem Ipsum, giving information on its origins, as well as a random
+                            Lipsum generator.
+                        </a>
+                    </p><br>
+                    <div class="footer-social-link">
+                        <span class="firsth" style="color: #fff;">Follow us<span><br><br>
+                                <ul type="none">
+                                    <li>
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/login">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://myaccount.google.com/intro/profile">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/login">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/accounts/login/">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="para">
+                    <p class="text-center">Best Positive Blogs 2021</p>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <span class="secondh" style="color: #fff;">Delhi India</span>
+                                <p class="parahover" style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a>
+                                </p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="glyphicon glyphicon-phone"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <span class="thirdh" style="color: #fff;">96 498 4 5480</span>
+                                <p class="parahover" style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a
+                                        call</a></p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class=" col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <span class="heading4" id="head4">Useful Links</span>
+                            <span>
+                                <hr align="left"
+                                    style="width: 135px;height:3px;background-color: #007bff;margin-left: 40px;border: transparent;margin-bottom: -3px;">
+                            </span>
+
+                            <ul type="none">
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="biographies.html">Biographies</a>
+                                </li>
+                                <li>
+                                    <a href="positive_quotes.html">Quotes</a>
+                                </li>
+                                <li>
+                                    <a href="img_gallary.html">Gallary</a>
+                                </li>
+                            </ul>
+
+                            <ul type="none">
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-6">
+
+                        <span class="heading4">Subscribe</span>
+                        <span>
+                            <hr align="left"
+                                style="width: 110px;height:3px;background-color: #007bff;border: transparent;margin-bottom: -18px;">
+                        </span>
+                        <p class="parahover para2">
+                            Reference site about Positivity,giving info of its origins, as well as.
+                        </p>
+                        <form action="#">
+                            <div class="">
+                                <input type="email" class="emailsend" placeholder="Email Address">
+                                <button type="submit" class="sendme">
+                                    <i class="glyphicon glyphicon-send"></i>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <span style="color: #9b9b9b;">Copyright © 2019, All Right Reserved Seobin</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6 col-xs-12">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="terms_service.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="privacy_policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="contact_us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+
+</body>
+
+</html>

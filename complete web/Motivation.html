@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation</title>
+    <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+        @media screen {
+
+            .dropdown:hover .dropdown-menu,
+            .btn-group:hover .dropdown-menu {
+                display: block;
+
+            }
+
+            .dropdown-menu {
+                margin: auto;
+
+            }
+
+            .dropdown-toggle {
+                margin: auto;
+
+            }
+
+            .navbar .dropdown-toggle,
+            .nav-tabs .dropdown-toggle {
+                margin: auto;
+
+            }
+        }
+
+        .carousel-inner>.item>img {
+            width: 1369px;
+            height: 460px;
+        }
+
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:focus,
+        .navbar-inverse .navbar-nav>.active>a:hover {
+            color: orangered;
+            background-color: transparent;
+
+        }
+
+        .paragraph {
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            line-height: 28px;
+
+        }
+
+        .glyphicon-user {
+            font-size: 14px;
+
+        }
+
+        .glyphicon-log-in {
+            font-size: 14px;
+        }
+
+
+        hr {
+            background-color: black;
+            height: 1px;
+        }
+
+        .navbar-inverse {
+            font-family: "Raleway", sans-serif;
+            border-radius: 0%;
+
+        }
+
+        .font-language {
+            /* font-family: 'Anton', sans-serif;
+        font-family: 'David Libre', serif;
+        font-family: 'Gurajada', serif;    */
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif
+        }
+
+        h1 {
+            color: #000;
+            font-size: 60px;
+            font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+        }
+
+        h3 {
+            color: #000;
+            /* color: rgb(25, 176, 247); */
+            font-size: 40px;
+            font-family: 'Anton', sans-serif;
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+
+        }
+
+        h5 {
+            font-size: 30px;
+            color: #000;
+            /* color: rgb(29, 148, 245);
+            font-family: 'Anton', sans-serif; */
+            font-family: 'David Libre', serif;
+            font-family: 'Gurajada', serif;
+        }
+
+        .font-language p {
+            font-size: 16.5px;
+            line-height: 25px;
+        }
+
+        a.contread {
+            color: #053dbf;
+            text-decoration: underline;
+        }
+
+        a.nextpage {
+            text-decoration: none;
+            color: #053dbf;
+        }
+
+        p.nextpagepara {
+            font-size: 17px;
+        }
+
+              /*  newslater 's css is present here */
+      .newsbox {
+            background-color: #f6f6f6;
+            padding: 20px 40px;
+            padding-bottom: 20px;
+
+        }
+
+        .newsbox p {
+            line-height: 30px;
+            text-align: center;
+            font-size: 15.5px;
+
+        }
+
+        img.posts {
+            opacity: 0.90;
+
+        }
+
+        img.posts:hover {
+            opacity: 1;
+            transition: 1s ease;
+            box-shadow: 0 0 20px rgb(18, 187, 253);
+        }
+
+        a.postanchor {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .newsemail {
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 45px;
+        }
+
+        .newsemail::placeholder {
+            padding-left: 20px;
+        }
+
+        .newssubscribe {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            outline: 0;
+            border: #000;
+            font-size: 12px;
+            height: 45px;
+            font-weight: bold;
+        }
+
+
+        .newsheading {
+            text-align: center;
+            color: #001;
+            font-size: 21px;
+
+        }
+
+        hr.design {
+            background-color: #000;
+            height: 2px;
+            width: 30px;
+            margin-bottom: 40px;
+        }
+/* here newsletter 's css has finished' */
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="font-language">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- this is opt1ional  -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html"><span
+                            style="font-size: 28px; color: orangered;">P</span>ositive<span
+                            style="font-size: 28px;color: orangered;">S</span>och</a>
+
+                            
+
+
+                </div>
+                 
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav" style="font-size: 15px;">
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" style="    background-color: #ffffff;">
+                                <li><a href="about.html" target="_blank">About</a></li>
+                                <li><a href="contact_us.html" target="_blank">Contact us</a></li>
+                                <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
+                                <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
+                                <li><a href="advertise.html" target="_blank">Advertise </a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: #fff;">
+                                <li><a href="Willpower and Discipline.html" target="_blank">Willpower & Discipline</a></li>
+                                <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration </a></li>
+                                <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
+                                <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
+                                <li><a href="Motivation.html" target="_blank">Motivation </a></li>
+                                <li><a href="Success.html" target="_blank"> Success </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #fff;">
+                            <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
+                            <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization </a></li>
+                            <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
+                            <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
+                            <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+        
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #fff;">
+                      
+                        <li><a href="positive_quotes.html">Positive Quotes</a></li>
+                        <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
+                       
+                    </ul>
+                </li>
+
+                    </ul>
+
+                    
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        </li>
+                        <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
+                                        style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
+                        <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
+                                        style="font-family: Raleway;"> Login</span> </span> </a></li>
+                    </ul>
+
+                </div>
+
+                
+
+            </div>
+
+        </nav>
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-xs-12">
+
+                    <h1>
+                        Motivation
+
+                    </h1>
+
+                    <h5>
+                        Motivation and Getting Motivated Articles and Advice
+
+                    </h5>
+                    <br>
+
+
+                    <p align="justify">
+
+                        Articles on motivation, with tips and advice to increase your motivation and enthusiasm.
+
+
+                    </p>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive" src="images/mo1.jpg">
+
+                            <h3>
+                                7 Ways to Find Inspiration During the Hardest Time in Life
+
+                            </h3>
+
+
+                            <p align="justify">
+
+                                In your tough times, being positive, helping others, giving yourself time, following
+                                your idol’s path, setting priorities are ways to find inspiration. Life is not always
+                                fair to everyone. It’s natural to get upset from time to time. However, the
+
+
+                                … <a href="#" class="contread">Continue Reading</a>
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <img class="img-responsive" src="images/mo2.jpg">
+                            <h3>
+
+                                Articles on Motivation and Getting Motivated
+
+
+                            </h3>
+
+                            <p align="justify">
+
+                                We have collected here some of the best articles on motivation that appear on our
+                                website. You will find here motivational articles with advice and tips on on how to get
+                                motivated. Motivation is the power that activates the engine
+
+                                … <a href="#" class="contread">Continue Reading</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive" src="images/mo3.jpg">
+
+                            <h3>
+                                What Does Motivation Mean and How to Strengthen It
+
+                            </h3>
+
+
+                            <p align="justify">
+                                “Create a definite plan for carrying out your desire and begin at once, whether you are
+                                ready or not, to put this plan into action.” – Napoleon Hill We all know that motivation
+                                is important in everyone’s life, but what
+
+
+                                … <a href="#" class="contread">Continue Reading</a>
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <img class="img-responsive" src="images/mo4.jpg">
+                            <h3>
+
+                                How to be More Enthusiastic and Motivated
+
+
+                            </h3>
+
+                            <p align="justify">
+
+                                “Enthusiasm is the electricity of life. How do you get it? You act enthusiastic until
+                                you make it a habit.” – Gordon Parks – How to be more enthusiastic? Do you feel
+                                enthusiastic, motivated and energetic when starting something new,
+
+                                … <a href="#" class="contread">Continue Reading</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive" src="images/mo5.jpg">
+
+                            <h3>
+                                How to Get Motivated – Tips and Advice
+
+
+                            </h3>
+
+
+                            <p align="justify">
+
+                                Are you looking for tips on how to get motivated? Do you lack intrinsic motivation and
+                                need a boost to your mental state? Or maybe you are you the type of person who is always
+                                enthusiastic and energetic with constant
+
+                                … <a href="#" class="contread">Continue Reading</a>
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <img class="img-responsive" src="images/mo6.jpg">
+                            <h3>
+                                What Are You Waiting For? Improvement Starts Now
+
+
+                            </h3>
+
+                            <p align="justify">
+
+                                Do you want to make changes and improvements in your life? If you do, what are you
+                                waiting for? When will you begin making these changes and improvement? Why not right
+                                now? Do you constantly tell yourself that if things
+
+                                … <a href="#" class="contread">Continue Reading</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive" src="images/mo7.jpg">
+
+                            <h3>
+                                Do You Lose Enthusiasm and Interest Fast?
+
+                            </h3>
+
+
+                            <p align="justify">
+
+                                Do you tend to lose your interest and enthusiasm fast? Do you start with motivation,
+                                energy and high hopes, but lose them after a short time? Do you often ask yourself the
+                                following questions: “Why do I lose interest fast?”
+
+                                … <a href="#" class="contread">Continue Reading</a>
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <img class="img-responsive" src="images/mo8.jpg">
+                            <h3>
+
+                                How to Overcome Lack of Motivation and Enthusiasm
+
+                            </h3>
+
+                            <p align="justify">
+
+                                Do you feel that you lack motivation and you need to kindle it? When motivation is
+                                lacking you become passive, unhappy and stay in the same place without making progress.
+                                It’s most important to change this situation. Motivation and enthusiasm
+
+                                … <a href="#" class="contread">Continue Reading</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive" src="images/mo9.jpg">
+
+                            <h3>
+                                The Main Methods Athletes Use for Motivation
+
+                            </h3>
+
+
+                            <p align="justify">
+
+                                Modern sportsmen have become celebrities with more fame than movie stars and singers.
+                                They earn millions and get exclusive brands deals with Adidas, Puma, and Pepsi. People
+                                see professional athletes as idols. Many of them started with nothing and become
+
+                                … <a href="#" class="contread">Continue Reading</a>
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <img class="img-responsive" src="images/mo10.jpg">
+                            <h3>
+
+                                6 Morning Practices Guaranteed to Keep You Motivated
+
+
+                            </h3>
+
+                            <p align="justify">
+
+                                There are predominantly two types of people in this world – those who like to start
+                                their day early and others, who if given a chance would lie in bed all day. We have all
+                                had days when getting out
+
+                                … <a href="#" class="contread">Continue Reading</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <img class="img-responsive" src="images/mo11.jpg">
+
+                            <h3>
+                                4 Inspirational Tips for Students Motivation
+
+                            </h3>
+
+
+                            <p align="justify">
+
+                                One of the most important features, as well as challenges of a student is motivation.
+                                All people need motivation to keep up with their daily tasks and obligations, but, for a
+                                student, the need to be constantly motivated is enhanced.
+
+
+                                … <a href="#" class="contread">Continue Reading</a>
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-md-6 col-xs-12">
+
+                            <img class="img-responsive" src="images/m012.jpg">
+                            <h3>
+                                How Do I Motivate Myself to Stay Motivated?
+
+
+                            </h3>
+
+                            <p align="justify">
+                                Making a decision to achieve success is not enough. Many do so, but they do not back
+                                their decision with action. It is so easy and pleasant to daydream, watch programs on TV
+                                about celebrities and follow them on Instagram,
+
+                                … <a href="#" class="contread">Continue Reading</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+
+
+
+
+                    <p class="nextpagepara">
+                        <b>1</b> &nbsp;<a href="#" class="nextpage"> 2&nbsp;</a> ... &nbsp;<a href="#" class="nextpage">
+                            4 &nbsp;</a> <a href="#" class="nextpage"> NEXT →</a>
+                    </p>
+                </div>
+
+
+                <br>
+
+                <div class="col-md-4 col-xs-12">
+
+                    <h3>Popular Articles and Quotes</h3>
+                    <ul type="none" style="color: #0000ff;text-decoration: underline;line-height: 39px;word-spacing: 1px;">
+<li> <a href="#" style="color: #0000ff;" > What Is Personal Growth</a></li>
+<li> <a href="#" style="color: #0000ff;" > The Law of Attraction </a></li>
+<li><a href="#" style="color: #0000ff;" >Manifest Something You Want </a></li> 
+<li><a href="#" style="color: #0000ff;" >Sunflower Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Motivation Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Encouraging Quotes and Words </a> </li>
+<li><a href="#" style="color: #0000ff;" >Daily Positive Affirmations </a></li>
+<li><a href="#" style="color: #0000ff;" >What Is Positivity </a></li>
+<li><a href="#" style="color: #0000ff;" >6 Meditation Techniques </a></li>
+<li><a href="#" style="color: #0000ff;" >How to Manifest Anything </a></li>
+</ul>
+<br><br><br>
+
+    <div class="newsbox">
+        <h3 class="newsheading"><strong> Newsletter</strong></h3>
+        <hr class="design">
+        </hr>
+        <form method="post" action="" target="_blank">
+            <div class="fields">
+                <p class="message">Do you want to know how to achieve your wildest dreams in life? I will
+                    tell
+                    you the secret... Nobody knows how. If you want raw and honest tips, subscribe to my
+                    newsletter.</p>
+                <p><input class="newsemail" type="email" name="EMAIL" placeholder="Your email address.."
+                        required=""></p>
+                <p><input class="newssubscribe" type="submit" value="SUBSCRIBE"></p>
+            </div>
+        </form>
+
+    </div>
+    
+    <br><br><br>
+
+    <div>
+        <span style="font-size: 20px; color:#000;line-height: 3.5;font-weight: 700;">Latest Posts</span>
+        <hr style="margin-top: -20px;background-color: rgb(117, 102, 102);height: 1px;">
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Dwayne.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px; ;line-height: 1.5;font-size: 18.5px;">The Best Dwayne Johson
+                Workout Video</p>
+            <p
+                style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 1px;padding-top: 20px;">
+                JUNE 27, 2021</p>
+        </a>
+        <br><br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Ronaldo.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 24 Most Motivating
+                Cristiano Ronaldo Quotes</p>
+            <p
+                style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
+                JUNE 25, 2021</p>
+        </a>
+        <br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Marilyn.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 25 Greatest Marilyn
+                Monroe Quotes</p>
+            <p
+                style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
+                MAY 25, 2019</p>
+        </a>
+        <br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/TEMPLATE.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">19 Great Peter Jackson Quotes
+                For Creative Success</p>
+            <p
+                style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;">
+                MAY 10, 2021</p>
+        </a>
+
+    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div><br>
+    
+    <br><br><br>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="footer-box-info">
+                        <a href="index.html">
+                            <div class="heading">
+                                <span style="font-size: 28px; color: orangered;">P</span>ositive
+                                <span style="font-size: 28px;color: orangered;">S</span>och
+                        </a><br><br>
+                    </div>
+                    <p class="parahover footer-info-text" style=" line-height: 23px;font-size: 17px;">
+                        <a href="#">
+                            Reference site about Lorem Ipsum, giving information on its origins, as well as a random
+                            Lipsum generator.
+                        </a>
+                    </p><br>
+                    <div class="footer-social-link">
+                        <span class="firsth" style="color: #fff;">Follow us<span><br><br>
+                                <ul type="none">
+                                    <li>
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/login">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://myaccount.google.com/intro/profile">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/login">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/accounts/login/">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="para">
+                    <p class="text-center">Best Positive Blogs 2021</p>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <span class="secondh" style="color: #fff;">Delhi India</span>
+                                <p class="parahover" style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a>
+                                </p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="glyphicon glyphicon-phone"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <span class="thirdh" style="color: #fff;">96 498 4 5480</span>
+                                <p class="parahover" style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a
+                                        call</a></p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class=" col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <span class="heading4" id="head4">Useful Links</span>
+                            <span>
+                                <hr align="left"
+                                    style="width: 135px;height:3px;background-color: #007bff;margin-left: 40px;border: transparent;margin-bottom: -3px;">
+                            </span>
+
+                            <ul type="none">
+                                <li>
+                                    <a href="about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="biographies.html">Biographies</a>
+                                </li>
+                                <li>
+                                    <a href="positive_quotes.html">Quotes</a>
+                                </li>
+                                <li>
+                                    <a href="img_gallary.html">Gallary</a>
+                                </li>
+                            </ul>
+
+                            <ul type="none">
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-6">
+
+                        <span class="heading4">Subscribe</span>
+                        <span>
+                            <hr align="left"
+                                style="width: 110px;height:3px;background-color: #007bff;border: transparent;margin-bottom: -18px;">
+                        </span>
+                        <p class="parahover para2">
+                            Reference site about Positivity,giving info of its origins, as well as.
+                        </p>
+                        <form action="#">
+                            <div class="">
+                                <input type="email" class="emailsend" placeholder="Email Address">
+                                <button type="submit" class="sendme">
+                                    <i class="glyphicon glyphicon-send"></i>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <span style="color: #9b9b9b;">Copyright © 2019, All Right Reserved Seobin</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6 col-xs-12">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="terms_service.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="privacy_policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="contact_us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+
+</body>
+
+</html>
