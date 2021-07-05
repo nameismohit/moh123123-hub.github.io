@@ -20,6 +20,7 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
@@ -54,9 +55,9 @@
             height: 460px;
         }
 
-        .navbar-inverse .navbar-nav>.active>a,
-        .navbar-inverse .navbar-nav>.active>a:focus,
-        .navbar-inverse .navbar-nav>.active>a:hover {
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
             color: orangered;
             background-color: transparent;
 
@@ -85,7 +86,8 @@
         }
 
         .navbar-default {
-            font-family: "Raleway", sans-serif;
+            /* font-family: "Raleway", sans-serif; */
+            font-family: 'Lato',sans-serif;
             border-radius: 0%;
             background-color: rgba(249,249,249,0.99);
             border-top: 1px solid rgba(0,0,0,.1);
@@ -99,7 +101,8 @@
         font-family: 'David Libre', serif;
         font-family: 'Gurajada', serif;    */
             font-size: 15px;
-            font-family: 'Montserrat', sans-serif
+            /* font-family: 'Montserrat', sans-serif */
+            font-family: "Lato",sans-serif;
         }
 
         h1 {
@@ -107,6 +110,7 @@
             font-family: 'Anton', sans-serif;
             font-family: 'David Libre', serif;
             font-family: 'Gurajada', serif;
+            /* font-family: "Lato",sans-serif; */
         }
 
         h3 {
@@ -127,37 +131,9 @@
         }
 
         
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        /* @media only screen and (min-width: 600px) {
-            .fa {}
-        } */
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        /* @media only screen and (min-width: 768px) {
-            .fa {}
-        } */
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        /* @media only screen and (min-width: 992px) {
-            .fa {
-
-            }
-        } */
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        /* @media only screen and (min-width: 1200px) {
-            .fa {
-                margin-left:960px;
-
-                margin-top: 14px;
-                
-                position: absolute;
-            }
-        }  */
-        
-        .jumbotron h1{
-            margin-top: 0;
-            margin-bottom: 0;
+        header h1{
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
 /*  new css for navbar 's height' */
@@ -181,31 +157,48 @@
  
 }
 
+
+
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     /* (80px - line-height of 27px) / 2 = 26.5px */
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: px;
+    line-height: 1.6;
   }
 }
 /* finish */
 
+
+/* middle toggle */
 .navbar-toggle {float: none; margin-right: 0; width: 100%; }
 
 .icon-bar { margin-left: 43%; margin-right: auto; }
+/* finish */
+.navbar-nav > li{
+  padding-left:4px;
+  padding-right:4px;
+}
+/* finish */
+/* after hover collapse bar css */
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color:rgba(249,249,249,0.99) ;
+/* finish */
 
     </style>
 </head>
 
 <body>
     <div class="font-language">
-        <span class="jumbotron">
-            <span class="col-md-1 col-xs-0"></span>
-            <h1>  <a  href="index.html" style="text-decoration: none;letter-spacing: 2px;"><span
-                style="font-size: 78px; color: #000000;">POSITIVE</span>
-                <span style="font-size: 78px;color: rgb(13, 183, 221);">SOCH</span></a></h1>
-        </span>
+
+        <span class="text-center">
+        <header>
+            <h1>  <a  href="index.html" style="text-decoration: none;letter-spacing: 1.5px;font-family: 'Lato',sans-serif;"><span class="poso"
+                style="font-size: 54px; color: #000000;">POSITIVE</span>
+                <span class="poso" style="font-size: 54px;color: rgb(13, 183, 221);">SOCH</span></a></h1>
+        </header>
+            </span>
+
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
@@ -220,15 +213,11 @@
                         <span class="mobile-menu" style="position:absolute;margin-left: 1px;margin-top:-20px;font-size: 
                         18px;font-family:Arial, Helvetica, sans-serif;font-weight: 600;">Menu</span>
                     </button>
-              
-
-                            
-
-
+            
                 </div>
                  
                 <div class="collapse navbar-collapse" id="myNavbar">
-<span class="col-md-1 col-xs-0"></span>
+<span class="col-md-1 col-sm-0 col-xs-0"></span>
                     <ul class="nav navbar-nav" style="font-size: 15px;">
                         <li class="active"><a href="home.html">Home</a></li>
                         <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
@@ -271,7 +260,9 @@
         
                         </ul>
                     </li>
-                    
+
+                    <li><a href="Blog.html">Blog</a></li>
+
                     
                     <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes
                         <span class="caret"></span>
@@ -283,19 +274,29 @@
                        
                     </ul>
                 </li>
+                <li><a href="Faq.html">Faq</a></li>
 
-                    </ul>
+            </ul>
 
+            
+            
+                
                     
 
                     <ul class="nav navbar-nav navbar-right">
 
-                        </li>
-                        <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
-                                        style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
-                        <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
-                                        style="font-family: Raleway;"> Login</span> </span> </a></li>
-                    </ul>
+                        
+            <li class=" dropdown"><a href="#" data-toggle="dropdown"> Profile
+                    <span class="caret"></span>
+                </a>
+                <ul class=" dropdown-menu" style="background-color: #fff;">
+                    <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
+                        style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
+        <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
+                        style="font-family: Raleway;"> Login</span> </span> </a></li>
+
+                </ul>
+            </li>        </ul>
 
                 </div>
 

@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>index page</title>
     <link rel="stylesheet" href="css/stylefooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
+      
 
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
@@ -62,12 +62,66 @@
 
         }
 
-        .paragraph {
-            word-spacing: 1px;
-            letter-spacing: 0.5px;
-            line-height: 28px;
+        .postzone {
+            background-color: #f7f7f7;
 
         }
+
+        .subscribers {
+            background-color: #ccf1ff;
+            padding: 20px;
+            font-size: 20px;
+            padding-bottom: 60px;
+        }
+
+        .subbutton {
+            background: #ee4903;
+            color: #fff;
+            border: transparent;
+            /* height: 44px;
+            width: 180px; */
+            font-size: 15px;
+
+        }
+
+        .subinput {
+            outline: 0;
+            border: 1px solid #d6d6d6;
+            /* height: 45px;
+            width: 180px; */
+            /* margin-left: 70px; */
+            padding-left: 10px;
+
+
+
+        }
+
+        .subinput::placeholder {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+
+        .headinganchor {
+
+            text-decoration: none;
+            color: #000;
+
+        }
+
+        .headinganchor:hover {
+            color: #2692f0;
+            text-decoration: none;
+
+        }
+
+        /* .paragraph {
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            line-height: 28px; 
+            }
+            */
+
 
         .glyphicon-user {
             font-size: 14px;
@@ -94,138 +148,67 @@
             /* font-family: 'Anton', sans-serif;
         font-family: 'David Libre', serif;
         font-family: 'Gurajada', serif;    */
-            font-size: 15px;
+            font-size: 18px;
             font-family: 'Montserrat', sans-serif
         }
 
         h1 {
-            color: #000;
-            font-size: 60px;
+            font-size: 50px;
             font-family: 'Anton', sans-serif;
             font-family: 'David Libre', serif;
             font-family: 'Gurajada', serif;
         }
 
         h3 {
-            color: #000;
-            /* color: rgb(25, 176, 247); */
-            font-size: 40px;
+            font-size: 35px;
+            color: rgb(25, 176, 247);
             font-family: 'Anton', sans-serif;
             font-family: 'David Libre', serif;
             font-family: 'Gurajada', serif;
 
         }
 
-        h5 {
+        h4 {
             font-size: 30px;
-            color: #000;
-            /* color: rgb(29, 148, 245);
-            font-family: 'Anton', sans-serif; */
+            color: rgb(29, 148, 245);
+            font-family: 'Anton', sans-serif;
             font-family: 'David Libre', serif;
             font-family: 'Gurajada', serif;
         }
 
-        .font-language p {
-            font-size: 16.5px;
-            line-height: 25px;
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        /* @media only screen and (min-width: 600px) {
+            .fa {}
+        } */
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        /* @media only screen and (min-width: 768px) {
+            .fa {}
+        } */
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        /* @media only screen and (min-width: 992px) {
+            .fa {
+
+            }
+        } */
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        /* @media only screen and (min-width: 1200px) {
+            .fa {
+                margin-left:960px;
+
+                margin-top: 14px;
+                
+                position: absolute;
+            }
+        }  */
+        p {
+            line-height: 28px;
+            word-spacing: 0.6px;
+            letter-spacing: 0.3px;
         }
-
-        a.contread {
-            color: #053dbf;
-            text-decoration: underline;
-        }
-
-        a.nextpage {
-            text-decoration: none;
-            color: #053dbf;
-        }
-
-        p.nextpagepara {
-            font-size: 17px;
-        }
-
-              /*  newslater 's css is present here */
-      .newsbox {
-            background-color: #f6f6f6;
-            padding: 20px 40px;
-            padding-bottom: 20px;
-
-        }
-
-        .newsbox p {
-            line-height: 30px;
-            text-align: center;
-            font-size: 15.5px;
-
-        }
-
-        img.posts {
-            opacity: 0.90;
-
-        }
-
-        img.posts:hover {
-            opacity: 1;
-            transition: 1s ease;
-            box-shadow: 0 0 20px rgb(18, 187, 253);
-        }
-
-        a.postanchor {
-            text-decoration: none;
-            color: #000;
-        }
-
-        .newsemail {
-            width: 100%;
-            border: 1px solid #e5e5e5;
-            outline: 0;
-            height: 45px;
-        }
-
-        .newsemail::placeholder {
-            padding-left: 20px;
-        }
-
-        .newssubscribe {
-            width: 100%;
-            background-color: #000;
-            color: #fff;
-            outline: 0;
-            border: #000;
-            font-size: 12px;
-            height: 45px;
-            font-weight: bold;
-        }
-
-
-        .newsheading {
-            text-align: center;
-            color: #001;
-            font-size: 21px;
-
-        }
-
-        hr.design {
-            background-color: #000;
-            height: 2px;
-            width: 30px;
-            margin-bottom: 40px;
-        }
-/* here newsletter 's css has finished' */
-
-         .anchor{
-             color:#0000ff;
-             text-decoration: underline;
-             font-size: 18.1px;
-         }
-
-        h2 span{
-            display: inline-block;
-    margin-bottom: -1px;
-    padding: 8px 0;
-    border-bottom: 2px solid #ff8400;
-        }           
-
     </style>
 </head>
 
@@ -237,9 +220,11 @@
                 <div class="navbar-header">
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                        
                     </button>
 
                     <a class="navbar-brand" href="index.html"><span
@@ -247,14 +232,12 @@
                             style="font-size: 28px;color: orangered;">S</span>och</a>
 
                             
-
-
                 </div>
                  
                 <div class="collapse navbar-collapse" id="myNavbar">
 
                     <ul class="nav navbar-nav" style="font-size: 15px;">
-                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
                             </a>
 
@@ -329,317 +312,215 @@
 
         </nav>
 
-
+        <br>
         <div class="container">
 
-            <h1>
-
-                Improve Your Life and Manifest Your Dreams
-
-            </h1>
-<br>
-<center>
-<div class=" row">
-   
-
-    <div class="col-md-4 col-xs-12">
-<a href="" ><img src="images/ind1.jpg" class="img-responsive" height="180px" width="300px" > </a> 
-
-<a class=" anchor" href="#"><p class="text-center">Peace of Mind Tips and Advice</p></a>   
-
-</div>
-   
-   <div class="col-md-4 col-xs-12">
-    <a href="" ><img src="images/ind2.jpg" class="img-responsive" height="180px" width="300px" > </a> 
-    <a class=" anchor" href="#"><p class="text-center">Willpower and Self Discipline    </p></a>   
-
-       </div>
-       
-       <div class="col-md-4 col-xs-12">
-        <a href="" ><img src="images/ind3.jpg" class="img-responsive" height="180px" width="300px" > </a> 
-        <a class=" anchor" href="#"><p class="text-center"> Manifestation Quotes </p></a>   
-
-    </div>
+            <div class="row">
 
 
-</div>
-   <br><br>
-   
-<div class=" row">
-   
-    
-    <div class="col-md-4 col-xs-12">
-<a href="" ><img src="images/ind4.jpg" class="img-responsive" height="180px" width="300px" > </a> 
-<a class=" anchor" href="#"><p class="text-center"> The Power of Positive Thinking</p></a>   
 
-</div>
-   
-   <div class="col-md-4 col-xs-12">
-    <a href="" ><img src="images/ind5.jpg" class="img-responsive" height="180px" width="300px" > </a> 
-    <a class=" anchor" href="#"><p class="text-center"> The Law of Attraction </p></a>   
+                <div class="col-md-8 col-xs-12">
+                    <div class="subscribers">
 
-</div>
-       
-       <div class="col-md-4 col-xs-12">
-        <a href="" ><img src="images/ind6.jpg" class="img-responsive" height="180px" width="300px" > </a> 
-        <a class=" anchor" href="#"><p class="text-center"> Meditation Guidance and Tips </p></a>   
+                        <h1 class="text-center"> Free Exclusive Happiness Tips </h1>
+                        <p align="jsutify" style="padding-left:26px;padding-right: 21.70px;">
+                            Join over 80,000 email subscribers. You’ll also get the “21 Things I Wish They Had Taught Me
+                            in School” guide.
 
-    </div>
+                        </p>
+
+                        <br>
+                        <form class="form-inline text-center">
+                            <div class="form-group">    
+                                <input type="email" class="form-control subinput" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control subbutton" type="submit" value="Yes, Sign Me Up!">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <br><br>
+
+                    <h2><a href="#" class="headinganchor">Don’t Compare Your Life to Someone’s Highlight Reel</a>
+                    </h2><br>
+                    <img class="img-responsive" src="images/kkk.jpg" />
+                    <br><br>
+                    <p align="justify"><q> When you are content to be simply yourself and don’t compare or compete,
+                            everybody will respect you.
+                        </q></p>
+                    <strong style="font-size: 22px;font-weight: 800;">Lao Tzu
+                    </strong>
 
 
-</div>
-   </center>
+                    <br><br><br>
 
+                    <p align="justify">Today I’d like to focus on a negative habit that creates insecurity within,
+                        <a href="#" class="blueheading" style="text-decoration: underline;">erodes self-esteem and can make you feel quite unhappy with your own life.</a></p>
+
+                    <br>
+                    <p align="justify">
+                        It’s something that has sprung up as we have moved a part of our lives on to the internet and
+                        social media.
+                    </p><br>
+                    <p align="justify">
+                        And that habit is to compare yourself and your life to other people’s highlight reels.
+                    </p><br>
+                    <p>
+                        What do I mean by that?
+                    </p><br>
+
+                    <a class="blueheading" href=""> [continue reading...] </a>
+                    <br><br><br>
+
+                    <h2>
+                        <a href="#" class="headinganchor">
+                            How to Get More Done with (a Lot) Less Stress: 12 Daily Habits
+                        </a>
+                    </h2>
+                    <br>
+                    <img class="img-responsive" src="images/150826_simpler_work-c.jpg" />
 <br><br>
 
-<h5>We are glad that you are here!</h5>
+                    <p align="justify"><i>
+                            “Three Rules of Work: Out of clutter find simplicity; From discord find harmony; In the
+                            middle
+                            of difficulty lies opportunity.”</i>
+                        <br><strong style="font-size: 22px;font-weight: 800;">Albert Einstein</strong>
+                    </p>
+                    <br>
+                    <p align="justify">
+                        <i>“Think simple” as my old master used to say – meaning reduce the whole of its parts into the
+                            simplest terms, getting back to first principles.”
+                        </i><br>
+                        <strong style="font-size: 22px;font-weight: 800;">Frank Lloyd Wright</strong>
+
+                    </p>
+                    <br>
+                    <p align="justify">
+                        The daily work we do – in school, at work or in a business – can easily become overwhelming,
+                        ineffective and suck the energy and joy out of what you are doing.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        So how can you work in a lighter, simpler way that helps you to <a class="blueheading" href="#" style="text-decoration: underline;">get more of what truly matters
+                        done</a> in less time and with less stress?
+                    </p>
+                    <br>
+                    <p align="justify">
+                        Let me share 12 habits that I've discovered over the years that help me to do just that.
+                    </p>
+                    <br>
+                    <a href="" class="blueheading"> [continue reading…] </a>
+
+                    <br><br><br>
+                    <h2>
+                        <a href="#" class="headinganchor">
+                            9 Things You Need to Stop Doing to Start Living a Happier and Self-Kinder Life
+                        </a>
+                    </h2>
+                    <br>
+                    <img class="img-responsive" src="images/151104_happier_life-c.jpg" />
+                    <br>
+                    <p align="justify"><i>
+                            “When one door of happiness closes, another opens, but often we look so long at the closed
+                            door
+                            that we do not see the one that has been opened for us.”</i>
+                        <br><strong style="font-size: 22px;font-weight: 800;">Helen Keller </strong>
+                    </p>
+                    <br>
+                    <p align="justify"><i>
+                            “Happiness is when what you think, what you say, and what you do are in harmony.”
+                        </i><br><strong style="font-size: 22px;font-weight: 800;">Mahatma Gandhi</strong>
+                    </p>
+                    <br>
+                    <p align="jsutify">
+                        Living a life where you're happier and <a href="#" class="blueheading" style="text-decoration: underline;" >kinder towards yourself </a> is not just about what you can
+                        do.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        But also about what you are already doing. And especially those habits that do have a negative
+                        and unhappy impact on your life.
+                    </p>
+                    <br>
+                    <p align="justify">
+                        So this week I'd like to share 9 such habits. And what have helped me a whole lot to do instead.
+                    </p>
+                    <br>
+                    <a href="" class="blueheading">
+                        [continue reading…]
+                    </a>
+                    <br><br><br>
+                    <h2>
+                        <a href="#" class="headinganchor">
+                            101 Courage Quotes That Will Motivate and Inspire You (2021 Update)
+                        </a>
+                    </h2>
+                    <br><br>
+                    <p align="justify">
+                        Today I’d like to share 101 of the best and most powerful courage quotes that I’ve found.
+                    </p><br>
+                    <p align="justify">
+                        Timeless thoughts that will inspire and help you to take that big – or sometimes small – leap
+                        that you need to take to move forward towards a dream or goal.
+                    </p><br>
+                    <p align="justify">
+                        These thought-provoking quotes will help you to build your own courage in life no matter if you
+                        need it in your love life or relationships, <a href="#" class="blueheading" style="text-decoration: underline;"> to go after what you want at work</a> or in your
+                        business or to make positive change in your life.
+                    </p><br>
+                    <p align="justify">
+                        And <a href="#" class="blueheading" style="text-decoration: underline;"> to not give up even when things are tough </a> and you may feel like giving in and going home.
+                    </p><br>
+                    <a href="" class="blueheading">
+                        [continue reading…]
+                    </a>
+                    <br><br><br>
+                </div>
+
+                <div class="postzone col-md-4 col-xs-12">
+                    <br>
+                    Hi!<br>
+                    I’m Mohit.<br>
+                    <br><br>
+                    Since 2018 I’ve written about <a href="">self-esteem</a> and <a href=""> happiness</a> and much
+                    more.
+                    <br><br>
+                    <a href="about.html"> Click here to learn more about me and this website…]</a>
+                    <br><br>
+
+                    POPULAR POSTS:
+                    <br>
+                    <b>–</b><a href=""> 7 Habits of Unhappy People</a><br>
+                    <b>–</b><a href=""> 101 Self-Love Quotes</a><br>
+                    <b>–</b> <a href=""> How to Stop Being So Lazy</a><br>
+                    <b>–</b> <a href=""> 27 Ways to Motivate Yourself</a><br>
+                    <b>–</b> <a href=""> 68 Relationship Quotes</a><br>
+                    <b>–</b> <a href=""> How to Overcome Failure</a><br>
+                    <b>–</b> <a href=""> 13 Ways to Overcome Self-Doubt</a><br>
+                    <b>–</b> <a href=""> How to Stop Overthinking</a><br>
+                    <b>–</b> <a href=""> 101 Happiness Quotes</a><br>
+                    <b>–</b> <a href=""> How to Start a Successful Blog</a><br>
+                    <b>–</b> <a href=""> 11 Ways to Stay Positive</a><br>
+                    <b>–</b> <a href=""> How to Make Someone Happy</a><br>
+                    <b>–</b> <a href=""> How to Overcome Frustration</a><br>
+                    <b>–</b> <a href=""> 78 Love Quotes</a><br>
+                    <b>–</b> <a href=""> How to Find Inner Peace</a><br>
+                    <b>–</b> <a href=""> 74 Friendship Quotes</a><br>
+                    <b>–</b> <a href=""> How to Overcome Negative Thoughts</a><br>
+                    <b>–</b> <a href=""> 73 Quotes on Fear</a><br>
 
 
-<ul style="line-height: 50px;">
-
-    <li> We will show you how to use affirmations and the law of attraction effectively, make positive changes in your life, and achieve your goals.
-    </li>
-
-    <li>
-        You will find here guidance about positive thinking and how to adopt it in your everyday life.
-
-    </li>
-
-    <li>
-        Learn how to strengthen your willpower, self-discipline and focus, the skills everyone should possess.
-
-    </li>
-
-    <li>
-        Learn about meditation and how to calm down your mind and enjoy inner peace in everyday life.
-
-    </li>
-
-</ul>
-<br>
+                </div>
 
 
-<p align="justify">
-    These are just a few of the many topics you will find on our website.
-</p>
+            </div>
 
-<br>
+        </div>
 
-<h2><span>
-Upgrade Your Life with Our Unique Books
-</span>
-</h2>
-
-<br>
-<p align="justify">
-Easy to follow, step-by-step guidance to help you:
-</p>
-
-<ul style="line-height: 50px;">
-
-<li>liAchieve your dreams and improve your life.</li>
-<li>Build up your willpower and self discipline.</li>
-<li>Attract love and happiness into your life.</li>
-<li>Sharpen your focus and concentration, and increase your attention span.</li>
-<li>Calm down the restlessness of your mind and enjoy inner peace.</li>
-
-</ul>
-
-<br>
-
-<center>
-    <div class="row">
-        <div class="col-md-4 col-xs-12">
-           <img src="images/book1.jpg" class="img-responsive"  width="180px" height="247px" > 
-        <a href="#" class="anchor">Manifest and Achieve</a>
         <br>
-        </div>
-    
-        <div class="col-md-4 col-xs-12">
-            <img src="images/book2.jpg" class="img-responsive" width="180px" height="247px"> 
-            <a href="#" class="anchor">Willpower and Self-Descipline</a> 
-            <br>
-        </div>
-    
-         <div class="col-md-4 col-xs-12">
-            <img src="images/book3.jpg" class="img-responsive" width="180px" height="247px"> 
-            <a href="#" class="anchor">Focus Your Attention</a> 
-        </div>
     </div>
-    <br>
-    <div class="row">
-    
-        <div class="col-md-4 col-xs-12">
-            <img src="images/book4.jpg" class="img-responsive" width="180px" height="247px"> 
-            <a href="#" class="anchor">Inner Peace in Daily Life </a>
-        </div>
-    
-         <div class="col-md-4 col-xs-12">
-            <img src="images/book5.jpg" class="img-responsive" width="180px" height="247px"> 
-            <a href="#" class="anchor">Calm Down Your Mind</a> 
-        </div>
-    
-         <div class="col-md-4 col-xs-12">
-            <img src="images/book6.jpg" class="img-responsive" width="180px" height="247px"> 
-            <a href="#" class="anchor">Emotional Detachment</a> 
-        </div>
-    
-    
-    </div>
-    </center>
-    
-
-<br>
-
-<h4> Visit Our <a href="#" class="anchor"> Bookstore </a> for More Books!</h4>
-
-<br>
-
-<p align="justify">
-    “Feeding your mind with thoughts about success will create success in your life.” –<a href="#" class="anchor"> Click here to tweet</a>
-</p>
-<br>
-<p align="justify">
-“When you rehearse success in your mind, you experience success in your life.” –<a href="#" class="anchor"> Click here to tweet</a>
-</p>
-<br>
-<p align="justify">
-“The mental movie that you play in your mind is the life that you will live tomorrow.” – <a href="#" class="anchor">Click here to tweet</a>
-</p>
-<br><br>
-
-<h2><span>
-    Our Mission
-</span>
-</h2>
-
-<p align="justify">
-Our aim is to provide you practical information and guidance, which will help you live a better, happier and more fulfilling life.
-</p>
-<br>
-<p align="justify">
-We strive to make this website, a place, where you can find the knowledge, guidance, tools, motivation and inspiration to improve your life, and to grow materially, emotionally, mentally and spiritually.
-</p>
-<br>
-<p align="justify">
-Thousands of visitors, from all over the world, arrive to our website every day, all seeking information, guidance, advice and inspiration.
-</p>
-<br>
-<p align="justify">
-We hope you find the articles, guidance and information useful, and continue coming back.
-</p>
-
-<br>
-
-<h2><span>
-    Material and Spiritual Success Are within Your Reach
-
-</span>
-</h2>
-
-<p align="justify">
-    Success is not only more money, promotion and social status. It is also more happiness, harmonious relationships and spiritual growth.
-</p>
-<br>
-<p align="justify">
-    Self improvement, positive lifestyle, material success and spiritual success are within your reach. Browse this website, and you will find the guidance, advice, exercises and books to help you improve your life, build new habits, and achieve your dreams.
-</p>
-<br>
-
-<h2><span>
-    Popular Articles and Quotes
-</span></h2>
-<p align="justify">
-    Here are a few of our popular articles and popular quotes. Browse the website and you will find many more:
-
-</p>
-<br>
-<div class="row" style="letter-spacing: .3px;word-spacing: 1px;">
-    <div class="col-md-6 col-xs-6" >
-<p><a href="#" class="anchor">
-        The Power of Positive Thinking
-</a></p>
-<br>
-<p><a href="#" class="anchor">
-What Is Personal Growth
-</a>
-</p>
-<br>
-<p><a href="#" class="anchor">
-Friendship Quotes
-</a>
-</p>
-<br>
-<p><a href="#" class="anchor">
-Love Quotes
-</a>
-</p>
-<br>
-<p><a href="#" class="anchor">
-Motivation Quotes
-</a>
-</p>
-<br>
-<p><a href="#" class="anchor">
-Buddha Quotes
-</a>
-</p>
-
-    </div>
-
-
-
-    <div class="col-md-6 col-xs-6">
-
-        <p><a href="#" class="anchor">
-            Positive Affirmations
-        </a></p>
-        <br>
-    <p><a href="#" class="anchor">
-        Peace of Mind Tips and Advice
-
-    </a>
-    </p>
-    <br>
-    <p><a href="#" class="anchor">
-        What Is Manifestation and How to Manifest
-
-    </a>
-    </p>
-    <br>
-    <p><a href="#" class="anchor">
-        Encouraging Quotes
-
-    </a>
-    </p>
-    <br>
-    <p><a href="#" class="anchor">
-        Letting Go Quotes
-
-    </a>
-    </p>
-    <br>
-    <p><a href="#" class="anchor">
-        Happiness Quotes
-
-    </a>
-    </p>
-    
-
-    </div>
-
-</div>
-
-
-    </div>
-    
-    <br>
-    
-</div>
-
-<br><br><br>
-
-
     <div class="footer">
         <div class="container">
             <div class="row">
