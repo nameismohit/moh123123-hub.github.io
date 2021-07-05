@@ -84,9 +84,13 @@
             height: 1px;
         }
 
-        .navbar-inverse {
+        .navbar-default {
             font-family: "Raleway", sans-serif;
             border-radius: 0%;
+            background-color: rgba(249,249,249,0.99);
+            border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
 
         }
 
@@ -150,25 +154,73 @@
                 position: absolute;
             }
         }  */
+        
+        .jumbotron h1{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+/*  new css for navbar 's height' */
+.navbar {
+  min-height: 10px;
+}
+
+.navbar-brand {
+  padding: 0 10px;
+  height: 10px;
+  line-height: 10px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 10px 10px !important;
+  border: transparent;
+  
+ 
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: px;
+  }
+}
+/* finish */
+
+.navbar-toggle {float: none; margin-right: 0; width: 100%; }
+
+.icon-bar { margin-left: 43%; margin-right: auto; }
+
     </style>
 </head>
 
 <body>
     <div class="font-language">
-        <nav class="navbar navbar-inverse">
+        <span class="jumbotron">
+            <span class="col-md-1 col-xs-1"></span>
+            <h1>  <a  href="index.html" style="text-decoration: none;letter-spacing: 2px;"><span
+                style="font-size: 78px; color: #000000;">POSITIVE</span>
+                <span style="font-size: 78px;color: rgb(13, 183, 221);">SOCH</span></a></h1>
+        </span>
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
-                <div class="navbar-header">
+                <div class="navbar-header" >
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
+ 
+                        <!-- <span style="position: absolute;margin-left: 20px;">Menu</span> -->
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                        <span class="mobile-menu" style="position:absolute;margin-left: 1px;margin-top:-20px;font-size: 
+                        18px;font-family:Arial, Helvetica, sans-serif;font-weight: 600;">Menu</span>
                     </button>
-
-                    <a class="navbar-brand" href="index.html"><span
-                            style="font-size: 28px; color: orangered;">P</span>ositive<span
-                            style="font-size: 28px;color: orangered;">S</span>och</a>
+              
 
                             
 
@@ -176,7 +228,7 @@
                 </div>
                  
                 <div class="collapse navbar-collapse" id="myNavbar">
-
+<span class="col-md-1 col-xs-0"></span>
                     <ul class="nav navbar-nav" style="font-size: 15px;">
                         <li class="active"><a href="home.html">Home</a></li>
                         <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
