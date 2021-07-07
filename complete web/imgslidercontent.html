@@ -1,0 +1,554 @@
+/* Changable for all */
+
+@media screen {
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+    display: block;
+
+}
+
+.dropdown-menu {
+    margin: auto;
+
+}
+
+.dropdown-toggle {
+    margin: auto;
+
+}
+
+.navbar .dropdown-toggle,
+.nav-tabs .dropdown-toggle {
+    margin: auto;
+
+}
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            /* color: orangered; */
+            background-color: transparent;
+            color: #000;
+
+
+        }
+
+        .navbar-default .navbar-nav>.active>a>span,
+        .navbar-default .navbar-nav>.active>a>span:focus,
+        .navbar-default .navbar-nav>.active>a>span:hover {
+            /* background-color: transparent; */
+            border-bottom: solid 4px rgb(0, 174, 255);
+        }
+
+        .paragraph {
+            word-spacing: 4.5px;
+            letter-spacing: -0.3px;
+            line-height: 260%;
+            color: #000;
+            font-weight: 700;
+
+        }
+
+
+h2 span {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 0;
+            border-bottom: 2px solid #ff8400;
+            font-family: "Fjalla One",sans-serif;
+        }
+
+
+        /*  new css for navbar 's height' */
+        .navbar {
+            min-height: 10px;
+        }
+
+        .navbar-brand {
+            padding: 0 10px;
+            height: 10px;
+            line-height: 10px;
+        }
+
+        .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 1px;
+            margin-bottom: 1px;
+            padding: 10px 10px !important;
+            border: transparent;
+
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 4px;
+                padding-bottom: 7px;
+                line-height: 1.6;
+                font-size: 20px;
+                
+
+            }
+        }
+
+        /* finish */
+
+
+        /* middle toggle */
+        .navbar-toggle {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        .icon-bar {
+            margin-left: 50%;
+            margin-right: auto;
+            
+        }
+
+
+        /* finish */
+        .navbar-nav>li {
+            padding-left: 0.5px;
+            padding-right: 0.5px;
+            font-size: 17.3px;
+            
+        }
+
+        /* finish */
+        /* after hover collapse bar css */
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: rgba(249, 249, 249, 0.99);
+        
+        }
+        /* finish */
+    /* for menus 's font colors */
+    .nav.navbar-nav li a {
+    color: #000;
+        }
+/*FINISH::: for menus 's font colors */
+
+
+
+
+/* fonts sizes */
+
+.navbar-default {
+            font-family: 'Lato', sans-serif;
+            border-radius: 0%;
+            background-color: rgba(249, 249, 249, 0.99);
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+
+        }
+
+        .font-language {
+            font-size: 19.5px;
+            font-family: "Lato", sans-serif;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: "Fjalla One", sans-serif;
+
+        }
+
+        h3 {
+            font-size: 24px;
+            color: rgb(25, 176, 247);
+
+        }
+
+        h4 {
+            font-size: 22px;
+            color: #000;
+        }
+
+
+/* FINISH fonts sizes  */
+
+
+/* ipad solution */
+
+/* ipad solution */
+@media (max-width: 1092px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+
+/* FINISH  ipad solutuon*/
+
+
+
+
+/* FINISH Changable for all */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="imgslider" class="carousel slide" data-ride="carousel" data-interval="2500" style="margin-top:-20px;">
+    <!-- here  data-interval  property uses for speed of slider where  1sec = "1000" mile second  -->
+    <ol class="carousel-indicators">
+        <li data-target="#imgslider" data-slide-to="0" class="active"></li>
+        <li data-target="#imgslider" data-slide-to="1"></li>
+        <li data-target="#imgslider" data-slide-to="2"></li>
+        <li data-target="#imgslider" data-slide-to="3"></li>
+        <li data-target="#imgslider" data-slide-to="4"></li>
+        <li data-target="#imgslider" data-slide-to="5"></li>
+
+    </ol>
+    <!-- NOTE   If you click or hover on image slider then image slider will stop try it once   -->
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src="images/10001000p507EDNmainimg-motivation-800x4501.jpg" />
+        </div>
+        <div class="item">
+            <img src="images/wallpaperflare.com_wallpaper (3).jpg" />
+        </div>
+        <div class="item">
+            <img src="images/wallpaperflare.com_wallpaper (4).jpg" />
+        </div>
+        <div class="item">
+            <img src="images/wallpaperflare.com_wallpaper (5).jpg" />
+        </div>
+        <div class="item">
+            <img src="images/wallpaperflare.com_wallpaper (6).jpg" />
+        </div>
+        <div class="item">
+            <img src="images/wallpaperflare.com_wallpaper (7).jpg" />
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Changable for all */
+
+@media screen {
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+    display: block;
+
+}
+
+.dropdown-menu {
+    margin: auto;
+
+}
+
+.dropdown-toggle {
+    margin: auto;
+
+}
+
+.navbar .dropdown-toggle,
+.nav-tabs .dropdown-toggle {
+    margin: auto;
+
+}
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            /* color: orangered; */
+            background-color: transparent;
+            color: #000;
+
+
+        }
+
+        .navbar-default .navbar-nav>.active>a>span,
+        .navbar-default .navbar-nav>.active>a>span:focus,
+        .navbar-default .navbar-nav>.active>a>span:hover {
+            /* background-color: transparent; */
+            border-bottom: solid 4px rgb(0, 174, 255);
+        }
+
+        .paragraph {
+            word-spacing: 4.5px;
+            letter-spacing: -0.3px;
+            line-height: 260%;
+            color: #000;
+            font-weight: 700;
+
+        }
+
+
+h2 span {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 0;
+            border-bottom: 2px solid #ff8400;
+            font-family: "Fjalla One",sans-serif;
+        }
+
+
+        /*  new css for navbar 's height' */
+        .navbar {
+            min-height: 10px;
+        }
+
+        .navbar-brand {
+            padding: 0 10px;
+            height: 10px;
+            line-height: 10px;
+        }
+
+        .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 1px;
+            margin-bottom: 1px;
+            padding: 10px 10px !important;
+            border: transparent;
+
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 4px;
+                padding-bottom: 7px;
+                line-height: 1.6;
+                font-size: 20px;
+                
+
+            }
+        }
+
+        /* finish */
+
+
+        /* middle toggle */
+        .navbar-toggle {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        .icon-bar {
+            margin-left: 50%;
+            margin-right: auto;
+            
+        }
+
+
+        /* finish */
+        .navbar-nav>li {
+            padding-left: 0.5px;
+            padding-right: 0.5px;
+            font-size: 17.3px;
+            
+        }
+
+        /* finish */
+        /* after hover collapse bar css */
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: rgba(249, 249, 249, 0.99);
+        
+        }
+        /* finish */
+    /* for menus 's font colors */
+    .nav.navbar-nav li a {
+    color: #000;
+        }
+/*FINISH::: for menus 's font colors */
+
+
+
+
+/* fonts sizes */
+
+.navbar-default {
+            font-family: 'Lato', sans-serif;
+            border-radius: 0%;
+            background-color: rgba(249, 249, 249, 0.99);
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+
+        }
+
+        .font-language {
+            font-size: 19.5px;
+            font-family: "Lato", sans-serif;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: "Fjalla One", sans-serif;
+
+        }
+
+        h3 {
+            font-size: 24px;
+            color: rgb(25, 176, 247);
+
+        }
+
+        h4 {
+            font-size: 22px;
+            color: #000;
+        }
+
+
+/* FINISH fonts sizes  */
+
+
+/* ipad solution */
+
+/* ipad solution */
+@media (max-width: 1092px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/* FINISH Changable for all */

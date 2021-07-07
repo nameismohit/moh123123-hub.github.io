@@ -17,41 +17,96 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-        .navbar-inverse .navbar-nav>.active>a,
-        .navbar-inverse .navbar-nav>.active>a:focus,
-        .navbar-inverse .navbar-nav>.active>a:hover {
-            color: orangered;
-            background-color: transparent;
+        
+.container p{
+    font-size: 18px;
+    font-family: "Lato",sans-serif;
+    font-weight: 600;
+}
+
+
+   /*  newslater 's css is present here */
+   .newsbox {
+            background-color: #f6f6f6;
+            padding: 20px 40px;
+            padding-bottom: 20px;
+
         }
 
-        @media screen {
+        .newsbox p {
+            line-height: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Lato",sans-serif;
 
-            .dropdown:hover .dropdown-menu,
-            .btn-group:hover .dropdown-menu {
-                display: block;
-            }
 
-            .navbar-inverse {
-                border-radius: 0%;
-            }
-
-            .dropdown-menu {
-                margin: auto;
-            }
-
-            .dropdown-toggle {
-                margin: auto;
-            }
-
-            .navbar .dropdown-toggle,
-            .nav-tabs .dropdown-toggle {
-                margin: auto;
-            }
         }
+
+        img.posts {
+            opacity: 0.90;
+
+        }
+
+        img.posts:hover {
+            opacity: 1;
+            transition: 1s ease;
+            box-shadow: 0 0 20px rgb(18, 187, 253);
+        }
+
+        a.postanchor {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .newsemail {
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 45px;
+        }
+
+        .newsemail::placeholder {
+            padding-left: 20px;
+        }
+
+        .newssubscribe {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            outline: 0;
+            border: #000;
+            font-size: 14.5px;
+            height: 45px;
+            font-weight: bold;
+        }
+
+
+        .newsheading {
+            text-align: center;
+            color: #001;
+            font-size: 21.5px;
+            font-weight: bold;
+            font-family: "Lato",sans-serif;
+
+        }
+
+        hr.design {
+            background-color: #ff8400;
+            height: 2px;
+            width: 60%;
+            margin-bottom: 40px;
+        }
+
+        /* here newsletter 's css has finished' */
+
+
 
         input.writeinput {
             height: 40px;
@@ -128,140 +183,359 @@
             margin-bottom: 40px;
         }
 
-        .navbar-inverse {
-            font-family: "Raleway", sans-serif;
+/* Changable for all */
+
+@media screen {
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+    display: block;
+
+}
+
+.dropdown-menu {
+    margin: auto;
+
+}
+
+.dropdown-toggle {
+    margin: auto;
+
+}
+
+.navbar .dropdown-toggle,
+.nav-tabs .dropdown-toggle {
+    margin: auto;
+
+}
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            /* color: orangered; */
+            background-color: transparent;
+            color: #000;
+
+
         }
 
-        h5 {
-            font-size: 21px;
-            font-weight: 500;
-            color: rgba(0, 0, 0, .74);
+        .navbar-default .navbar-nav>.active>a>span,
+        .navbar-default .navbar-nav>.active>a>span:focus,
+        .navbar-default .navbar-nav>.active>a>span:hover {
+            /* background-color: transparent; */
+            border-bottom: solid 4px rgb(0, 174, 255);
+        }
+
+        .paragraph {
+            word-spacing: 4.5px;
+            letter-spacing: -0.3px;
+            line-height: 260%;
+            color: #000;
+            font-weight: 700;
 
         }
 
-        p {
-            font-size: 18px;
-            line-height: 30px;
-            word-spacing: 2px;
-            margin-right: 10px;
+
+h2 span {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 0;
+            border-bottom: 2px solid #ff8400;
+            font-family: "Fjalla One",sans-serif;
+        }
+
+
+        /*  new css for navbar 's height' */
+        .navbar {
+            min-height: 10px;
+        }
+
+        .navbar-brand {
+            padding: 0 10px;
+            height: 10px;
+            line-height: 10px;
+        }
+
+        .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 1px;
+            margin-bottom: 1px;
+            padding: 10px 10px !important;
+            border: transparent;
 
         }
 
-        h1,
-        h2 {
-            color: #111;
-            margin-right: 60px;
-            line-height: 50px;
-            font-weight: 600;
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 4px;
+                padding-bottom: 7px;
+                line-height: 1.6;
+                font-size: 20px;
+                
+
+            }
         }
+
+        /* finish */
+
+
+        /* middle toggle */
+        .navbar-toggle {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        .icon-bar {
+            margin-left: 50%;
+            margin-right: auto;
+            
+        }
+
+
+        /* finish */
+        .navbar-nav>li {
+            padding-left: 0.5px;
+            padding-right: 0.5px;
+            font-size: 17.3px;
+            
+        }
+
+        /* finish */
+        /* after hover collapse bar css */
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: rgba(249, 249, 249, 0.99);
+        
+        }
+        /* finish */
+    /* for menus 's font colors */
+    .nav.navbar-nav li a {
+    color: #000;
+        }
+/*FINISH::: for menus 's font colors */
+
+
+
+
+/* fonts sizes */
+
+.navbar-default {
+            font-family: 'Lato', sans-serif;
+            border-radius: 0%;
+            background-color: rgba(249, 249, 249, 0.99);
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+
+        }
+
+        .font-language {
+            font-size: 19.5px;
+            font-family: "Lato", sans-serif;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: "Fjalla One", sans-serif;
+
+        }
+
+        h3 {
+            font-size: 24px;
+            color: rgb(0, 174, 255);
+            font-weight: bolder;
+
+        }
+
+        h4 {
+            font-size: 22px;
+            color: #000;
+        }
+
+
+/* FINISH fonts sizes  */
+
+
+/* ipad solution */
+
+/* ipad solution */
+@media (max-width: 1092px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/* FINISH Changable for all */
+
+        
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse">
+    <div class="container">
+        <img class="img-responsive" src="images/weblogo.png" style="margin-top: 5px;margin-bottom: 5px;" />
+    </div>
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- this is opt1ional  -->
             <div class="navbar-header">
 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
+
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="index.html"><span
-                        style="font-size: 28px; color: orangered;">P</span>ositive<span
-                        style="font-size: 28px;color: orangered;">S</span>och</a>
-
-
+                    
+                    
+            </button>
 
 
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="container">
+                    <ul class="nav navbar-nav" style="font-size: 15px;">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
+                            </a>
 
-                <ul class="nav navbar-nav" style="font-size: 15px;">
-                    <li class="active"><a href="home.html">Home</a></li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" style="    background-color: #ffffff;">
-                            <li><a href="about.html" target="_blank">About</a></li>
-                            <li><a href="contact_us.html" target="_blank">Contact us</a></li>
-                            <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
-                            <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
-                            <li><a href="advertise.html" target="_blank">Advertise </a></li>
-
-                        </ul>
-                    </li>
+                            <ul class="dropdown-menu" style="    background-color: #ffffff;">
+                                <li><a href="about.html" target="_blank">About</a></li>
+                                <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
+                                <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
+                                <li><a href="advertise.html" target="_blank">Advertise </a></li>
+                                <li><a href="writeforus.html">Write For Us</a></li>
+    
+                            </ul>
+                        </li>
 
 
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: #fff;">
+                                <li><a href="Willpower and Discipline.html" target="_blank">Willpower &
+                                        Discipline</a>
+                                </li>
+                                <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration
+                                    </a>
+                                </li>
+                                <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
+                                <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
+                                <li><a href="Motivation.html" target="_blank">Motivation </a></li>
+                                <li><a href="Success.html" target="_blank"> Success </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: #fff;">
+                                <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
+                                <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization
+                                    </a>
+                                </li>
+                                <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
+                                <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
+                                <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="Blog.html">Blog</a></li>
+
+
+                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes    
                             <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: #fff;">
-                            <li><a href="Willpower and Discipline.html" target="_blank">Willpower & Discipline</a></li>
-                            <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration </a></li>
-                            <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
-                            <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
-                            <li><a href="Motivation.html" target="_blank">Motivation </a></li>
-                            <li><a href="Success.html" target="_blank"> Success </a></li>
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: #fff;">
 
-                        </ul>
-                    </li>
+                                <li><a href="positive_quotes.html">Positive Quotes</a></li>
+                                <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
 
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: #fff;">
-                            <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
-                            <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization </a></li>
-                            <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
-                            <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
-                            <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+                                
 
-                        </ul>
-                    </li>
+                            </ul>
+                        </li>
+                       
+                        <li><a href="contact_us.html" target="_blank">Contact</a></li>
+                        <li class="active"><a href="Faq.html"><span>Faq</span></a></li>
 
-
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: #fff;">
-
-                            <li><a href="positive_quotes.html">Positive Quotes</a></li>
-                            <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
-
-                        </ul>
-                    </li>
-
-                </ul>
+                    </ul>
 
 
 
-                <ul class="nav navbar-nav navbar-right">
 
-                    </li>
-                    <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
-                                    style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
-                    <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
-                                    style="font-family: Raleway;"> Login</span> </span> </a></li>
-                </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right" style="font-family: 'Lato',san-sarif;">
+
+
+                        <li class=" dropdown"><a href="#" data-toggle="dropdown"> Profile
+                                <span class="caret"></span>
+                            </a>
+                            <ul class=" dropdown-menu" style="background-color: #fff;">
+                                <li><a href="signup.html" target="blank"> <span
+                                            class="glyphicon glyphicon-user"><span style="font-family: Raleway;">
+                                                Sign-up</span> </span> </a></li>
+                                <li><a href="login.html" target="blank"> <span
+                                            class="glyphicon glyphicon-log-in"><span style="font-family: Raleway;">
+                                                Login</span> </span> </a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
 
             </div>
-
-
-
         </div>
 
     </nav>
 
 
-
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-xs-12">
+
                 <h1>Frequently Asked Questions </h1>
                 <h3>1. Is this a site about Positivy & Motivation ?</h3>
                 <p class="normal"align="justify">
@@ -269,18 +543,18 @@ Yes and no. The blog focuses heavily on  kindness, compassion, mindfulness, self
 </p>
 
 <h3>2. How do I submit a guest post?</h3>
-<p class=" normal"align="justify">
+<p class="normal" align="justify">
 Anyone, of any age, in any location can submit their writing to the site. You can learn more here page.
 </p>
 
 
 <h3>3. Will you review my book?</h3>
-<p class=" normal"align="justify">
+<p class="normal" align="justify">
 Unfortunately, I am a little behind with reading at the moment, so I’m not able to run books reviews or author interviews. Sharing a guest blog post may be a good way to introduce yourself and your work to Positive Soch readers. You can include links to your site/book in your bio.
 </p>
 
 <h3>4. Will you share my site/social media page/fundraising link on your site or social media pages?</h3>
-<p class=" normal"align="justify">
+<p class="normal" align="justify">
 I’m grateful to know so many wonderful people working on amazing projects, online and off, and I love to introduce them to Positive Soch readers. The best way to do that is through the blog. In contributing a post, you’ll be able to promote your services and projects in your bio, reaching more than 100,000 email subscribers and more than three million monthly readers.
 </p>
 <p align="justify">
@@ -288,7 +562,7 @@ If you’re looking to share a fundraising campaign with the community, you may 
 </p>
 
 <h3>5. Why was my comment deleted?</h3>
-<p class=" normal"align="justify">
+<p class=" normal" align="justify">
 I am a huge proponent of free speech, and I by no means want to limit the conversations these posts inspire. However, I take an active role in moderating this site to keep it a place that feels safe for open, authentic connecting. If your comment appears hostile or offensive to any of the writers or readers here, I will delete it.
 </p>
 <p class=" normal"align="justify">
@@ -350,7 +624,89 @@ Positive Soch Founder
 </div>
 
 
-            <div class=" col-md-4 col-xs-12">
+            <div style="margin-top: 40px;" class=" col-md-4 col-xs-12">
+
+
+                <h2 class="text-center" style="color: #000;font-size: 21px;"><span>Popular Articles and Quotes</span></h2>
+                <ul type="none" style="color: #0000ff;text-decoration: underline;line-height: 39px;word-spacing: 1px;font-size: 18px;">
+<li> <a href="#" style="color: #0000ff;" > What Is Personal Growth</a></li>
+<li> <a href="#" style="color: #0000ff;" > The Law of Attraction </a></li>
+<li><a href="#" style="color: #0000ff;" >Manifest Something You Want </a></li> 
+<li><a href="#" style="color: #0000ff;" >Sunflower Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Motivation Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Encouraging Quotes and Words </a> </li>
+<li><a href="#" style="color: #0000ff;" >Daily Positive Affirmations </a></li>
+<li><a href="#" style="color: #0000ff;" >What Is Positivity </a></li>
+<li><a href="#" style="color: #0000ff;" >6 Meditation Techniques </a></li>
+<li><a href="#" style="color: #0000ff;" >How to Manifest Anything </a></li>
+</ul>
+<br><br><br>
+
+<div class="newsbox">
+    <h3 class="newsheading"><strong> Newsletter</strong></h3>
+    <hr class="design">
+    </hr>
+    <form method="post" action="" target="_blank">
+        <div class="fields">
+            <p class="message">Do you want to know how to achieve your wildest dreams in life? I will
+                tell
+                you the secret... Nobody knows how. If you want raw and honest tips, subscribe to my
+                newsletter.</p>
+            <p><input class="newsemail" type="email" name="EMAIL" placeholder="Your email address.."
+                    required=""></p>
+            <p><input class="newssubscribe" type="submit" value="SUBSCRIBE"></p>
+        </div>
+    </form>
+
+</div>
+
+<br><br><br>
+
+<div>
+    <span style="font-size: 20px; color:#000;line-height: 3.5;font-weight: 700;">Latest Posts</span>
+    <hr style="margin-top: -20px;background-color: #ff8400;height: 1px;">
+    <a class="postanchor" href="#" target="blank">
+        <img class="posts" src="images/Dwayne.jpg" height="130px" width="150px"
+            style="position: absolute;">
+        <p style="padding-left: 170px; ;line-height: 1.5;font-size: 18.5px;">The Best Dwayne Johson
+            Workout Video</p>
+        <p
+            style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 1px;padding-top: 20px;">
+            JUNE 27, 2021</p>
+    </a>
+    <br><br><br>
+    <a class="postanchor" href="#" target="blank">
+        <img class="posts" src="images/Ronaldo.jpg" height="130px" width="150px"
+            style="position: absolute;">
+        <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 24 Most Motivating
+            Cristiano Ronaldo Quotes</p>
+        <p
+            style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
+            JUNE 25, 2021</p>
+    </a>
+    <br><br>
+    <a class="postanchor" href="#" target="blank">
+        <img class="posts" src="images/Marilyn.jpg" height="130px" width="150px"
+            style="position: absolute;">
+        <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 25 Greatest Marilyn
+            Monroe Quotes</p>
+        <p
+            style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
+            MAY 25, 2019</p>
+    </a>
+    <br><br>
+    <a class="postanchor" href="#" target="blank">
+        <img class="posts" src="images/TEMPLATE.jpg" height="130px" width="150px"
+            style="position: absolute;">
+        <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">19 Great Peter Jackson Quotes
+            For Creative Success</p>
+        <p
+            style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;">
+            MAY 10, 2021</p>
+    </a>
+
+</div>
+            
 
             </div>
         </div>

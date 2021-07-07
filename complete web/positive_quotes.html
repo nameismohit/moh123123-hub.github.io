@@ -15,16 +15,93 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
 
 
-        .navbar-inverse .navbar-nav>.active>a,
-        .navbar-inverse .navbar-nav>.active>a:focus,
-        .navbar-inverse .navbar-nav>.active>a:hover {
-            color: orangered;
-            background-color: transparent;
+.mainspan{
+    border-bottom: solid 3px #ff8400;
+}
+
+
+   /*  newslater 's css is present here */
+   .newsbox {
+            background-color: #f6f6f6;
+            padding: 20px 40px;
+            padding-bottom: 20px;
+
         }
+
+        .newsbox p {
+            line-height: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Lato",sans-serif;
+
+
+        }
+
+        img.posts {
+            opacity: 0.90;
+
+        }
+
+        img.posts:hover {
+            opacity: 1;
+            transition: 1s ease;
+            box-shadow: 0 0 20px rgb(18, 187, 253);
+        }
+
+        a.postanchor {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .newsemail {
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            outline: 0;
+            height: 45px;
+        }
+
+        .newsemail::placeholder {
+            padding-left: 20px;
+        }
+
+        .newssubscribe {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            outline: 0;
+            border: #000;
+            font-size: 14.5px;
+            height: 45px;
+            font-weight: bold;
+        }
+
+
+        .newsheading {
+            text-align: center;
+            color: #001;
+            font-size: 21.5px;
+            font-weight: bold;
+            font-family: "Lato",sans-serif;
+
+        }
+
+        hr.design {
+            background-color: #ff8400;
+            height: 2px;
+            width: 60%;
+            margin-bottom: 40px;
+        }
+
+        /* here newsletter 's css has finished' */
+
+
 
         .glyphicon-user {
             font-size: 14px;
@@ -35,47 +112,18 @@
             font-size: 14px;
         }
 
-        @media screen {
-
-            .dropdown:hover .dropdown-menu,
-            .btn-group:hover .dropdown-menu {
-                display: block;
-            }
-
-            .dropdown-menu {
-                margin: auto;
-            }
-
-            .dropdown-toggle {
-                margin: auto;
-            }
-
-            .navbar .dropdown-toggle,
-            .nav-tabs .dropdown-toggle {
-                margin: auto;
-            }
-        }
-
-
         hr {
             background-color: black;
             height: 1px;
         }
 
         .language {
-            font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-            font-size: 30px;
+            font-family: "Lato", sans-serif;
+            font-size: 18.5px;
         }
 
         body {
             background-attachment: fixed;
-            /* font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-            font-size: 30px; */
-
         }
 
         .dropdown a {
@@ -98,10 +146,239 @@
 
         }
 
-        .navbar-inverse {
-            font-family: "Raleway", sans-serif;
+        .navbar-default {
+
             border-radius: 0%;
         }
+
+        /* Changable for all */
+
+        @media screen {
+
+            .dropdown:hover .dropdown-menu,
+            .btn-group:hover .dropdown-menu {
+                display: block;
+
+            }
+
+            .dropdown-menu {
+                margin: auto;
+
+            }
+
+            .dropdown-toggle {
+                margin: auto;
+
+            }
+
+            .navbar .dropdown-toggle,
+            .nav-tabs .dropdown-toggle {
+                margin: auto;
+
+            }
+        }
+
+
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            /* color: orangered; */
+            background-color: transparent;
+            color: #000;
+
+
+        }
+
+        .navbar-default .navbar-nav>.active>a>span,
+        .navbar-default .navbar-nav>.active>a>span:focus,
+        .navbar-default .navbar-nav>.active>a>span:hover {
+            /* background-color: transparent; */
+            border-bottom: solid 4px rgb(0, 174, 255);
+        }
+
+        .paragraph {
+            word-spacing: 4.5px;
+            letter-spacing: -0.3px;
+            line-height: 260%;
+            color: #000;
+            font-weight: 700;
+
+        }
+
+
+        h2 span {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 0;
+            border-bottom: 2px solid #ff8400;
+            font-family: "Fjalla One", sans-serif;
+        }
+
+
+        /*  new css for navbar 's height' */
+        .navbar {
+            min-height: 10px;
+        }
+
+        .navbar-brand {
+            padding: 0 10px;
+            height: 10px;
+            line-height: 10px;
+        }
+
+        .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 1px;
+            margin-bottom: 1px;
+            padding: 10px 10px !important;
+            border: transparent;
+
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 4px;
+                padding-bottom: 7px;
+                line-height: 1.6;
+                font-size: 20px;
+
+
+            }
+        }
+
+        /* finish */
+
+
+        /* middle toggle */
+        .navbar-toggle {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        .icon-bar {
+            margin-left: 50%;
+            margin-right: auto;
+
+        }
+
+
+        /* finish */
+        .navbar-nav>li {
+            padding-left: 0.5px;
+            padding-right: 0.5px;
+            font-size: 17.3px;
+
+        }
+
+        /* finish */
+        /* after hover collapse bar css */
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: rgba(249, 249, 249, 0.99);
+
+        }
+
+        /* finish */
+        /* for menus 's font colors */
+        .nav.navbar-nav li a {
+            color: #000;
+        }
+
+        /*FINISH::: for menus 's font colors */
+
+
+
+
+        /* fonts sizes */
+
+        .navbar-default {
+            font-family: 'Lato', sans-serif;
+            border-radius: 0%;
+            background-color: rgba(249, 249, 249, 0.99);
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+        }
+
+        .font-language {
+            font-size: 19.5px;
+            font-family: "Lato", sans-serif;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: "Fjalla One", sans-serif;
+
+        }
+
+        h3 {
+            font-size: 24px;
+            color: rgb(25, 176, 247);
+
+        }
+
+        h4 {
+            font-size: 22px;
+            color: #000;
+        }
+
+
+        /* FINISH fonts sizes  */
+
+
+        /* ipad solution */
+
+        /* ipad solution */
+        @media (max-width: 1092px) {
+            .navbar-header {
+                float: none;
+            }
+
+            .navbar-left,
+            .navbar-right {
+                float: none !important;
+            }
+
+            .navbar-toggle {
+                display: block;
+            }
+
+            .navbar-collapse {
+                border-top: 1px solid transparent;
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            }
+
+            .navbar-fixed-top {
+                top: 0;
+                border-width: 0 0 1px;
+            }
+
+            .navbar-collapse.collapse {
+                display: none !important;
+            }
+
+            .navbar-nav {
+                float: none !important;
+                margin-top: 7.5px;
+            }
+
+            .navbar-nav>li {
+                float: none;
+            }
+
+            .navbar-nav>li>a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .collapse.in {
+                display: block !important;
+            }
+        }
+
+        /* FINISH Changable for all */
     </style>
 
 </head>
@@ -109,112 +386,138 @@
 <body>
     <div class="language">
 
-
-        <nav class="navbar navbar-inverse">
+        <div class="container">
+            <img class="img-responsive" src="images/weblogo.png" style="margin-top: 5px;margin-bottom: 5px;" />
+        </div>
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
                 <div class="navbar-header">
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
+
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+
+
                     </button>
 
-                    <a class="navbar-brand" href="index.html"><span
-                            style="font-size: 28px; color: orangered;">P</span>ositive<span
-                            style="font-size: 28px;color: orangered;">S</span>och</a>
-
-                            
-
 
                 </div>
-                 
+
                 <div class="collapse navbar-collapse" id="myNavbar">
-
-                    <ul class="nav navbar-nav" style="font-size: 15px;">
-                        <li class="active"><a href="home.html">Home</a></li>
-                        <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" style="    background-color: #ffffff;">
-                                <li><a href="about.html" target="_blank">About</a></li>
-                                <li><a href="contact_us.html" target="_blank">Contact us</a></li>
-                                <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
-                                <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
-                                <li><a href="advertise.html" target="_blank">Advertise </a></li>
-
-                            </ul>
-                        </li>
-
-
-                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" style="background-color: #fff;">
-                                <li><a href="Willpower and Discipline.html" target="_blank">Willpower & Discipline</a></li>
-                                <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration </a></li>
-                                <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
-                                <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
-                                <li><a href="Motivation.html" target="_blank">Motivation </a></li>
-                                <li><a href="Success.html" target="_blank"> Success </a></li>
-
-                            </ul>
-                        </li>
-
-                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: #fff;">
-                            <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
-                            <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization </a></li>
-                            <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
-                            <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
-                            <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+                    <div class="container">
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
+                                </a>
+    
+                                <ul class="dropdown-menu" style="    background-color: #ffffff;">
+                                    <li><a href="about.html" target="_blank">About</a></li>
+                                    <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
+                                    <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
+                                    <li><a href="advertise.html" target="_blank">Advertise </a></li>
+                                    <li><a href="writeforus.html">Write For Us</a></li>
         
+                                </ul>
+                            </li>
+    
+    
+                            <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #fff;">
+                                    <li><a href="Willpower and Discipline.html" target="_blank">Willpower &
+                                            Discipline</a>
+                                    </li>
+                                    <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration
+                                        </a>
+                                    </li>
+                                    <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
+                                    <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
+                                    <li><a href="Motivation.html" target="_blank">Motivation </a></li>
+                                    <li><a href="Success.html" target="_blank"> Success </a></li>
+    
+                                </ul>
+                            </li>
+    
+                            <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #fff;">
+                                    <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
+                                    <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization
+                                        </a>
+                                    </li>
+                                    <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
+                                    <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
+                                    <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+    
+                                </ul>
+                            </li>
+    
+                            <li><a href="Blog.html">Blog</a></li>
+    
+    
+                            <li class="active dropdown"><a href="#" data-toggle="dropdown"><span> Quotes    
+                                <span class="caret"></span></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #fff;">
+    
+                                    <li><a href="positive_quotes.html">Positive Quotes</a></li>
+                                    <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
+    
+                                    
+    
+                                </ul>
+                            </li>
+                           
+                            <li><a href="contact_us.html" target="_blank">Contact</a></li>
+                            <li><a href="Faq.html">Faq</a></li>
+    
                         </ul>
-                    </li>
-                    
-                    
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" style="background-color: #fff;">
-                      
-                        <li><a href="positive_quotes.html">Positive Quotes</a></li>
-                        <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
-                       
-                    </ul>
-                </li>
-
-                    </ul>
-
-                    
-
-                    <ul class="nav navbar-nav navbar-right">
-
-                        </li>
-                        <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
-                                        style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
-                        <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
-                                        style="font-family: Raleway;"> Login</span> </span> </a></li>
-                    </ul>
-
+    
+    
+    
+    
+    
+    
+                        <ul class="nav navbar-nav navbar-right" style="font-family: 'Lato',san-sarif;">
+    
+    
+                            <li class=" dropdown"><a href="#" data-toggle="dropdown"> Profile
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class=" dropdown-menu" style="background-color: #fff;">
+                                    <li><a href="signup.html" target="blank"> <span
+                                                class="glyphicon glyphicon-user"><span style="font-family: Raleway;">
+                                                    Sign-up</span> </span> </a></li>
+                                    <li><a href="login.html" target="blank"> <span
+                                                class="glyphicon glyphicon-log-in"><span style="font-family: Raleway;">
+                                                    Login</span> </span> </a></li>
+    
+                                </ul>
+                            </li>
+                        </ul>
+    
+                    </div>
+    
+    
                 </div>
-
-                
-
             </div>
 
         </nav>
 
+
         <div class="container">
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                <h1 class="text-center" style="word-spacing:10px;letter-spacing:2px"> <span
-                        style="color: orangered;font-size: 50px;">P</span>OSITIVE <span
-                        style="color: orangered;font-size: 50px;">Q</span>UOTES </h1>
-                <p align="justify" style="font-size: 29px;">
-                    <span style="font-size: 30px;">I</span>f &nbsp you’re looking for positive quotes and uplifting
+            <div class="col-md-7 col-xs-12">
+                <h1 class="text-center" style="word-spacing:10px;letter-spacing:2px"><span class="mainspan"> <span
+                        style="color: orangered;font-size: 50px;">P</span>OSITIVE</span> <span class="mainspan"><span
+                        style="color: orangered;font-size: 50px;">Q</span>UOTES</span></span> </h1>
+                        <br>
+                <p align="justify" style="font-size: 19.5px;line-height: 33px;letter-spacing: 0.5px;">
+                    <span style="font-size: 24.5px;">I</span>f you’re looking for positive quotes and uplifting
                     sayings to
                     boost your mood, these 100 stay positive
                     quotes will help you look on the bright side—even when your day starts out on the totally wrong
@@ -224,12 +527,11 @@
                     your “glass half full” attitude back, this list of inspiring “stay positive” quotes, thoughts, and
                     messages can help during these uncertain times.
                 </p><br><br>
-            </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" align="justify">
-                <div><img class="img-responsive" src="images/stay-positive-quotes.png"
-                        style="width: 100%;height: 450px;"></div></br></br> &nbsp;
-                <h1 align="center" style="font-size: 40px"> 100 Stay Positive Quotes </h1><br><br>
-                <div style="font-size: 25px;">
+           
+                <center><img  src="images/stay-positive-quotes.png"
+                        style="width: 350px;height: 218px;"></center></br> &nbsp;
+                <h2 align="center" style="font-size: 40px"><span> 100 Stay Positive Quotes</span> </h2><br><br>
+                <div style="font-size: 19.5px;line-height: 23px;letter-spacing: 0.5px;">
                     1. “Keep your face always toward the sunshine and shadows will fall behind you.” <b>Walt Whitman</b>
                     <br><br>
 
@@ -241,7 +543,7 @@
 
                     4. “You can have it all. Just not all at once.” —<b>Oprah Winfrey</b><br><br>
 
-                    <div style="color: rgb(6, 171, 248);font-size: 30px;">Related: Best Good Attitude Quotes</div> <br>
+                    <div style="color: rgb(6, 171, 248);font-size: 23px;">Related: Best Good Attitude Quotes</div> <br>
 
                     5. “I’ve missed more than 9000 shots in my career I’ve lost almost 300 games. 26 times I’ve been
                     trusted
@@ -249,7 +551,7 @@
                     take the game winning shot and missed. I’ve failed over and over and over again in my life. And that
                     is
                     why
-                    I succeed.” —<b>Michael Jordan</b><br>
+                    I succeed.” —<b>Michael Jordan</b><br><br>
 
                     6. “Say something positive, and you’ll see something positive.” —<b>Jim Thompson</b><br><br>
 
@@ -263,10 +565,11 @@
 
                     10. “Stay positive. Better days are on their way.” —<b>Unknown</b><br><br>
 
-                    <div style="color: rgb(6, 171, 248); font-size: 30px;">Related: Instant Mood Boosters</div><br><br>
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                        <img class="img-responsive" src="images/stay-positive-quotes2.jpg"
-                            style="width: 100%;height: 450px;">
+                    <div style="color: rgb(6, 171, 248); font-size: 23px;">Related: Instant Mood Boosters</div><br><br>
+                    <div align="center" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                       
+                        <img  src="images/stay-positive-quotes2.jpg"
+                            style="width: 350px;height: 218px;">
                     </div></br></br> &nbsp;
                     <div>&nbsp;</div>
                     11. “Only in the darkness can you see the stars.” —<b>Martin Luther King, Jr.</b><br><br>
@@ -296,7 +599,7 @@
                     things
                     happen.” —<b>Deep Roy</b><br><br>
 
-                    <div style="color: rgb(6, 171, 248);font-size: 30px;">Related: Inspiring Quotes About Happiness
+                    <div style="color: rgb(6, 171, 248);font-size: 23px;">Related: Inspiring Quotes About Happiness
                     </div>
                     <br>
 
@@ -330,8 +633,8 @@
                     30. “Just for the record darling, not all positive change feels positive in the beginning.” —<b>S.
                         C.
                         Lourie</b><br><br>
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img class="img-responsive"
-                            src="images/stay-positive-quotes-30.jpg" style="width: 100%;height: 450px;"></div>
+                    <div align="center" class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img
+                            src="images/stay-positive-quotes-30.jpg" style="width: 350px;height: 218px;"></div>
                     <br><br><br>
                     <div>&nbsp;<br> </div>
                     31. “Thousands of candles can be lighted from a single candle, and the life of the candle will not
@@ -360,10 +663,10 @@
                         Parks</b></b><br><br>
 
                     40. “All our dreams can come true, if we have the courage to pursue them.” —<b>Walt
-                        Disney</b></b><br>
+                        Disney</b></b><br><br>
 
-                    <div style="color: rgb(6, 171, 248);font-size: 30px;"> Related: 50 Positive Affirmations</div>
-                    </b>
+                    <div style="color: rgb(6, 171, 248);font-size: 23px;"> Related: 50 Positive Affirmations</div>
+                    </b><br>
 
                     41. “Twenty years from now you will be more disappointed by the things that you didn’t do than by
                     the
@@ -390,8 +693,8 @@
                     50. “Choose to be optimistic, it feels better.”—<b>Dalai Lama</b></b><br><br>
 
 
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img class="img-responsive"
-                            src="images/stay-positive-quotes-50.jpg" style="width: 100%;height: 450px;"></div>
+                    <div align="center" class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img 
+                            src="images/stay-positive-quotes-50.jpg" style="width: 350px;height: 218px;"></div>
                     <br><br><br>
                     <div>&nbsp;</div>
 
@@ -419,11 +722,11 @@
                     59. “When you realize how precious and fragile life is, it changes your whole perspective.” —<b>Ryan
                         O’Donnell</b><br><br>
 
-                    60. “The next choice is the most important choice.” —<b>George Wells</b><br>
+                    60. “The next choice is the most important choice.” —<b>George Wells</b><br><br>
 
-                    <div style="color: rgb(6, 171, 248); font-size: 30px;">Related: 100 Uplifting Quotes About Change
+                    <div style="color: rgb(6, 171, 248); font-size: 23px;">Related: 100 Uplifting Quotes About Change
                     </div>
-
+<br>
 
                     61. “A friend may be waiting behind a stranger’s face.”—<b>Maya Angelou</b><br><br>
 
@@ -450,8 +753,8 @@
                         Sugars</b><br><br>
 
                     70. “May your troubles be less and your blessings be more.” —<b>Irish Blessing</b><br><br>
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img class="img-responsive"
-                            src="images/stay-positive-quotes-70.jpg" style="width: 100%;height: 450px;"></div>
+                    <div align="center" class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img class="img-responsive"
+                            src="images/stay-positive-quotes-70.jpg" style="width: 350px;height: 218px;"></div>
                     <br><br><br>
                     <div>&nbsp;</div>
                     71. “Few things can help an individual more than to place responsibility on him, and to let him know
@@ -486,9 +789,9 @@
 
                     81. “I’ve learned that people will forget what you said, people will forget what you did, but people
                     will
-                    never forget how you made them feel.” —<b>Maya Angelou</b><br>
+                    never forget how you made them feel.” —<b>Maya Angelou</b><br><br>
 
-                    <div style="color: rgb(6, 171, 248); font-size: 30px;">Related: 150 Goals Quotes</div>
+                    <div style="color: rgb(6, 171, 248); font-size: 23px;">Related: 150 Goals Quotes</div><br>
 
                     82. “One day or day one. It’s your choice.” —<b>Unknown</b><br><br>
 
@@ -515,8 +818,8 @@
 
                     90. “Tough times don’t last. Tough people do.” —<b>Unknown</b><br><br>
 
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img class="img-responsive"
-                            src="images/stay-positive-quotes-90.jpg" style="width: 100%;height: 450px;"></div>
+                    <div align="center" class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><img class="img-responsive"
+                            src="images/stay-positive-quotes-90.jpg" style="width: 350px;height: 218px;"></div>
                     <br><br><br>
                     <div>&nbsp;</div>
                     91. “You only live once, but if you do it right, once is enough.” —<b>Mae West</b><br><br>
@@ -563,9 +866,98 @@
                     ending.”
                     —<b>Maria Robinson</b>
                 </div>
-                <div>&nbsp;</div>
-                <div>&nbsp;</div>
             </div>
+
+            <div class="col-md-1 col-xs-0">
+            </div>
+
+            <div style="margin-top: 100px;" class="col-md-4 col-xs-12">
+                    <h2 class="text-center" style="color: #000;font-size: 21px;"><span>Popular Articles and Quotes</span></h2>
+                    <ul type="none" style="color: #0000ff;text-decoration: underline;line-height: 39px;word-spacing: 1px;">
+<li> <a href="#" style="color: #0000ff;" > What Is Personal Growth</a></li>
+<li> <a href="#" style="color: #0000ff;" > The Law of Attraction </a></li>
+<li><a href="#" style="color: #0000ff;" >Manifest Something You Want </a></li> 
+<li><a href="#" style="color: #0000ff;" >Sunflower Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Motivation Quotes </a></li>
+<li><a href="#" style="color: #0000ff;" >Encouraging Quotes and Words </a> </li>
+<li><a href="#" style="color: #0000ff;" >Daily Positive Affirmations </a></li>
+<li><a href="#" style="color: #0000ff;" >What Is Positivity </a></li>
+<li><a href="#" style="color: #0000ff;" >6 Meditation Techniques </a></li>
+<li><a href="#" style="color: #0000ff;" >How to Manifest Anything </a></li>
+</ul>
+<br><br><br>
+
+    <div class="newsbox">
+        <h3 class="newsheading"><strong> Newsletter</strong></h3>
+        <hr class="design">
+        </hr>
+        <form method="post" action="" target="_blank">
+            <div class="fields">
+                <p class="message">Do you want to know how to achieve your wildest dreams in life? I will
+                    tell
+                    you the secret... Nobody knows how. If you want raw and honest tips, subscribe to my
+                    newsletter.</p>
+                <p><input class="newsemail" type="email" name="EMAIL" placeholder="Your email address.."
+                        required=""></p>
+                <p><input class="newssubscribe" type="submit" value="SUBSCRIBE"></p>
+            </div>
+        </form>
+
+    </div>
+    
+    <br><br><br>
+
+    <div>
+        <span style="font-size: 20px; color:#000;line-height: 3.5;font-weight: 700;">Latest Posts</span>
+        <hr style="margin-top: -20px;background-color: #ff8400;height: 1px;">
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Dwayne.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px; ;line-height: 1.5;font-size: 18.5px;">The Best Dwayne Johson
+                Workout Video</p>
+            <p
+                style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 1px;padding-top: 20px;">
+                JUNE 27, 2021</p>
+        </a>
+        <br><br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Ronaldo.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 24 Most Motivating
+                Cristiano Ronaldo Quotes</p>
+            <p
+                style="padding-left:170px;line-height: 0.5 ;color: #989898;font-size: 14.3px;margin-bottom: 5px;padding-top: 10px;">
+                JUNE 25, 2021</p>
+        </a>
+        <br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/Marilyn.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">Top 25 Greatest Marilyn
+                Monroe Quotes</p>
+            <p
+                style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;margin-bottom: 6px;">
+                MAY 25, 2019</p>
+        </a>
+        <br><br>
+        <a class="postanchor" href="#" target="blank">
+            <img class="posts" src="images/TEMPLATE.jpg" height="130px" width="150px"
+                style="position: absolute;">
+            <p style="padding-left: 170px;line-height: 1.5;font-size: 18.5px;">19 Great Peter Jackson Quotes
+                For Creative Success</p>
+            <p
+                style="padding-left:170px;line-height: .5 ;color: #989898;font-size: 14.3px;padding-top: 10px;">
+                MAY 10, 2021</p>
+        </a>
+
+    </div>
+
+
+
+                </div>
+            
+
+
         </div>
     </div>
 

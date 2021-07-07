@@ -20,54 +20,23 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=David+Libre&family=Gurajada&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-        @media screen {
-
-            .dropdown:hover .dropdown-menu,
-            .btn-group:hover .dropdown-menu {
-                display: block;
-
-            }
-
-            .dropdown-menu {
-                margin: auto;
-
-            }
-
-            .dropdown-toggle {
-                margin: auto;
-
-            }
-
-            .navbar .dropdown-toggle,
-            .nav-tabs .dropdown-toggle {
-                margin: auto;
-
-            }
+        
+        p{
+            padding-right: 12%;
+            padding-left: 12%;
         }
-
-        .carousel-inner>.item>img {
-            width: 1369px;
-            height: 460px;
-        }
-
-        .navbar-inverse .navbar-nav>.active>a,
-        .navbar-inverse .navbar-nav>.active>a:focus,
-        .navbar-inverse .navbar-nav>.active>a:hover {
-            color: orangered;
-            background-color: transparent;
-
-        }
-
-        .paragraph {
-            word-spacing: 1px;
-            letter-spacing: 0.5px;
-            line-height: 28px;
-
-        }
+   
+        h3{
+             padding-right: 10%;
+             padding-left: 12%;
+        }        
 
         .glyphicon-user {
             font-size: 14px;
@@ -84,67 +53,20 @@
             height: 1px;
         }
 
-        .navbar-inverse {
-            font-family: "Raleway", sans-serif;
-            border-radius: 0%;
-
-        }
-
-        .font-language {
-            /* font-family: 'Anton', sans-serif;
-        font-family: 'David Libre', serif;
-        font-family: 'Gurajada', serif;    */
-            font-size: 15px;
-            font-family: 'Montserrat', sans-serif
-        }
-
-        h1 {
-            color: #000;
-            font-size: 60px;
-            font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-        }
-
-        h3 {
-            color: #000;
-            /* color: rgb(25, 176, 247); */
-            font-size: 40px;
-            font-family: 'Anton', sans-serif;
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-
-        }
-
-        h5 {
-            font-size: 30px;
-            color: #000;
-            /* color: rgb(29, 148, 245);
-            font-family: 'Anton', sans-serif; */
-            font-family: 'David Libre', serif;
-            font-family: 'Gurajada', serif;
-        }
-
-        .font-language p {
-            font-size: 16.5px;
-            line-height: 25px;
-        }
-
+     
         a.contread {
-            color: #053dbf;
+            color:  #0000ff;
             text-decoration: underline;
         }
-
-        a.nextpage {
+        a.nextpage{
             text-decoration: none;
-            color: #053dbf;
+            color: #0000ff;
         }
-
-        p.nextpagepara {
+        p.nextpagepara{
             font-size: 17px;
         }
 
-              /*  newslater 's css is present here */
+      /*  newslater 's css is present here */
       .newsbox {
             background-color: #f6f6f6;
             padding: 20px 40px;
@@ -214,130 +136,376 @@
 /* here newsletter 's css has finished' */
 
 /* image 's css */
-img.twelve{
+        img.twelve{
             display: block;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
 
         }
-        p{
-            padding-left: 5%;
-            padding-right: 10%;
-        }
-        h3{
-            letter-spacing: -2.2px;
-            word-spacing: 5px;
-        }
+
+       
         #normal{
             padding-left: 0;
             padding-right: 25px;
         }
         /*image 's css finish here */
+    
+    
+    /* Changable for all */
+
+@media screen {
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+    display: block;
+
+}
+
+.dropdown-menu {
+    margin: auto;
+
+}
+
+.dropdown-toggle {
+    margin: auto;
+
+}
+
+.navbar .dropdown-toggle,
+.nav-tabs .dropdown-toggle {
+    margin: auto;
+
+}
+}
 
 
-            </style>
+.navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            /* color: orangered; */
+            background-color: transparent;
+            color: #000;
+
+
+        }
+
+        .navbar-default .navbar-nav>.active>a>span,
+        .navbar-default .navbar-nav>.active>a>span:focus,
+        .navbar-default .navbar-nav>.active>a>span:hover {
+            /* background-color: transparent; */
+            border-bottom: solid 4px rgb(0, 174, 255);
+        }
+
+        .paragraph {
+            word-spacing: 4.5px;
+            letter-spacing: -0.3px;
+            line-height: 260%;
+            color: #000;
+            font-weight: 700;
+
+        }
+
+
+h2 span {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 0;
+            border-bottom: 2px solid #ff8400;
+            font-family: "Fjalla One",sans-serif;
+        }
+
+
+        /*  new css for navbar 's height' */
+        .navbar {
+            min-height: 10px;
+        }
+
+        .navbar-brand {
+            padding: 0 10px;
+            height: 10px;
+            line-height: 10px;
+        }
+
+        .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 1px;
+            margin-bottom: 1px;
+            padding: 10px 10px !important;
+            border: transparent;
+
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav>li>a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 4px;
+                padding-bottom: 7px;
+                line-height: 1.6;
+                font-size: 20px;
+                
+
+            }
+        }
+
+        /* finish */
+
+
+        /* middle toggle */
+        .navbar-toggle {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        .icon-bar {
+            margin-left: 50%;
+            margin-right: auto;
+            
+        }
+
+
+        /* finish */
+        .navbar-nav>li {
+            padding-left: 0.5px;
+            padding-right: 0.5px;
+            font-size: 17.3px;
+            
+        }
+
+        /* finish */
+        /* after hover collapse bar css */
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: rgba(249, 249, 249, 0.99);
+        
+        }
+        /* finish */
+    /* for menus 's font colors */
+    .nav.navbar-nav li a {
+    color: #000;
+        }
+/*FINISH::: for menus 's font colors */
+
+
+
+
+/* fonts sizes */
+
+.navbar-default {
+            font-family: 'Lato', sans-serif;
+            border-radius: 0%;
+            background-color: rgba(249, 249, 249, 0.99);
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+
+        }
+
+        .font-language {
+            font-size: 18.5px;
+            font-family: "Lato", sans-serif;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-family: "Fjalla One", sans-serif;
+
+        }
+
+        h3 {
+            font-size: 24px;
+            color: rgb(25, 176, 247);
+            letter-spacing: 0.5px;
+
+        }
+
+        h5 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #000;
+        }
+
+
+/* FINISH fonts sizes  */
+
+
+/* ipad solution */
+
+/* ipad solution */
+@media (max-width: 1092px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/* FINISH Changable for all */
+
+    
+    
+    </style>
+
+    
 </head>
 
 <body>
     <div class="font-language">
-        <nav class="navbar navbar-inverse">
+        
+
+        <div class="container">
+            <img class="img-responsive" src="images/weblogo.png" style="margin-top: 5px;margin-bottom: 5px;" />
+        </div>
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
                 <div class="navbar-header">
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
 
-                    <a class="navbar-brand" href="index.html"><span
-                            style="font-size: 28px; color: orangered;">P</span>ositive<span
-                            style="font-size: 28px;color: orangered;">S</span>och</a>
-
-                            
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        
+                        
+                </button>
 
 
                 </div>
-                 
+
                 <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="container">
+                        <ul class="nav navbar-nav" style="font-size: 15px;">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
+                                </a>
 
-                    <ul class="nav navbar-nav" style="font-size: 15px;">
-                        <li class="active"><a href="home.html">Home</a></li>
-                        <li class="dropdown"><a href="#" data-toggle="dropdown">About us <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" style="    background-color: #ffffff;">
-                                <li><a href="about.html" target="_blank">About</a></li>
-                                <li><a href="contact_us.html" target="_blank">Contact us</a></li>
-                                <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
-                                <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
-                                <li><a href="advertise.html" target="_blank">Advertise </a></li>
-
-                            </ul>
-                        </li>
-
-
-                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" style="background-color: #fff;">
-                                <li><a href="Willpower and Discipline.html" target="_blank">Willpower & Discipline</a></li>
-                                <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration </a></li>
-                                <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
-                                <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
-                                <li><a href="Motivation.html" target="_blank">Motivation </a></li>
-                                <li><a href="Success.html" target="_blank"> Success </a></li>
-
-                            </ul>
-                        </li>
-
-                        <li class="dropdown"><a href="#" data-toggle="dropdown"> Mainfesting
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: #fff;">
-                            <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
-                            <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization </a></li>
-                            <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
-                            <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
-                            <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+                                <ul class="dropdown-menu" style="    background-color: #ffffff;">
+                                    <li><a href="about.html" target="_blank">About</a></li>
+                                    <li><a href="terms_service.html" target="_blank">Terms & service </a></li>
+                                    <li><a href="privacy_policy.html" target="_blank">Privacy Policy </a></li>
+                                    <li><a href="advertise.html" target="_blank">Advertise </a></li>
+                                    <li><a href="writeforus.html">Write For Us</a></li>
         
+                                </ul>
+                            </li>
+
+
+                            <li class="dropdown"><a href="#" data-toggle="dropdown"> Success Skills
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #fff;">
+                                    <li><a href="Willpower and Discipline.html" target="_blank">Willpower &
+                                            Discipline</a>
+                                    </li>
+                                    <li><a href="Focus and Concentration.html" target="_blank"> Focus & Concentration
+                                        </a>
+                                    </li>
+                                    <li><a href="Personal Devlopment.html" target="_blank">Personal Devlopment </a></li>
+                                    <li><a href="Acheving Goals.html" target="_blank">Achieving Goals </a></li>
+                                    <li><a href="Motivation.html" target="_blank">Motivation </a></li>
+                                    <li><a href="Success.html" target="_blank"> Success </a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="active dropdown"><a href="#" data-toggle="dropdown"><span> Mainfesting
+                                    <span class="caret"></span></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #fff;">
+                                    <li><a href="Law of Attraction.html" target="_blank">Low of Attraction</a></li>
+                                    <li><a href="Creative Visualization.html" target="_blank"> Creative Visulaization
+                                        </a>
+                                    </li>
+                                    <li><a href="Manifesting.html" target="_blank">Mainfesting </a></li>
+                                    <li><a href="Affirmations.html" target="_blank">Affirmations </a></li>
+                                    <li><a href="Positive Thinking.html" target="_blank">Positive Thinking </a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="Blog.html">Blog</a></li>
+
+
+                            <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes    
+                                <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #fff;">
+
+                                    <li><a href="positive_quotes.html">Positive Quotes</a></li>
+                                    <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
+
+                                    
+
+                                </ul>
+                            </li>
+                           
+                            <li><a href="contact_us.html" target="_blank">Contact</a></li>
+                            <li><a href="Faq.html">Faq</a></li>
+
                         </ul>
-                    </li>
-                    
-                    
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"> Quotes
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" style="background-color: #fff;">
-                      
-                        <li><a href="positive_quotes.html">Positive Quotes</a></li>
-                        <li><a href="img_gallary.html" target="_blank">Quotes Gallary</a></li>
-                       
-                    </ul>
-                </li>
 
-                    </ul>
 
-                    
 
-                    <ul class="nav navbar-nav navbar-right">
 
-                        </li>
-                        <li><a href="signup.html" target="blank"> <span class="glyphicon glyphicon-user"><span
-                                        style="font-family: Raleway;"> Sign-up</span> </span> </a></li>
-                        <li><a href="login.html" target="blank"> <span class="glyphicon glyphicon-log-in"><span
-                                        style="font-family: Raleway;"> Login</span> </span> </a></li>
-                    </ul>
+
+
+                        <ul class="nav navbar-nav navbar-right" style="font-family: 'Lato',san-sarif;">
+
+
+                            <li class=" dropdown"><a href="#" data-toggle="dropdown"> Profile
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class=" dropdown-menu" style="background-color: #fff;">
+                                    <li><a href="signup.html" target="blank"> <span
+                                                class="glyphicon glyphicon-user"><span style="font-family: Raleway;">
+                                                    Sign-up</span> </span> </a></li>
+                                    <li><a href="login.html" target="blank"> <span
+                                                class="glyphicon glyphicon-log-in"><span style="font-family: Raleway;">
+                                                    Login</span> </span> </a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
 
                 </div>
-
-                
-
             </div>
 
         </nav>
+
 
         <div class="container">
             <div class="row">
