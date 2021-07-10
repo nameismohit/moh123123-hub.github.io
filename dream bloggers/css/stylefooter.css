@@ -22,7 +22,9 @@
 }
 
 .footer {
-    background-color: #2b2d32;
+    background-color: #0e0d0d;
+    
+
     /* background-color: #151414; */
     padding: 30px 0 0 0;
     
@@ -37,7 +39,7 @@
 }
 
 .heading4 {
-    color: #fff;
+    color: #cbcbf8;
     font-size: 25px;
 
 }
@@ -161,7 +163,7 @@ button.sendme {
 }
 
 .para p {
-    color: #fff;
+    color: #cbcbf8;
     font-size: 24px;
     font-weight: 700;
     margin-left: px;
