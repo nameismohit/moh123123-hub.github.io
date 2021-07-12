@@ -17,7 +17,7 @@ margin:0;
 padding-left:80px;
 font-size: 25px;
 font-weight: 200;
-
+margin-top: -5px;
 }
 }
 ::placeholder{
@@ -32,7 +32,7 @@ font-weight: 200;
     input[type=text]{
 
         width: 790px;
-        
+        margin-top: -5px;
     }
 
 }
@@ -53,7 +53,7 @@ z-index: 1;
 color: #ababab;
 font-size: 22px;
 font-weight: 200;
-
+margin-top: -5px;
     }
     ::placeholder{
         font-size: 22px;
@@ -71,6 +71,7 @@ font-weight: 200;
         width: 91.5%;
         float: left;
         margin-left: -91.35%;
+        margin-top: -5px;
     }
 }
 
@@ -80,6 +81,7 @@ font-weight: 200;
         width: 91.5%;
         float: left;
         margin-left: -91.3%;
+        margin-top: -5px;
     }
 
 }
@@ -91,6 +93,7 @@ font-weight: 200;
         float: left;
         margin-left: -84%;
         font-size: 21px;
+        margin-top: -5px;
     }
     ::placeholder{
         font-size: 21px;
@@ -106,6 +109,7 @@ font-weight: 200;
         float: left;
         margin-left: -79%;
         font-size: 18px;
+        margin-top: -5px;
     }
     ::placeholder{
         font-size: 18px;
@@ -120,6 +124,7 @@ font-weight: 200;
         float: left;
         margin-left: -79%;
         font-size: 17px;
+        margin-top: -5px;
     }
     ::placeholder{
         font-size: 17px;
