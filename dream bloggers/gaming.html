@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/stylefooter.css">
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/searchstyle.css">
     <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
 
     <!-- navbarslider css -->
@@ -27,6 +28,7 @@
 
     <script src="js/sidebarNavigation.js"></script>
 
+    <script src="js/search.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
@@ -38,12 +40,72 @@
    #loader{
     background: url('images/preloader.gif') no-repeat center; 
     /* background-color: rgb(36, 35, 35); */
-    background-color: rgb(35, 34, 36);
+    background-color: rgba(34,34,34,255);
     height: 100vh; 
     width: 100%;
-    background-size:50%;
+    background-size:52% 50%;
     z-index:100; 
    
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+
+    #loader{
+    background: url('images/preloader.gif') no-repeat center; 
+    /* background-color: rgb(36, 35, 35); */
+    background-color: rgba(34,34,34,255);
+    height: 100vh; 
+    width: 100%;
+    background-size:78% 53%;
+    z-index:100; 
+   
+}
+    
+}
+
+@media screen and (min-width:450px) and (max-width:600px){
+
+#loader{
+background: url('images/preloader.gif') no-repeat center; 
+/* background-color: rgb(36, 35, 35); */
+background-color: rgba(34,34,34,255);
+height: 100vh; 
+width: 100%;
+background-size:108% 53%;
+z-index:100; 
+
+}
+
+}
+
+@media screen and (min-width:350px) and (max-width:450px){
+
+#loader{
+background: url('images/preloader.gif') no-repeat center; 
+/* background-color: rgb(36, 35, 35); */
+background-color: rgba(34,34,34,255);
+height: 100vh; 
+width: 100%;
+background-size:139% 50%;
+z-index:100; 
+
+}
+
+}
+
+@media(max-width:350px){
+
+#loader{
+background: url('images/preloader.gif') no-repeat center; 
+/* background-color: rgb(36, 35, 35); */
+background-color: rgba(34,34,34,255);
+height: 100vh; 
+width: 100%;
+background-size:175% 57%;
+z-index:100; 
+
+}
+
 }
 
 /* finish loader */
@@ -66,11 +128,10 @@
             <span class="mylogo">
                 dream blogger
             </span>
+
             <a class="mysignin" href="signin.html">
                 Login</a>
-
-
-
+    
         </div>
 
         
@@ -79,7 +140,6 @@
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
                 <div class="navbar-header">
-
                     <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
                         data-target="#myNavbar">
                         <span class="icon-bar" style="background-color: #fff;"></span>
@@ -88,21 +148,38 @@
 
                     </button>
 
+                    
+
                     <div class="togglename">dream blogger</div>
+                  
 
                     <div class="uppersearch pull-right">
-                        <i class="fa fa-search" style="color: #fff;"></i>
+                        <form action="post">
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
+                            </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
+                      
                     </div>
+
 
 
                 </div>
 
-                <input class="downsearchbox" type="search" placeholder="Search here...">
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
+                    
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
+                            <li>
+                                <form action="post">
+                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
+                                
+                                </form>
+                                </li>
+
+                                
 
                             <li id="firstmenu"><a href="home.html">Home</a></li>
 
@@ -114,17 +191,19 @@
                             <li class="active"><a href="advertise.html" target="_blank"><span>Gaming</span></a></li>
                             <li><a href="Blog.html">Blog</a></li>
 
+                            <li><a href="Blog.html">Blog</a></li>
+
+                            <li><a href="Blog.html">Blog</a></li>
+
+
                             <li class="hideit"><a href="advertise.html" target="_blank">SignUp</a></li>
                             <li class="hideit"><a href="advertise.html" target="_blank">SignIn</a></li>
 
-                            <li><a href="Blog.html">Blog</a></li>
-
-                            <li><a href="Blog.html">Blog</a></li>
 
 
 
-                            <li><a class="downsearch fa fa-search"></a></li>
-
+                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
+                            
                         </ul>
 
 
@@ -720,6 +799,28 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
         <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 </div>
 </body>
 <script>
