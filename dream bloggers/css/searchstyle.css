@@ -17,7 +17,7 @@ margin:0;
 padding-left:80px;
 font-size: 25px;
 font-weight: 200;
-margin-top: -5px;
+/* margin-top: -5px; */
 }
 }
 ::placeholder{
@@ -31,8 +31,8 @@ margin-top: -5px;
 
     input[type=text]{
 
-        width: 790px;
-        margin-top: -5px;
+        width: 870px;
+        
     }
 
 }

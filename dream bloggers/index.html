@@ -54,7 +54,6 @@
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
                 <div class="navbar-header">
-                    
                     <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
                         data-target="#myNavbar">
                         <span class="icon-bar" style="background-color: #fff;"></span>
@@ -63,42 +62,60 @@
 
                     </button>
 
+                    
+
                     <div class="togglename">dream blogger</div>
-              
+                  
+
                     <div class="uppersearch pull-right">
-                        <i class="fa fa-search" style="color: #fff;"></i>
+                        <form action="post">
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
+                            </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
+                      
                     </div>
+
 
 
                 </div>
 
+
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
+                    
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
-                            <li class="active" id="firstmenu"><a href="home.html"><span>Home</span></a></li>
+                            <li>
+                                <form action="post">
+                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
+                                
+                                </form>
+                                </li>
 
-                            <li><a href="about.html" target="_blank">Latest News</a></li>
+                                
 
-                            <li><a href="about.html" target="_blank">Tech</a></li>
-                            <li><a href="terms_service.html" target="_blank">Health</a></li>
-                            <li><a href="privacy_policy.html" target="_blank">Science</a></li>
-                            <li><a href="advertise.html" target="_blank">Gaming</a></li>
-                            <li><a href="Blog.html">Blog</a></li>
+                            <li id="firstmenu" class="active"><a href="index.html"> <span> Home </span> </a></li>
+                            <li><a href="tech.html" target="_blank">Tech</a></li>
+                            <li><a href="gaming.html" target="_blank">Gaming</a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li><a href="science.html" target="_blank">Science</a></li>
+                            <li ><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html">Self Development </a></li>
+                            <li><a href="AI.html"> AI </a></li>
+                            <li><a href="about.html">About</a></li>
+
 
                             <li class="hideit"><a href="advertise.html" target="_blank">SignUp</a></li>
                             <li class="hideit"><a href="advertise.html" target="_blank">SignIn</a></li>
 
-                            <li><a href="Blog.html">Blog</a></li>
-
-                            <li><a href="Blog.html">Blog</a></li>
 
 
 
-                            <li><a class="downsearch fa fa-search"></a></li>
-
-                        </ul>
+                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
                             
+                        </ul>
+
 
 
 

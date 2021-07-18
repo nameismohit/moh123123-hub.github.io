@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/searchstyle.css">
     <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
-
+                                                               
     <!-- navbarslider css -->
     <link rel="stylesheet" href="css/sidebarNavigation.css">
 
@@ -36,29 +36,37 @@
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
 
+        .mydata{
+            margin-top: 20px;
+        }
+
            /* loader */
-   #loader{
-    background: url('images/preloader.gif') no-repeat center; 
+   @media (min-width:786px){
+           #loader{
+    background: url('images/guanxian.gif') no-repeat center center; 
     /* background-color: rgb(36, 35, 35); */
-    background-color: rgba(34,34,34,255);
-    height: 100vh; 
+    background-color: #000103;
+    height: 100%; 
     width: 100%;
-    background-size:52% 50%;
-    z-index:100; 
-   
+    background-size:55% 60%;
+    z-index:1; 
+   position: fixed;
+   top:0
 }
+}
+
 
 @media screen and (min-width:600px) and (max-width:768px){
 
     #loader{
-    background: url('images/preloader.gif') no-repeat center; 
+    background: url('images/guanxian.gif') no-repeat center center; 
     /* background-color: rgb(36, 35, 35); */
-    background-color: rgba(34,34,34,255);
+    background-color: #000103;
     height: 100vh; 
     width: 100%;
     background-size:78% 53%;
     z-index:100; 
-   
+   position: fixed;
 }
     
 }
@@ -66,14 +74,14 @@
 @media screen and (min-width:450px) and (max-width:600px){
 
 #loader{
-background: url('images/preloader.gif') no-repeat center; 
+background: url('images/guanxian.gif') no-repeat center center; 
 /* background-color: rgb(36, 35, 35); */
-background-color: rgba(34,34,34,255);
-height: 100vh; 
+background-color: #000103;
+height: 100%; 
 width: 100%;
-background-size:108% 53%;
+background-size:80% 43%;
 z-index:100; 
-
+position: fixed;
 }
 
 }
@@ -81,14 +89,14 @@ z-index:100;
 @media screen and (min-width:350px) and (max-width:450px){
 
 #loader{
-background: url('images/preloader.gif') no-repeat center; 
+background: url('images/guanxian.gif') no-repeat center center; 
 /* background-color: rgb(36, 35, 35); */
-background-color: rgba(34,34,34,255);
-height: 100vh; 
+background-color: #000103;
+height: 100%; 
 width: 100%;
-background-size:139% 50%;
+background-size:90% 50%;
 z-index:100; 
-
+position:fixed;
 }
 
 }
@@ -96,19 +104,39 @@ z-index:100;
 @media(max-width:350px){
 
 #loader{
-background: url('images/preloader.gif') no-repeat center; 
+background: url('images/guanxian.gif') no-repeat center center; 
 /* background-color: rgb(36, 35, 35); */
-background-color: rgba(34,34,34,255);
+background-color: #000103;
+height: 100%; 
+width: 100%;
+background-size:94% 55%;
+z-index:100; 
+position: fixed;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:786px){
+
+#loader{
+background: url('images/guanxian.gif') no-repeat center center; 
+/* background-color: rgb(36, 35, 35); */
+background-color: #000103;
 height: 100vh; 
 width: 100%;
-background-size:175% 57%;
+background-size:78% 53%;
 z-index:100; 
-
+position: fixed;
 }
 
 }
+
 
 /* finish loader */
+
+input[type=email]::placeholder{
+    font-size:20px;
+}
 
    </style>
 
@@ -181,19 +209,15 @@ z-index:100;
 
                                 
 
-                            <li id="firstmenu"><a href="home.html">Home</a></li>
-
-                            <li><a href="about.html" target="_blank">Latest News</a></li>
-
-                            <li><a href="about.html" target="_blank">Tech</a></li>
-                            <li><a href="terms_service.html" target="_blank">Health</a></li>
-                            <li><a href="privacy_policy.html" target="_blank">Science</a></li>
-                            <li class="active"><a href="advertise.html" target="_blank"><span>Gaming</span></a></li>
-                            <li><a href="Blog.html">Blog</a></li>
-
-                            <li><a href="Blog.html">Blog</a></li>
-
-                            <li><a href="Blog.html">Blog</a></li>
+                            <li id="firstmenu"><a href="index.html">Home</a></li>
+                            <li><a href="tech.html" target="_blank">Tech</a></li>
+                            <li class="active"><a href="gaming.html" target="_blank"><span>Gaming</span></a></li>
+                            <li><a href="health.html" target="_blank">Health</a></li>
+                            <li><a href="science.html" target="_blank">Science</a></li>
+                            <li ><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html">Self Development </a></li>
+                            <li><a href="AI.html"> AI </a></li>
+                            <li><a href="about.html">About</a></li>
 
 
                             <li class="hideit"><a href="advertise.html" target="_blank">SignUp</a></li>
@@ -233,20 +257,22 @@ z-index:100;
         <div class="greyimage">
         </div>
         <div class="imgset">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-1 col-xs-0"></div>
-                    <div class="col-md-7 col-xs-0"><a
+                    <!-- <div class="col-md-1 col-xs-0"></div> -->
+                    <div class="col-md-9 col-xs-0"><a
                             href="https://lifehacker.com/how-to-install-software-on-linux-1822447190"><img
-                                class="img-responsive" src="images/pubg.jpg" style="margin-top:40px">
+                                class="img-responsive" src="images/pubg.jpg" style="margin-top:40px" width="800px">
                             <h1 class="blogheading">'PUBG Mobile' update adds a self-driving Tesla Model Y
                             </h1>
                         </a>
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali,
+
+                        <p class="mydata" style="margin-top: 10px;margin-bottom: 40px;"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali,
                             07.09.2021</p>
                     </div>
-                    <div class="ad2 col-md-4 col-xs-0"><img class="img-responsive" src="images/ddd.jpg"
-                            style="margin-top:40px"></div>
+
+                    <div class="ad2 col-md-3 col-xs-0"><img class="img-responsive" src="images/ddd.jpg"
+                            style="margin-top:40px;width: 300px;height: 200px;" ></div>
                 </div>
             </div>
         </div>
@@ -261,18 +287,18 @@ z-index:100;
 
             <div class="col-md-9">
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                      
+                        <img class="img-responsive" src="images/111.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks"> 'The Witcher 3: Wild Hunt' is getting free DLC inspired by the
                             Netflix series</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day ago</p>
 
                     </div>
 
@@ -286,17 +312,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/pubg.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks"> 'PUBG Mobile' update adds a self-driving Tesla Model Y</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 22 hours ago</p>
 
                     </div>
 
@@ -310,17 +335,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/kungfu.jpg" style="height: 180px;">
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">Age-based kung fu game 'Sifu' gets pushed to early 2022</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 23 hours ago</p>
 
                     </div>
 
@@ -334,17 +358,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/ds.jpg" style="height: 180px;"  >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">'Death Stranding Director's Cut' will hit PS5 September 24th</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day ago</p>
 
                     </div>
 
@@ -358,18 +381,17 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/moss.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">
                             'Moss: Book II' continues the story of Quill on PSVR</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day ago</p>
 
                     </div>
 
@@ -383,17 +405,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/ns.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks"> Nintendo’s OLED Switch isn’t the Switch Pro, and that’s okay</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day ago</p>
 
                     </div>
 
@@ -407,17 +428,16 @@ z-index:100;
                 <!-- 
             <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/bungi.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">Bungie will reveal what's next for 'Destiny 2' on August 24th</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day ago</p>
 
                     </div>
 
@@ -431,17 +451,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/amazon-free-source.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">Amazon open-sources its in-house game engine</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day ago</p>
 
                     </div>
 
@@ -455,17 +474,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/ab.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">Assassin's Creed could become an online service game</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day ago</p>
 
                     </div>
 
@@ -479,18 +497,17 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/testdrive.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">'Test Drive Unlimited Solar Crown' arrives September 22nd,
                             2022</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day ago</p>
 
                     </div>
 
@@ -503,17 +520,16 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/sony.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">Sony's next State of Play will focus on 'Deathloop'</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day ago</p>
 
                     </div>
 
@@ -527,18 +543,17 @@ z-index:100;
 
                 <!-- <div class="col-md-9"> -->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="images/111.jpg" style="width: 200px;height: 130px;">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="images/atari.jpg" style="height: 180px;" >
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <a href="#" class="postlinks">Atari steps back from mobile games to focus on 'premium' PC and
                             console titles</a>
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 20
-                            hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day ago</p>
 
                     </div>
 
@@ -554,12 +569,36 @@ z-index:100;
 
             </div>
 
+
+
+
+
             <div class="col-md-3">
                 <img class="rightimage" src="images/ddd.jpg" />
             </div>
 
 
         </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-9 col-xs-12">
+        <div class="mynews" style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgb(0, 162, 255);border-bottom:4px solid rgb(0,162,255);width:100%;">
+            <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                <br>
+                <form action="post">
+                <input type="email" style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgb(0,162,255);font-size: 17px;width: 100%;" placeholder="Type your Email..." required="">
+            </form>    <br>
+                <input type="button" value="sign me up" style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
+            
+            <p class="newspara" style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By subscribing you agree to our Terms of Use and Privacy Policy.</p>
+        </div>
+    </div>
+    <div class="col-md-3 col-xs-0"></div>
+</div>
+</div>
+<br>
+
+    
 <div align="center" class="container">
     <div class="row">
 
@@ -805,9 +844,10 @@ z-index:100;
 </body>
 <script>
     var loader = document.getElementById("loader");
-
+   
     window.addEventListener("load", function(){
         loader.style.display="none";
+        
     })
 
     // function open()
