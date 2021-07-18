@@ -109,6 +109,14 @@ margin-top: -210px;
     }
 }
 
+@media (max-width:755px){
+    .downsearch{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
 
 @media(min-width:1092px){
     li.hideit>a{
