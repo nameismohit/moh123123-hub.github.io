@@ -22,8 +22,9 @@
 }
 
 .footer {
-    background-color: #0e0d0d;
-    
+    /* background-color: #0e0d0d; */
+    background-color: rgba(43,45,50,1.0)
+    ;
 
     /* background-color: #151414; */
     padding: 30px 0 0 0;
@@ -39,8 +40,9 @@
 }
 
 .heading4 {
-    color: #cbcbf8;
+    color: #fff;
     font-size: 25px;
+    font-weight: 700;
 
 }
 
@@ -87,8 +89,8 @@ button.sendme {
     padding: 12px 24px 12px 17px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    border: 1px solid #007bff;
-    background: #007bff;
+    border: 1px solid #9a58b5;
+    background-color: #9a58b5;
     color: #fff;
 }
 
@@ -139,7 +141,8 @@ button.sendme {
 .contact-icon i {
     font-size: 24px;
     top: 50px;
-    color: #007bff;
+    color: #9a58b5;
+    ;
 }
 
 .glyphicon-phone {
@@ -163,10 +166,9 @@ button.sendme {
 }
 
 .para p {
-    color: #cbcbf8;
+    color: #fff;
     font-size: 24px;
     font-weight: 700;
-    margin-left: px;
     padding-top: 30px;
 }
 .para2{

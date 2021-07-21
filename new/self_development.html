@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/searchstyle.css">
     <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
 
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
     <!-- navbarslider css -->
     <link rel="stylesheet" href="css/sidebarNavigation.css">
 
@@ -30,111 +35,121 @@
 
     <script src="js/search.js"></script>
 
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
 
-           /* loader */
-   @media (min-width:786px){
-           #loader{
-    background: url('images/guanxian.gif') no-repeat center center; 
-    /* background-color: rgb(36, 35, 35); */
-    background-color: #000103;
-    height: 100%; 
-    width: 100%;
-    background-size:55% 60%;
-    z-index:1; 
-   position: fixed;
-   top:0
-}
-}
+        /* loader */
+        @media (min-width:786px) {
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 55% 60%;
+                z-index: 1;
+                position: fixed;
+                top: 0
+            }
+        }
 
 
-@media screen and (min-width:600px) and (max-width:768px){
+        @media screen and (min-width:600px) and (max-width:768px) {
 
-    #loader{
-    background: url('images/guanxian.gif') no-repeat center center; 
-    /* background-color: rgb(36, 35, 35); */
-    background-color: #000103;
-    height: 100vh; 
-    width: 100%;
-    background-size:78% 53%;
-    z-index:100; 
-   position: fixed;
-}
-    
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100vh;
+                width: 100%;
+                background-size: 78% 53%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media screen and (min-width:450px) and (max-width:600px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100%; 
-width: 100%;
-background-size:80% 43%;
-z-index:100; 
-position: fixed;
-}
+        @media screen and (min-width:450px) and (max-width:600px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 80% 43%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media screen and (min-width:350px) and (max-width:450px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100%; 
-width: 100%;
-background-size:90% 50%;
-z-index:100; 
-position:fixed;
-}
+        @media screen and (min-width:350px) and (max-width:450px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 90% 50%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media(max-width:350px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100%; 
-width: 100%;
-background-size:94% 55%;
-z-index:100; 
-position: fixed;
-}
+        @media(max-width:350px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 94% 55%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media screen and (min-width:768px) and (max-width:786px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100vh; 
-width: 100%;
-background-size:78% 53%;
-z-index:100; 
-position: fixed;
-}
+        @media screen and (min-width:768px) and (max-width:786px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100vh;
+                width: 100%;
+                background-size: 78% 53%;
+                z-index: 100;
+                position: fixed;
+            }
+
+        }
 
 
-/* finish loader */
+        /* finish loader */
 
-input[type=email]::placeholder{
-    font-size:20px;
-}
-
-   </style>
+        input[type=email]::placeholder {
+            font-size: 20px;
+        }
+    </style>
 
 </head>
 
@@ -144,9 +159,9 @@ input[type=email]::placeholder{
     <div class="font-language">
 
         <div id="loader">
-    
+
         </div>
-    
+
 
         <div class="logobox container">
             <span class="mylogo">
@@ -155,10 +170,10 @@ input[type=email]::placeholder{
 
             <a class="mysignin" href="signin.html">
                 Login</a>
-    
+
         </div>
 
-        
+
         <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
@@ -171,17 +186,19 @@ input[type=email]::placeholder{
 
                     </button>
 
-                    
+
 
                     <div class="togglename">dream blogger</div>
-                  
+
 
                     <div class="uppersearch pull-right">
                         <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
-                            </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
-                      
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
                     </div>
 
 
@@ -191,27 +208,28 @@ input[type=email]::placeholder{
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
-                    
+
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
                                 <form action="post">
-                                
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
-                                
-                                </form>
-                                </li>
 
-                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
 
                             <li id="firstmenu"><a href="index.html">Home</a></li>
                             <li><a href="tech.html" target="_blank">Tech</a></li>
                             <li><a href="gaming.html" target="_blank">Gaming</a></li>
                             <li><a href="health.html" target="_blank">Health</a></li>
                             <li><a href="science.html" target="_blank">Science</a></li>
-                            <li ><a href="money.html" target="_blank">Money</a></li>
-                            <li class="active" ><a href="self_development.html"> <span> Self Development </span> </a></li>
-                            <li ><a href="AI.html"> AI </a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li class="active"><a href="self_development.html"> <span> Positivity </span> </a></li>
+                            <li><a href="AI.html"> AI </a></li>
                             <li><a href="about.html">About</a></li>
 
 
@@ -221,8 +239,10 @@ input[type=email]::placeholder{
 
 
 
-                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
-                            
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
                         </ul>
 
 
@@ -238,7 +258,7 @@ input[type=email]::placeholder{
 
         </nav>
 
-        
+
 
         <div class="greycontent">
             <div align="center" class="container">
@@ -257,18 +277,19 @@ input[type=email]::placeholder{
                     <div class="col-md-1 col-xs-0"></div>
                     <div class="col-md-7 col-xs-0"><a
                             href="https://lifehacker.com/how-to-install-software-on-linux-1822447190"><img
-                                class="img-responsive" src="images/corinne.jpg" style="margin-top:40px;height: 350px;width: 660px;">
+                                class="img-responsive" src="images/corinne.jpg"
+                                style="margin-top:40px;height: 350px;width: 660px;">
                             <h1 class="blogheading">How to make Mindset & increase the Productivity
                             </h1>
                         </a>
-        
+
                     </div>
                     <div class="ad2 col-md-4 col-xs-0"><img class="img-responsive" src="images/ddd.jpg"
                             style="margin-top:40px"></div>
                 </div>
             </div>
         </div>
-<br><br>
+        <br><br>
         <div class="container">
 
             <h1>
@@ -278,16 +299,18 @@ input[type=email]::placeholder{
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
 
             <div class="col-md-9">
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd1.jpg" style="width: 200px;height: 130px;">
 
                     </div>
                     <div class="col-md-9">
                         <a href="#" class="postlinks">
-                            THE POWER OF SETTING DAILY INTENTIONS (AND HOW TO DO IT) 
+                            THE POWER OF SETTING DAILY INTENTIONS (AND HOW TO DO IT)
                         </a>
-                        <p class="littleheading">Setting daily intentions is a powerful way to stay focused on your goals. In this post, I explain what daily intentions are and offer some examples to get you started.
+                        <p class="littleheading">Setting daily intentions is a powerful way to stay focused on your
+                            goals. In this post, I explain what daily intentions are and offer some examples to get you
+                            started.
                         </p>
 
 
@@ -302,14 +325,15 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd2.png" style="width: 200px;height: 130px;">
 
                     </div>
                     <div class="col-md-9">
                         <a href="#" class="postlinks"> HOW I’M FEELING ABOUT TURNING THIRTY</a>
-                        <p class="littleheading">In this post, I'm sharing some reflections on my thirtieth trip around the sun.</p>
+                        <p class="littleheading">In this post, I'm sharing some reflections on my thirtieth trip around
+                            the sun.</p>
 
 
                     </div>
@@ -323,7 +347,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd3.jpg" style="width: 200px;height: 130px;">
 
@@ -331,7 +355,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">10 WAYS TO ADD MORE VARIETY TO YOUR ROUTINE
                         </a>
-                        <p class="littleheading">Feeling stale and bored with your current routine? Here are 10 tips to get you out of a funk and add more variety to your life.
+                        <p class="littleheading">Feeling stale and bored with your current routine? Here are 10 tips to
+                            get you out of a funk and add more variety to your life.
                         </p>
 
 
@@ -346,7 +371,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd4.jpg" style="width: 200px;height: 130px;">
 
@@ -354,7 +379,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">7 WAYS TO BEAT THE SUNDAY SCARIES
                         </a>
-                        <p class="littleheading">Is the dread of Monday taking away the fun of your Sundays? Here are 7 tips to beat the Sunday Scaries and prepare for the week ahead.
+                        <p class="littleheading">Is the dread of Monday taking away the fun of your Sundays? Here are 7
+                            tips to beat the Sunday Scaries and prepare for the week ahead.
                         </p>
 
 
@@ -369,7 +395,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd5.jpg" style="width: 200px;height: 130px;">
 
@@ -377,8 +403,9 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">
                             HOW TO KEEP COMMITMENTS TO YOURSELF
-</a>
-                        <p class="littleheading">Do you struggle with keeping commitments to yourself? Here’s how I’ve shifted my mindset to prioritize my goals and keep promises to myself.
+                        </a>
+                        <p class="littleheading">Do you struggle with keeping commitments to yourself? Here’s how I’ve
+                            shifted my mindset to prioritize my goals and keep promises to myself.
                         </p>
 
 
@@ -393,7 +420,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd6.jpg" style="width: 200px;height: 130px;">
 
@@ -401,7 +428,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks"> THE 7 PILLARS OF SELF-CARE AND HOW TO USE THEM
                         </a>
-                        <p class="littleheading">Learn about the seven pillars of self-care and take the self-care quiz to see which type of self-care you need right now.
+                        <p class="littleheading">Learn about the seven pillars of self-care and take the self-care quiz
+                            to see which type of self-care you need right now.
                         </p>
 
 
@@ -416,7 +444,7 @@ input[type=email]::placeholder{
 
                 <!-- 
             <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd7.jpg" style="width: 200px;height: 130px;">
 
@@ -424,7 +452,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">WHY A “FULL LIFE” ISN’T THE KEY TO FULFILLMENT
                         </a>
-                        <p class="littleheading">Life doesn't have to be filled to the brim to be fulfilling. Here’s how I learned that true fulfillment is about doing less, not more.
+                        <p class="littleheading">Life doesn't have to be filled to the brim to be fulfilling. Here’s how
+                            I learned that true fulfillment is about doing less, not more.
                         </p>
 
 
@@ -439,7 +468,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd8.jpg" style="width: 200px;height: 130px;">
 
@@ -447,7 +476,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">HOW TO BUILD A STRONG INNER FOUNDATION FOR YOUR LIFE
                         </a>
-                        <p class="littleheading">Do you have a strong inner foundation to help you stay grounded? Here’s how to build a solid foundation that helps you stay strong when life gets tough.
+                        <p class="littleheading">Do you have a strong inner foundation to help you stay grounded? Here’s
+                            how to build a solid foundation that helps you stay strong when life gets tough.
                         </p>
 
 
@@ -462,7 +492,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd9.jpg" style="width: 200px;height: 130px;">
 
@@ -470,7 +500,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">30 JOURNAL PROMPTS FOR END OF THE YEAR REFLECTION
                         </a>
-                        <p class="littleheading"> 30 end of year journal prompts to help you close out this chapter and move into the new year with a fresh mindset.
+                        <p class="littleheading"> 30 end of year journal prompts to help you close out this chapter and
+                            move into the new year with a fresh mindset.
                         </p>
 
 
@@ -485,7 +516,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd10.jpg" style="width: 200px;height: 130px;">
 
@@ -493,7 +524,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks"> HOW TO UNPLUG FROM TECHNOLOGY WHEN YOU NEED A BREAK
                         </a>
-                        <p class="littleheading"> Is going offline part of your regular routine? Here's how to unplug and be more mindful when you need a break from the world.
+                        <p class="littleheading"> Is going offline part of your regular routine? Here's how to unplug
+                            and be more mindful when you need a break from the world.
                         </p>
 
 
@@ -507,7 +539,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd11.jpg" style="width: 200px;height: 130px;">
 
@@ -515,7 +547,8 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">5 SELF-CARE HABITS FOR YOUR DAILY ROUTINE
                         </a>
-                        <p class="littleheading">The easiest way to make self-care stick is through routine and daily habits. Here's what my self-care habits look like right now if you need some inspiration.
+                        <p class="littleheading">The easiest way to make self-care stick is through routine and daily
+                            habits. Here's what my self-care habits look like right now if you need some inspiration.
                         </p>
 
 
@@ -530,7 +563,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-3">
                         <img class="img-responsive" src="images/sd12.jpg" style="width: 200px;height: 130px;">
 
@@ -538,10 +571,11 @@ input[type=email]::placeholder{
                     <div class="col-md-9">
                         <a href="#" class="postlinks">HOW I’M LEARNING TO EMBRACE THE ART OF DOING NOTHING
                         </a>
-                        <p class="littleheading">Feel like you never have time to simply relax? Here's how you can make doing nothing part of your routine without feeling guilty about it.
+                        <p class="littleheading">Feel like you never have time to simply relax? Here's how you can make
+                            doing nothing part of your routine without feeling guilty about it.
                         </p>
 
-                      
+
                     </div>
 
                 </div>
@@ -566,27 +600,33 @@ input[type=email]::placeholder{
 
 
         </div>
-    <div class="container">
-        <div class="row">
-        <div class="col-md-9 col-xs-12">
-        <div class="mynews" style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgb(0, 162, 255);border-bottom:4px solid rgb(0,162,255);width:100%;">
-            <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
-                <br>
-                <form action="post">
-                <input type="email" style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgb(0,162,255);font-size: 17px;width: 100%;" placeholder="Type your Email..." required="">
-            </form>    <br>
-                <input type="button" value="sign me up" style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
-            
-            <p class="newspara" style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By subscribing you agree to our Terms of Use and Privacy Policy.</p>
-        </div>
-    </div>
-    <div class="col-md-3 col-xs-0"></div>
-</div>
-</div>
-<br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="mynews"
+                        style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgb(0, 162, 255);border-bottom:4px solid rgb(0,162,255);width:100%;">
+                        <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                            <br>
+                            <form action="post">
+                                <input type="email"
+                                    style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgb(0,162,255);font-size: 17px;width: 100%;"
+                                    placeholder="Type your Email..." required="">
+                            </form> <br>
+                            <input type="button" value="sign me up"
+                                style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
 
-    
-<div align="center" class="container">
+                            <p class="newspara"
+                                style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By
+                                subscribing you agree to our Terms of Use and Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-0"></div>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- <div align="center" class="container"> 
     <div class="row">
 
         <div class="col-md-3 col-xs-12">
@@ -621,7 +661,8 @@ input[type=email]::placeholder{
     </div>
 
     <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
-</div>
+</div> -->
+
 
     </div>
 
@@ -821,24 +862,36 @@ input[type=email]::placeholder{
         <!-- End Copyright Container -->
     </div>
     <div style="display: none;">
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-       
-</div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+    </div>
 </body>
 <script>
     var loader = document.getElementById("loader");
-   
-    window.addEventListener("load", function(){
-        loader.style.display="none";
-        
+
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+
     })
 
     // function open()
     // document.getElementById("mysearch").style.display="block";
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
 
 </script>
 

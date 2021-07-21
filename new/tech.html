@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/searchstyle.css">
     <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
 
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
     <!-- navbarslider css -->
     <link rel="stylesheet" href="css/sidebarNavigation.css">
 
@@ -29,6 +34,17 @@
     <script src="js/sidebarNavigation.js"></script>
 
     <script src="js/search.js"></script>
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
@@ -194,17 +210,19 @@
 
                     </button>
 
-                    
+
 
                     <div class="togglename">dream blogger</div>
-                  
+
 
                     <div class="uppersearch pull-right">
                         <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
-                            </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
-                      
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
                     </div>
 
 
@@ -214,26 +232,27 @@
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
-                    
+
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
                                 <form action="post">
-                                
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
-                                
-                                </form>
-                                </li>
 
-                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
 
                             <li id="firstmenu"><a href="index.html">Home</a></li>
-                            <li class="active" ><a href="tech.html" target="_blank"><span>Tech</span></a></li>
+                            <li class="active"><a href="tech.html" target="_blank"><span>Tech</span></a></li>
                             <li><a href="gaming.html" target="_blank">Gaming</a></li>
                             <li><a href="health.html" target="_blank">Health</a></li>
                             <li><a href="science.html" target="_blank">Science</a></li>
-                            <li ><a href="money.html" target="_blank">Money</a></li>
-                            <li><a href="self_development.html">Self Development </a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
                             <li><a href="AI.html"> AI </a></li>
                             <li><a href="about.html">About</a></li>
 
@@ -244,8 +263,10 @@
 
 
 
-                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
-                            
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
                         </ul>
 
 
@@ -339,6 +360,7 @@
 
                 </select>
                 <br><br>
+     <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Gaming</span>
@@ -349,26 +371,29 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t1.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Finally Fix Your Drifting<br> Nintendo Joy-Con on Your Own
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Finally Fix Your Drifting<br>
+                                Nintendo Joy-Con on Your Own
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t2.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Stop Your Gaming Console<br> From Jacking up Your Energy Bill
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Stop Your Gaming Console<br>
+                                From Jacking up Your Energy Bill
 
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t3.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Take Screenshots on the <br> Xbox Series X|S Outside of <br> Gameplay
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Take Screenshots on the <br>
+                                Xbox Series X|S Outside of <br> Gameplay
                             </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
@@ -376,6 +401,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Apps</span>
@@ -386,24 +412,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t4.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">You Can Make Instagram Less <br> Addicting, If You Want</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">You Can Make Instagram Less <br>
+                                Addicting, If You Want</figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t5.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">All the Features Worth Knowing <br> About in the New Google Drive for <br> Windows and Mac
+                            <figcaption style="font-size: 16px;font-weight: 600;">All the Features Worth Knowing <br>
+                                About in the New Google Drive for <br> Windows and Mac
 
-                                 </figcaption>
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t6.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">10 of the Best Scanner Apps for <br> Android</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">10 of the Best Scanner Apps for <br>
+                                Android</figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -412,6 +441,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Privacy</span>
@@ -422,23 +452,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t7.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Hide Personal Data, and <br> Pictures on an iPhone or iPad</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Hide Personal Data, and <br>
+                                Pictures on an iPhone or iPad</figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t8.png" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Disable Google Chrome's<br> New 'Privacy Sandbox' Tracking<br> (and Why You Want To)
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Disable Google Chrome's<br> New
+                                'Privacy Sandbox' Tracking<br> (and Why You Want To)
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t9.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Is Audacity Really Spyware?</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">Is Audacity Really Spyware?
+                            </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -447,6 +480,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Internet</span>
@@ -457,24 +491,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t10.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Delete Your Duplicate Google<br> Contacts, Because It's Easier <br> Than  You Think</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">Delete Your Duplicate Google<br>
+                                Contacts, Because It's Easier <br> Than You Think</figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t11.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Use This Site to Find the Cheapest <br> and Fastest Way to Send a Package
+                            <figcaption style="font-size: 16px;font-weight: 600;">Use This Site to Find the Cheapest
+                                <br> and Fastest Way to Send a Package
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t12.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">The Out-of-Touch Adults' Guide <br> To Kid Culture: When Will Britney<br> Spears Be Free?
+                            <figcaption style="font-size: 16px;font-weight: 600;">The Out-of-Touch Adults' Guide <br> To
+                                Kid Culture: When Will Britney<br> Spears Be Free?
                             </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -483,6 +520,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Gear</span>
@@ -493,23 +531,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t13.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> THe Do's and Don'ts of Buying a <br> Refurbished Smartphone </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> THe Do's and Don'ts of Buying a <br>
+                                Refurbished Smartphone </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t14.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Add Multiple Accounts to <br> Your Amazon Echo
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Add Multiple Accounts to <br>
+                                Your Amazon Echo
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t15.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Get an Amazon Echo to Tell <br> You a Room's Temperature</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Get an Amazon Echo to Tell <br>
+                                You a Room's Temperature</figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
@@ -517,6 +558,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Apple</span>
@@ -527,22 +569,25 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t16.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> 10 Useful Controls Everyone <br> Should Add to Their iPhone Control <br> Center </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> 10 Useful Controls Everyone <br>
+                                Should Add to Their iPhone Control <br> Center </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t17.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Force Restart Any iPhone <br> or iPad     </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Force Restart Any iPhone <br>
+                                or iPad </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t18.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Download Spotify Songs to <br> Your Apple Watch Instead of <br> Streaming Them </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Download Spotify Songs to <br>
+                                Your Apple Watch Instead of <br> Streaming Them </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -551,6 +596,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Security</span>
@@ -561,21 +607,25 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t19.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> What to Do Now That Those <br> 'PrintNightmare' Windows Patches<br> Didn't Work[Updated] </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What to Do Now That Those <br>
+                                'PrintNightmare' Windows Patches<br> Didn't Work[Updated] </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t20.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Disconnect These Western Digital <br> NAS Drives Right Now
+                            <figcaption style="font-size: 16px;font-weight: 600;">Disconnect These Western Digital <br>
+                                NAS Drives Right Now
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t21.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Update Your Snapchat Password <br> Immediately </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Update Your Snapchat Password <br>
+                                Immediately </figcaption>
                         </figure>
                     </a>
 
+                </div>
                 </div>
 
 
@@ -586,6 +636,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Android</span>
@@ -596,23 +647,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t22.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Uninstall These Malicious Android <br> Apps That Stole Facebook <br> Passwords </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Uninstall These Malicious Android
+                                <br> Apps That Stole Facebook <br> Passwords
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t23.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Stop Your Google App <br> From Crashing on Android
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Stop Your Google App <br> From
+                                Crashing on Android
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t24.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> The Best Features in Android 12<br> Beta (So Far) </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The Best Features in Android 12<br>
+                                Beta (So Far) </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -621,6 +676,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Computing</span>
@@ -631,23 +687,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t25.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">What Is a 'TPM' and Why Do You <br> Need One to Run Windows 11?</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">What Is a 'TPM' and Why Do You <br>
+                                Need One to Run Windows 11?</figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t26.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Don't Install the Leaked Windows <br> 11 Build
+                            <figcaption style="font-size: 16px;font-weight: 600;">Don't Install the Leaked Windows <br>
+                                11 Build
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
-                        <figure> <img src="images/t27.jpg" width="240px"> 
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Enable Chrome OS 91's <br> Hidden Experimental Features </figcaption>
+                        <figure> <img src="images/t27.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Enable Chrome OS 91's <br>
+                                Hidden Experimental Features </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -656,6 +715,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Hacks</span>
@@ -666,23 +726,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t28.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Why You Should Cancel Your Free <br> Trials Immediately After You Sign <br> Up </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Why You Should Cancel Your Free <br>
+                                Trials Immediately After You Sign <br> Up </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t29.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Make Sure You're<br> Streaming in Full 4K
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Make Sure You're<br> Streaming
+                                in Full 4K
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t30.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Get Started With a <br> Password Manager </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Get Started With a <br>
+                                Password Manager </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
@@ -690,6 +753,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Software</span>
@@ -700,22 +764,25 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t31.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Are Dropbox's Paid Plans Worth<br> It ?</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Are Dropbox's Paid Plans Worth<br> It
+                                ?</figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t32.png" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> The Best Way to Set Up a Dropbox <br> Account </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The Best Way to Set Up a Dropbox <br>
+                                Account </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/t33.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Install Software on Linux </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Install Software on Linux
+                            </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
 
@@ -758,7 +825,7 @@
         <br>
 
 
-        <div align="center" class="container">
+        <!-- <div align="center" class="container">
             <div class="row">
 
                 <div class="col-md-3 col-xs-12">
@@ -806,7 +873,7 @@
             </div>
 
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -1007,9 +1074,15 @@
     </div>
     <div style="display: none;">
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 </body>
 <script>
@@ -1023,7 +1096,12 @@
     // function open()
     // document.getElementById("mysearch").style.display="block";
 
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
 </script>
 
 </html>
-

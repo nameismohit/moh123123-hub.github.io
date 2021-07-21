@@ -12,12 +12,17 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/stylefooter.css">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/searchstyle.css">
     <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
-                                                               
+
     <!-- navbarslider css -->
     <link rel="stylesheet" href="css/sidebarNavigation.css">
 
@@ -30,115 +35,127 @@
 
     <script src="js/search.js"></script>
 
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
 
-        .mydata{
+        .mydata {
             margin-top: 20px;
         }
 
-           /* loader */
-   @media (min-width:786px){
-           #loader{
-    background: url('images/guanxian.gif') no-repeat center center; 
-    /* background-color: rgb(36, 35, 35); */
-    background-color: #000103;
-    height: 100%; 
-    width: 100%;
-    background-size:55% 60%;
-    z-index:1; 
-   position: fixed;
-   top:0
-}
-}
+        /* loader */
+        @media (min-width:786px) {
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 55% 60%;
+                z-index: 1;
+                position: fixed;
+                top: 0
+            }
+        }
 
 
-@media screen and (min-width:600px) and (max-width:768px){
+        @media screen and (min-width:600px) and (max-width:768px) {
 
-    #loader{
-    background: url('images/guanxian.gif') no-repeat center center; 
-    /* background-color: rgb(36, 35, 35); */
-    background-color: #000103;
-    height: 100vh; 
-    width: 100%;
-    background-size:78% 53%;
-    z-index:100; 
-   position: fixed;
-}
-    
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100vh;
+                width: 100%;
+                background-size: 78% 53%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media screen and (min-width:450px) and (max-width:600px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100%; 
-width: 100%;
-background-size:80% 43%;
-z-index:100; 
-position: fixed;
-}
+        @media screen and (min-width:450px) and (max-width:600px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 80% 43%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media screen and (min-width:350px) and (max-width:450px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100%; 
-width: 100%;
-background-size:90% 50%;
-z-index:100; 
-position:fixed;
-}
+        @media screen and (min-width:350px) and (max-width:450px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 90% 50%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media(max-width:350px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100%; 
-width: 100%;
-background-size:94% 55%;
-z-index:100; 
-position: fixed;
-}
+        @media(max-width:350px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100%;
+                width: 100%;
+                background-size: 94% 55%;
+                z-index: 100;
+                position: fixed;
+            }
 
-@media screen and (min-width:768px) and (max-width:786px){
+        }
 
-#loader{
-background: url('images/guanxian.gif') no-repeat center center; 
-/* background-color: rgb(36, 35, 35); */
-background-color: #000103;
-height: 100vh; 
-width: 100%;
-background-size:78% 53%;
-z-index:100; 
-position: fixed;
-}
+        @media screen and (min-width:768px) and (max-width:786px) {
 
-}
+            #loader {
+                background: url('images/guanxian.gif') no-repeat center center;
+                /* background-color: rgb(36, 35, 35); */
+                background-color: #000103;
+                height: 100vh;
+                width: 100%;
+                background-size: 78% 53%;
+                z-index: 100;
+                position: fixed;
+            }
+
+        }
 
 
-/* finish loader */
+        /* finish loader */
 
-input[type=email]::placeholder{
-    font-size:20px;
-}
-
-   </style>
+        input[type=email]::placeholder {
+            font-size: 20px;
+        }
+    </style>
 
 </head>
 
@@ -148,9 +165,9 @@ input[type=email]::placeholder{
     <div class="font-language">
 
         <div id="loader">
-    
+
         </div>
-    
+
 
         <div class="logobox container">
             <span class="mylogo">
@@ -159,11 +176,11 @@ input[type=email]::placeholder{
 
             <a class="mysignin" href="signin.html">
                 Login</a>
-    
+
         </div>
 
-        
-        
+
+
         <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
@@ -176,17 +193,19 @@ input[type=email]::placeholder{
 
                     </button>
 
-                    
+
 
                     <div class="togglename">dream blogger</div>
-                  
+
 
                     <div class="uppersearch pull-right">
                         <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
-                            </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
-                      
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
                     </div>
 
 
@@ -196,26 +215,27 @@ input[type=email]::placeholder{
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
-                    
+
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
                                 <form action="post">
-                                
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
-                                
-                                </form>
-                                </li>
 
-                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
 
                             <li id="firstmenu"><a href="index.html">Home</a></li>
                             <li><a href="tech.html" target="_blank">Tech</a></li>
                             <li class="active"><a href="gaming.html" target="_blank"><span>Gaming</span></a></li>
                             <li><a href="health.html" target="_blank">Health</a></li>
                             <li><a href="science.html" target="_blank">Science</a></li>
-                            <li ><a href="money.html" target="_blank">Money</a></li>
-                            <li><a href="self_development.html">Self Development </a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
                             <li><a href="AI.html"> AI </a></li>
                             <li><a href="about.html">About</a></li>
 
@@ -226,8 +246,10 @@ input[type=email]::placeholder{
 
 
 
-                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
-                            
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
                         </ul>
 
 
@@ -243,7 +265,7 @@ input[type=email]::placeholder{
 
         </nav>
 
-        
+
 
         <div class="greycontent">
             <div align="center" class="container">
@@ -267,12 +289,13 @@ input[type=email]::placeholder{
                             </h1>
                         </a>
 
-                        <p class="mydata" style="margin-top: 10px;margin-bottom: 40px;"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali,
+                        <p class="mydata" style="margin-top: 10px;margin-bottom: 40px;"><img src="images/unknown.png"
+                                width="25px" height="23px"> By Mohit Mali,
                             07.09.2021</p>
                     </div>
 
                     <div class="ad2 col-md-3 col-xs-0"><img class="img-responsive" src="images/ddd.jpg"
-                            style="margin-top:40px;width: 300px;height: 200px;" ></div>
+                            style="margin-top:40px;width: 300px;height: 200px;"></div>
                 </div>
             </div>
         </div>
@@ -286,10 +309,10 @@ input[type=email]::placeholder{
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
 
             <div class="col-md-9">
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-4">
-                      
-                        <img class="img-responsive" src="images/111.jpg" style="height: 180px;" >
+
+                        <img class="img-responsive" src="images/111.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -298,7 +321,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day
+                            ago</p>
 
                     </div>
 
@@ -311,9 +335,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/pubg.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/pubg.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -321,7 +345,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 22 hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 22
+                            hours ago</p>
 
                     </div>
 
@@ -334,7 +359,7 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-4">
                         <img class="img-responsive" src="images/kungfu.jpg" style="height: 180px;">
 
@@ -344,7 +369,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 23 hours ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 23
+                            hours ago</p>
 
                     </div>
 
@@ -357,9 +383,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/ds.jpg" style="height: 180px;"  >
+                        <img class="img-responsive" src="images/ds.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -367,7 +393,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day
+                            ago</p>
 
                     </div>
 
@@ -380,9 +407,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/moss.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/moss.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -391,7 +418,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day
+                            ago</p>
 
                     </div>
 
@@ -404,9 +432,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/ns.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/ns.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -414,7 +442,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 1 day
+                            ago</p>
 
                     </div>
 
@@ -427,9 +456,9 @@ input[type=email]::placeholder{
 
                 <!-- 
             <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/bungi.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/bungi.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -437,7 +466,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day
+                            ago</p>
 
                     </div>
 
@@ -450,9 +480,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/amazon-free-source.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/amazon-free-source.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -460,7 +490,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day
+                            ago</p>
 
                     </div>
 
@@ -473,9 +504,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/ab.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/ab.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -483,7 +514,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 2 day
+                            ago</p>
 
                     </div>
 
@@ -496,9 +528,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/testdrive.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/testdrive.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -507,7 +539,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day
+                            ago</p>
 
                     </div>
 
@@ -519,9 +552,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-left">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/sony.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/sony.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -529,7 +562,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 3 day
+                            ago</p>
 
                     </div>
 
@@ -542,9 +576,9 @@ input[type=email]::placeholder{
 
 
                 <!-- <div class="col-md-9"> -->
-                <div class="row">
+                <div class="row" data-aos="fade-up-right">
                     <div class="col-md-4">
-                        <img class="img-responsive" src="images/atari.jpg" style="height: 180px;" >
+                        <img class="img-responsive" src="images/atari.jpg" style="height: 180px;">
 
                     </div>
                     <div class="col-md-8">
@@ -553,7 +587,8 @@ input[type=email]::placeholder{
                         <p class="littleheading">The downloadable content will come included with the game's free
                             next-gen update.</p>
 
-                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day ago</p>
+                        <p class="mydata"><img src="images/unknown.png" width="25px" height="23px"> By Mohit Mali, 4 day
+                            ago</p>
 
                     </div>
 
@@ -579,69 +614,32 @@ input[type=email]::placeholder{
 
 
         </div>
-    <div class="container">
-        <div class="row">
-        <div class="col-md-9 col-xs-12">
-        <div class="mynews" style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgb(0, 162, 255);border-bottom:4px solid rgb(0,162,255);width:100%;">
-            <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
-                <br>
-                <form action="post">
-                <input type="email" style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgb(0,162,255);font-size: 17px;width: 100%;" placeholder="Type your Email..." required="">
-            </form>    <br>
-                <input type="button" value="sign me up" style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
-            
-            <p class="newspara" style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By subscribing you agree to our Terms of Use and Privacy Policy.</p>
-        </div>
-    </div>
-    <div class="col-md-3 col-xs-0"></div>
-</div>
-</div>
-<br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <div class="mynews"
+                        style="margin-top:20px;margin-bottom:20px;border-top:4px solid rgb(0, 162, 255);border-bottom:4px solid rgb(0,162,255);width:100%;">
+                        <h1 style="font-size:23px;font-weight: 600;margin-top:30px">Subscribe to our newsletter!</h2>
+                            <br>
+                            <form action="post">
+                                <input type="email"
+                                    style="outline: 0;border-top: transparent;border-left: transparent;border-right: transparent;border-bottom:1px solid rgb(0,162,255);font-size: 17px;width: 100%;"
+                                    placeholder="Type your Email..." required="">
+                            </form> <br>
+                            <input type="button" value="sign me up"
+                                style="background-color:#1ebbeb;border:#ababab;color:#fff;height:40px;border-radius:8px">
 
-    
-<div align="center" class="container">
-    <div class="row">
-
-        <div class="col-md-3 col-xs-12">
-            <a href="whitehatjr.com" target="blank"><img class="img-responsive sponsored" src="images/spon1.jpg" style="height: 200px;width: 250px; margin-top: 25px;" ></a>
-            <p><a href="whitehatjr.com" target="blank" class="sponsoredheading">
-                Live online coding classes with Whitehat Jr. Age 6-18 only.</a></p>
-                <a href="whitehatjr.com" target="blank" class="sponsoredlink" style="margin-top:-9px">whitehatjr.com</a>
+                            <p class="newspara"
+                                style="margin-top:5px;margin-bottom: 30px;font-size: 12px;color:rgb(117,117,117)">By
+                                subscribing you agree to our Terms of Use and Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-0"></div>
             </div>
-
-
-        <div class="col-md-3 col-xs-12">
-           <a href="https://www.dell.com/en-in" target="blank"> <img class="img-responsive sponsored" src="images/spon2.jpg" style="height: 200px;width: 250px; margin-top: 25px;"> </a>
-            <p><a href="https://www.dell.com/en-in" target="blank" class="sponsoredheading" >Powerful laptops for your home or office, now for less.</a></p>
-            
-
-            <a href="https://www.dell.com/en-in" target="blank" class="sponsoredlink" style="margin-top:-9px" >Dell</a>
         </div>
-        
-        <div class="col-md-3 col-xs-12">
-            <a href="https://www.toppr.com/" target="blank"><img class="img-responsive sponsored" src="images/spon3.jpg" style="height: 200px;width: 250px; margin-top: 25px;" ></a>
-            <p><a href="https://www.toppr.com/" target="blank" class="sponsoredheading">Online Summer Coding Classes for Kids. Book a Free Class.
-                </a></p>
-                <a href="https://www.toppr.com/" target="blank" class="sponsoredlink" style="margin-top:-9px">toppr.com</a>
-        </div>
-        
-        <div class="col-md-3 col-xs-12">
-           <a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge" target="blank"><img class="img-responsive sponsored" src="images/spon4.jpg" style="height: 200px;width: 250px; margin-top: 25px;"   ></a>
-            <p><a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge" target="blank" class="sponsoredheading">Secure your family from the safety of your home</a></p>
-            
-            <a href="https://www.maxlifeinsurance.com/term-insurance-plans/premium-calculator?utmCode=14230408&utm_content=GharSe&utm=AD_1Cr&utm_theme=1Cr_Cover&utm_source=Impact&utm_medium=Outbrain&utm_term=Polygon%20(Vox%20Media)_Polygon&utm_campaign=FY22_MaxLife_Insurance_Desktop_TCPA_Open_July&dicbo=v1-bae1fab29dd7c87f419318285d0b9adc-00a6670584117435b8a590a05173a3be08-gjsdmyjygztgcljwhaytmljugeztillcgaztqljume2giytcgztdcmbyge" target="blank" class="sponsoredlink" style="margin-top:-9px" >Max lige Insurance</a>
-        </div>
-    </div>
-
-    <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
-</div>
+        <br>
 
     </div>
-
-
-
-
-
 
     <div class="footer">
         <div class="container">
@@ -834,24 +832,39 @@ input[type=email]::placeholder{
         <!-- End Copyright Container -->
     </div>
     <div style="display: none;">
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-       
-</div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g3G8RcXVmwo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+    </div>
 </body>
 <script>
     var loader = document.getElementById("loader");
-   
-    window.addEventListener("load", function(){
-        loader.style.display="none";
-        
+
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+
+
     })
 
     // function open()
     // document.getElementById("mysearch").style.display="block";
+
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
 
 </script>
 

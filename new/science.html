@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/searchstyle.css">
     <!-- <link rel="stylesheet" href="css/searchstyle.css"> -->
 
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
     <!-- navbarslider css -->
     <link rel="stylesheet" href="css/sidebarNavigation.css">
 
@@ -30,14 +35,25 @@
 
     <script src="js/search.js"></script>
 
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
 
-        @media(max-width:988px){
-            #hidescience{
+        @media(max-width:988px) {
+            #hidescience {
                 display: none;
             }
         }
@@ -200,17 +216,19 @@
 
                     </button>
 
-                    
+
 
                     <div class="togglename">dream blogger</div>
-                  
+
 
                     <div class="uppersearch pull-right">
                         <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
-                            </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
-                      
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
                     </div>
 
 
@@ -220,26 +238,27 @@
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
-                    
+
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
                                 <form action="post">
-                                
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
-                                
-                                </form>
-                                </li>
 
-                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
 
                             <li id="firstmenu"><a href="index.html">Home</a></li>
                             <li><a href="tech.html" target="_blank">Tech</a></li>
                             <li><a href="gaming.html" target="_blank">Gaming</a></li>
                             <li><a href="health.html" target="_blank">Health</a></li>
-                            <li class="active" ><a href="science.html" target="_blank"> <span> Science</span> </a></li>
-                            <li ><a href="money.html" target="_blank">Money</a></li>
-                            <li><a href="self_development.html">Self Development </a></li>
+                            <li class="active"><a href="science.html" target="_blank"> <span> Science</span> </a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
                             <li><a href="AI.html"><span> AI </span> </a></li>
                             <li><a href="about.html">About</a></li>
 
@@ -250,8 +269,10 @@
 
 
 
-                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
-                            
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
                         </ul>
 
 
@@ -288,17 +309,34 @@
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
 
             <div class="row">
-                <div class="col-md-9" style="border-right: 2px solid #dedede;"> 
-                    <a href="#">  <figure> <img src="images/europa.jpg" class="img-responsive" style="margin-top: 15px;"><figcaption style="margin-top:25px;font-size: 30px;font-weight: 700;text-align: center;color: #000;"> Evidence of Life Could Exist Just Beneath Europa's Icy Surface </figcaption> </figure></a> 
+                <div class="col-md-9" style="border-right: 2px solid #dedede;">
+                    <a href="#">
+                        <figure> <img src="images/europa.jpg" class="img-responsive" style="margin-top: 15px;">
+                            <figcaption
+                                style="margin-top:25px;font-size: 30px;font-weight: 700;text-align: center;color: #000;">
+                                Evidence of Life Could Exist Just Beneath Europa's Icy Surface </figcaption>
+                        </figure>
+                    </a>
                 </div>
-                
-                <div class="col-md-3" id="hidescience"> 
-           <a href="#"> <figure>    <img src="images/q.jpg" class="img-responsive" style="margin-top: 15px;" width="300px"> <figcaption style="font-size: 17px;color:#000;font-weight: 800;">Anti-Vaxxer Tucker Carlson Says He's Not Against Vaccines</figcaption>  </figure> </a>
-    <a href="#">         <figure>    <img src="images/spacecraft.jpg" class="img-responsive" style="margin-top: 15px;" width="300px">   <figcaption style="font-size: 17px;color:#000;font-weight: 800;" > NASA'S Lucy Spacecraft Will Carry a Time Capsule for Future Earthlings </figcaption>  </figure></a>
+
+                <div class="col-md-3" id="hidescience">
+                    <a href="#">
+                        <figure> <img src="images/q.jpg" class="img-responsive" style="margin-top: 15px;" width="300px">
+                            <figcaption style="font-size: 17px;color:#000;font-weight: 800;">Anti-Vaxxer Tucker Carlson
+                                Says He's Not Against Vaccines</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure> <img src="images/spacecraft.jpg" class="img-responsive" style="margin-top: 15px;"
+                                width="300px">
+                            <figcaption style="font-size: 17px;color:#000;font-weight: 800;"> NASA'S Lucy Spacecraft
+                                Will Carry a Time Capsule for Future Earthlings </figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
-<br>
-<div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
+            <br>
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
 
             <div class="col-md-9" style="border-right:2px solid #dedede">
                 <select
@@ -354,6 +392,7 @@
 
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Health</span>
@@ -364,22 +403,25 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc1.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Journal Retracts Flawed Study <br> That Claimed to Show Face Masks <br> Harm Kids </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Journal Retracts Flawed Study <br>
+                                That Claimed to Show Face Masks <br> Harm Kids </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
-                        <figure> <img src="images/sc2.jpg" width="240px"> 
-                            <figcaption style="font-size: 16px;font-weight: 600;">   Some Doctors Say They Won't Give <br> Their Patients a Contentious New <br> Alzheimer's Drug    </figcaption>
+                        <figure> <img src="images/sc2.jpg" width="240px">
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Some Doctors Say They Won't Give <br>
+                                Their Patients a Contentious New <br> Alzheimer's Drug </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc3.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Study: Alcohol Linked to More <br> Than 700,000 Cancer Cases <br> Worldwide Every Year </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Study: Alcohol Linked to More <br>
+                                Than 700,000 Cancer Cases <br> Worldwide Every Year </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
@@ -387,6 +429,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Genetics</span>
@@ -397,22 +440,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc4.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Cannabis Genomes Suggest the <br> Plant Originated in in East Asia</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Cannabis Genomes Suggest the <br>
+                                Plant Originated in in East Asia</figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc5.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">   Genetically Modified Babies Are <br> Still a Bad Idea, WHO Committee <br> Concludes   </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Genetically Modified Babies Are <br>
+                                Still a Bad Idea, WHO Committee <br> Concludes </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc6.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Revised Family Tree Identifies 14 <br> Living Relatives of Leonardo Da <br> Vinci </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Revised Family Tree Identifies 14
+                                <br> Living Relatives of Leonardo Da <br> Vinci
+                            </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -421,6 +468,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Space</span>
@@ -431,22 +479,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc7.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Hubble Space Telescope Is Back </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Hubble Space Telescope Is Back
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc8.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">  $28 Million Ticket-Holder for Jeff <br> Bezos’s Flight to Space Suddenly <br> Has Something Better to Do  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> $28 Million Ticket-Holder for Jeff
+                                <br> Bezos’s Flight to Space Suddenly <br> Has Something Better to Do
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc9.png" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Enormous Inbound Comet Appears <br> as ‘Beautiful Little Fuzzy Dot’ in <br> New Image </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Enormous Inbound Comet Appears <br>
+                                as ‘Beautiful Little Fuzzy Dot’ in <br> New Image </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -455,6 +507,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Animals</span>
@@ -465,23 +518,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc10.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Two Bull Sharks Swam Up the <br> Mississippi River All the Way to St. <br> Louis </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Two Bull Sharks Swam Up the <br>
+                                Mississippi River All the Way to St. <br> Louis </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc11.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Would Your Dog Give You Treats If <br> He Could?
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Would Your Dog Give You Treats If
+                                <br> He Could?
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc12.png" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Watch Thousands of Fish Get <br> Dropped From a Plane Into a Utah <br> Lake </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Watch Thousands of Fish Get <br>
+                                Dropped From a Plane Into a Utah <br> Lake </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -490,6 +546,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Earth Science </span>
@@ -500,12 +557,15 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc13.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Massive Tsunami From Dino-Killing <br> Asteroid Carved ‘Megaripples’ Into <br> the Ocean Floor </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Massive Tsunami From Dino-Killing
+                                <br> Asteroid Carved ‘Megaripples’ Into <br> the Ocean Floor
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc14.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Life Under Antarctiva Is Surviving <br> on Pulverized Rock
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Life Under Antarctiva Is Surviving
+                                <br> on Pulverized Rock
                             </figcaption>
                         </figure>
                     </a>
@@ -516,14 +576,16 @@
                     </a> -->
 
                 </div>
-
+</div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
 
                     </option>
                 </select>
+      
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Archaeology</span>
@@ -534,23 +596,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc15.png" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> 51,000-Year-Old Bone Carving <br> Suggest Neanderthals Were True <br> Artists </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> 51,000-Year-Old Bone Carving <br>
+                                Suggest Neanderthals Were True <br> Artists </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc16.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> New Expedition Will Inspect <br> Deteriorating Wreck of the Titanic 
+                            <figcaption style="font-size: 16px;font-weight: 600;"> New Expedition Will Inspect <br>
+                                Deteriorating Wreck of the Titanic
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc17.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> This Carved Snake May Have Been <br> the Staff of a Stone Age Shaman  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> This Carved Snake May Have Been <br>
+                                the Staff of a Stone Age Shaman </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -559,6 +624,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Physics </span>
@@ -569,23 +635,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc18.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Fool's Gold Is Hiding 'Invisible' <br> Real Gold,Scientists Find </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Fool's Gold Is Hiding 'Invisible'
+                                <br> Real Gold,Scientists Find
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc19.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Young Physicists Are Shaping the <br> Next Generation of Discoveries
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Young Physicists Are Shaping the <br>
+                                Next Generation of Discoveries
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc20.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Mirrors That Detect Ripples in <br> Space-Time Were Frozen to Near <br> Absolute Zero </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Mirrors That Detect Ripples in <br>
+                                Space-Time Were Frozen to Near <br> Absolute Zero </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -594,6 +664,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Artificial Intelligencce </span>
@@ -604,22 +675,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <video src="images/sc21.mp4" width="240px"></video>
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How and Artificial Superintelligence <br> Might Actually Destroy Humanity </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How and Artificial Superintelligence
+                                <br> Might Actually Destroy Humanity
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc22.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">  How AI Could Upgrade Brain <br> Stimulation Therapies  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How AI Could Upgrade Brain <br>
+                                Stimulation Therapies </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc23.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">  Artificial Human Genomes Could <br> Help Overcome Research Privacy <br> Concerns  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Artificial Human Genomes Could <br>
+                                Help Overcome Research Privacy <br> Concerns </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -628,6 +703,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Conservation </span>
@@ -638,22 +714,25 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc24.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> The UK's New Animal Welfare Plan <br> Is Both Very Good and Not Nearly <br> Enough </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The UK's New Animal Welfare Plan <br>
+                                Is Both Very Good and Not Nearly <br> Enough </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc25.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Dogs and Dingoes Are Not Boning </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Dogs and Dingoes Are Not Boning
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc26.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> This 'Map of Life' Shows Where <br> Undiscovered Species May Be <br> Lurking </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> This 'Map of Life' Shows Where <br>
+                                Undiscovered Species May Be <br> Lurking </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -662,6 +741,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Extreme Field Work</span>
@@ -672,12 +752,14 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/sc27.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Lava Tube 'Astronauts' Are <br> Preparing for Mars on a Hawaiian <br> Volcano </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Lava Tube 'Astronauts' Are <br>
+                                Preparing for Mars on a Hawaiian <br> Volcano </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <video src="images/sc28.mp4" width="240px"></video>
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Scientists Cook Hot Dogs in Lava <br> From Iceland's Erupting Volcano
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Scientists Cook Hot Dogs in Lava <br>
+                                From Iceland's Erupting Volcano
                             </figcaption>
                         </figure>
                     </a>
@@ -688,7 +770,7 @@
                     </a> -->
 
                 </div>
-
+</div>
 
 
 
@@ -731,7 +813,7 @@
         <br>
 
 
-        <div align="center" class="container">
+        <!-- <div align="center" class="container">
             <div class="row">
 
                 <div class="col-md-3 col-xs-12">
@@ -779,7 +861,7 @@
             </div>
 
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -980,9 +1062,15 @@
     </div>
     <div style="display: none;">
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BOezfUn9lSc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 </body>
 <script>
@@ -996,7 +1084,12 @@
     // function open()
     // document.getElementById("mysearch").style.display="block";
 
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
 </script>
 
 </html>
-

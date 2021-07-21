@@ -12,8 +12,15 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
-    <link rel="stylesheet" href="css/nav.css">
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- finish -->
+
+
+    <link rel="stylesheet" href="css/homenavstyle.css">
     <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="stylesheet" href="css/searchstyle.css">
+
     <!-- navbarslider css -->
     <link rel="stylesheet" href="css/sidebarNavigation.css">
 
@@ -21,8 +28,23 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
 
     <script src="js/sidebarNavigation.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
 
 
     <style>
@@ -31,15 +53,456 @@
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
 
-        
 
-</style>
+        @media (min-width:1024px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{
+              max-width: 100%;
+            
+      }
+      .btndiv{
+        padding:2.1% 8%
+      }
+
+      .homepara{
+padding-top: 300px;
+font-size: 16px;
+      }
+      
+      .homeheading{
+        padding-top: 140px;
+        font-size: 55px;  
+      }
+      .mywebname{
+        font-size: 22px;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 15px;
+      }
+      
+    }
+
+
+
+      @media (min-width:1400px){
+          #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{max-width: 100%;}
+      }
+      
+      @media screen and (min-width:768px) and (max-width:1024px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{
+              max-width: 100%;
+            
+      }
+      .btndiv{
+        padding:2.3% 10%
+      }
+
+      .homepara{
+padding-top: 275px;
+      }
+      
+      .homeheading{
+        padding-top: 140px;
+        
+      }
+      .mywebname{
+        font-size: 24px;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 13px;
+      }
+      
+    }
+
+
+    @media screen and (min-width:600px) and (max-width:768px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{
+              max-width: 100%;
+            
+      }
+      .btndiv{
+        padding:2.3% 10%
+      }
+
+      .homepara{
+padding-top: 225px;
+      }
+      
+      .homeheading{
+        padding-top: 90px;
+        
+      }
+      .mywebname{
+        font-size: 21px;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 13px;
+      }
+      
+    }
+
+    @media screen and (min-width:450px) and (max-width:600px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+              
+          }
+          .myvidgroup{
+              max-width: 100%;
+              
+      }
+      .btndiv{
+        padding:2.9% 13%
+      }
+
+      .homepara{
+padding-top: 195px;
+font-size: 14px;
+      }
+      
+      .homeheading{
+        padding-top: 90px;
+        
+      }
+      .mywebname{
+        font-size: 21.5px;
+      }
+      .myanchor{
+          padding: 5px 10px;
+          font-size: 13px;
+      }
+    }
+
+
+    @media screen and (min-width:300px) and (max-width:450px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{
+              max-width: 100%;
+            
+      }
+      .btndiv{
+        padding:2% 14%;
+        line-height: 1;
+        margin-top:8px;
+        margin-right:15px;
+    
+      }
+
+      .homepara{
+padding-top: 160px;
+font-size: 13.5px;
+      }
+      
+      .homeheading{
+        padding-top: 70px;
+        font-size: 28px;
+      }
+      
+      .mywebname{
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      
+    }
+
+
+    @media screen and (min-width:370px) and (max-width:450px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{
+              max-width: 100%;
+            
+      }
+      .btndiv{
+        padding:2.3% 12%
+      }
+
+      .homepara{
+padding-top: 160px;
+font-size: 14px;
+      }
+      
+      .homeheading{
+        padding-top: 70px;
+        font-size: 28px;
+      }
+      a.myanchor{
+          font-size: 10px;
+          padding:5px 10px;
+      }
+      
+      
+    }
+
+
+    @media screen and (min-width:250px) and (max-width:370px){
+        #myvideo{
+              max-width: 100%;
+              min-width: 100%;
+          }
+          .myvidgroup{
+              max-width: 100%;
+            
+      }
+      .btndiv{
+        padding:3.3% 18%
+      }
+
+      .homepara{
+padding-top: 130px;
+font-size: 12px;
+      }
+      
+      .homeheading{
+        padding-top: 60px;
+        font-size: 23px;
+      }
+      a.myanchor{
+          font-size: 8px;
+          padding:5px 8px;
+      }
+      
+      .mywebname{
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+    }
+
+
+
+
+        @media (min-width:1092px){
+            .vdo{
+                width:300px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 50px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:1092px) and (min-width:768px){
+            .vdo{
+                width:300px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 50px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:992px) and (min-width:768px){
+            .vdo{
+                width:230px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 20px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+
+        @media screen and (max-width:768px) and (min-width:600px){
+            .vdo{
+                width:180px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:42px
+            }
+            #vdoheadgrp{
+                margin-top: 15px;
+            }
+            .vdopara{
+                font-size: 12.5px;
+            }
+        }
+
+        @media screen and (max-width:600px) and (min-width:500px){
+            .vdo{
+                width:150px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:30px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:500px) and (min-width:400px){
+            .vdo{
+                width:120px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:25px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:400px) and (min-width:300px){
+            .vdo{
+                width:90px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:22px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 13.5px;
+            }
+        }
+
+        @media (max-width:300px) {
+            .vdo{
+                width:70px;
+            }
+            .vdohead{
+                line-height: 1.3;
+                font-size:16px
+            }
+            #vdoheadgrp{
+                margin-top: 10px;
+            }
+            .vdopara{
+                font-size: 12.5px;
+            }
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mybtn:hover {
+            color: #fff;
+            background-color: #505050;
+        }
+
+        #mybtn {
+            color: #505050;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .animated-counter {
+            /* background-image: linear-gradient(45deg, blue, purple); */
+            /* background-color: #2b2b32; */
+            background-color: rgba(22,21,22,255);
+            margin-bottom: 30px;
+            line-height: 2;
+
+
+        }
+
+        @media(min-width:992px) {
+            .animated-counter {
+                height: 230px;
+            }
+
+            .sdsd {
+                padding-top: 30px;
+            }
+        }
+
+        @media(max-width:992px) {
+            .sdsd {
+                padding-top: 30px;
+            }
+        }
+
+        .fa-gift,
+        .fa-history,
+        .fa-users {
+            color: #fff;
+            font-size: 30px;
+        }
+
+        #shiva {
+
+            /* border: 1px dashed #fff; */
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+        }
+
+        .count {
+            /* line-height: 100px; */
+            color: white;
+            /* margin-left:30px; */
+            font-size: 25px;
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <div class="font-language">
+    <div class="font-language" style="background-color:">
 
-        <div class="logobox container">
+        <!-- <div class="logobox container">
             <span class="mylogo">
                 dream blogger
             </span>
@@ -48,13 +511,15 @@
 
 
 
-        </div>
+        </div> -->
+<div class="mywebname" style="color: #fff;position: absolute;padding:2% 5%;font-weight:550;font-family:orbitron;">dream blogger</div>
+<div class="btndiv" style="color: #fff;position: absolute;right:0;font-weight:500;"><a class="myanchor" style="color: #fff;border-radius: 60px;background: #2c71f6;">Login with us</a></div>
 
-        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default">
+        <nav class="navbar navbar-default sidebarNavigation" data-sidebarClass="navbar-default" style="position: absolute;top: 0;right: 0;background-color: transparent;padding: 1.3% 0%;">
             <div class="container-fluid">
                 <!-- this is opt1ional  -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse"
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#myNavbar">
                         <span class="icon-bar" style="background-color: #fff;"></span>
                         <span class="icon-bar" style="background-color: #fff;"></span>
@@ -62,18 +527,20 @@
 
                     </button>
 
-                    
 
-                    <div class="togglename">dream blogger</div>
-                  
 
-                    <div class="uppersearch pull-right">
+                    <!-- <div class="container togglename" style="position: absolute;">dream blogger</div> -->
+
+
+                    <!-- <div class="uppersearch pull-right">
                         <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
-                            </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
-                      
-                    </div>
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
+                    </div> -->
 
 
 
@@ -82,26 +549,27 @@
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
-                    
+
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
                                 <form action="post">
-                                
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
-                                
+
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
                                 </form>
-                                </li>
+                            </li>
 
-                                
 
-                            <li id="firstmenu" class="active"><a href="index.html"> <span> Home </span> </a></li>
+
+                            <li class="active" id="firstmenu"><a href="index.html"><span>Home</span></a></li>
                             <li><a href="tech.html" target="_blank">Tech</a></li>
                             <li><a href="gaming.html" target="_blank">Gaming</a></li>
                             <li><a href="health.html" target="_blank">Health</a></li>
                             <li><a href="science.html" target="_blank">Science</a></li>
-                            <li ><a href="money.html" target="_blank">Money</a></li>
-                            <li><a href="self_development.html">Self Development </a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
                             <li><a href="AI.html"> AI </a></li>
                             <li><a href="about.html">About</a></li>
 
@@ -112,8 +580,10 @@
 
 
 
-                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
-                            
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
                         </ul>
 
 
@@ -128,37 +598,269 @@
             </div>
 
         </nav>
+<div style="background:#004995">
+        <h1 class="homeheading" style="position: absolute;left: 5%;color: #fff;font-family: 'Lato',sans-serif;font-weight: 800" data-aos="fade-up">Welcome to <br> dream blogger</h1>
+<p class="homepara" style="position: absolute;left: 5%;color: #fff;font-weight: 600;" data-aos="fade-down">we are here to share our exeperience and knowledge</p>
+<div class="myvidgroup">
+<video id="myvideo" autoplay muted loop ><source src="images/loop.webm"  type="video/webm" ></video>
+</div>
+
+<div style="background-color: rgba(22,21,22,255);">
+<br><br>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-xs-4" align="center" data-aos="fade-right"><video class="vdo" autoplay muted loop><source src="images/mail_loop.webm" type="video/webm"></video></div>
+    <div class="col-md-6 col-xs-8" id="vdoheadgrp" data-aos="fade-left"><div class="vdohead" style="color:#fff;font-weight: 700;">Easily</div>
+        <div class="vdohead" style="color:#fff;font-weight: 700;">send requests</div>
+        <div class="vdohead" style="color:#fff;font-weight: 700;">via e-mail or SMS</div>
+        <p style="color: #fff" class="vdopara"> ...or copy-paste the link
+        </p></div>
+    </div>
+    </div>
+    <br><br>
+    </div>
+    
+
+    
 
 
-        <div class="greycontent">
-            <div align="center" class="container">
-                <a
-                    href="https://www.intuit.com/in/careers/software-engineering/?cid=dis_eng_reach_in_ttt-fy21-India-lum_aw_gptwbanner|tttproindia_img|728x90_intuit-talent#gptw">
-                    <img src="images/adstrial.jpg" class="img-responsive"  style="margin-top: 25px;height: 130px;">
-                </a>
+</div>
+
+<div class="animated-counter" data-aos="fade-in">
+    <div class="row">
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva">
+                <div> <i class="fa fa-history"></i> </div>
+                <div class="count">500</div>
+                <div style="color: #fff;font-size: 17px;">Working Hours</div>
             </div>
         </div>
-        <br>
-        <div class="greyimage">
-</div>       
-<div class="imgset"> 
-            <div class="container-fluid">
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva">
+                <div> <i class="fa fa-gift"></i>
+                </div>
+                <div class="count">100</div>
+                <div style="color: #fff;font-size: 17px;">Completed Projects</div>
+            </div>
+        </div>
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva">
+                <div> <i class="fa fa-users"></i> </div>
+                <div class="count">853</div>
+                <div style="color: #fff;font-size: 17px;">Happy Clients</div>
+            </div>
+        </div>
+
+        <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
+            <div id="shiva">
+                <div> <i class="fa fa-gift"></i> </div>
+                <div class="count">40</div>
+                <div style="color: #fff;font-size: 17px;">Awards Recieved</div>
+            </div>
+        </div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+</div>
+
+        <div style="background-color: #f4f4f4;" data-aos="fade-in">
+            <div class="container">
+                <h3 style="color: #000;font-weight: 600;">Create with Pride</h3>
                 <div class="row">
-                    <div align="center" class="featureheading ad1 col-md-3 col-xs-0"><span>Featured</span><img src="images/homeimage1.jpg" class="img-responsive" height="120px" width="270px" style="margin-top:40px"></div>
+                    <div class="col-md-9">
+                        <p style="font-size: 16px;">This Pride Month and year-round, dream blogger celebrates the
+                            contributions.</p>
+                    </div>
 
-                    <div class="col-md-6 col-xs-0"><a href="https://lifehacker.com/how-to-install-software-on-linux-1822447190"><img class="img-responsive" src="images/linex.jpg" style="margin-top:40px" ><h1 class="blogheading">How to Install Software on Linux </h1></a>
-                <p class="mydata"><img src="images/unknown-removebg-preview (2).png" width="50px" height="30px">By Mohit Mali, 12 hours ago </p>
+                    <div class="col-md-3">
+                        <a id="mybtn" href="#"
+                            style="border: 2px solid #505050;border-radius: 20px;padding: 5px 10px;font-size: 15.5px;">Browse
+                            the collection</a>
+                    </div>
                 </div>
+                <div class="row" style="margin-bottom: 30px;">
 
-                    <div class="ad2 col-md-3 col-xs-0"><img class="img-responsive" src="images/222.jpg" style="margin-top:40px"></div>
+                    <div style="margin-top: 20px;">
+                        <div class="col-md-4"
+                            style="background-color: #fff;box-sizing: border-box;border: 1px solid #eaeaea;margin: 0;padding: 0;">
+                            <img src="images/111.jpg" style="width: 110px;height: 120px;"> <span
+                                style="font-size: 15px;position: absolute;padding: 30px 20px;font-weight: 800;color: #505050;">RESPONSIBILITY</span>
+                            <a href="#"
+                                style="font-size: 15px;position: absolute;padding: 60px 20px;font-weight: 800;color: #000;word-spacing: 3px;">Celebrating,
+                                mentoring and creating with Pride</a> </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <div class="col-md-4"
+                            style="background-color: #fff;box-sizing: border-box;border: 1px solid #eaeaea;margin: 0;padding: 0;">
+                            <img src="images/111.jpg" style="width: 110px;height: 120px;"> <span
+                                style="font-size: 15px;position: absolute;padding: 30px 20px;font-weight: 800;color: #505050;">RESPONSIBILITY</span>
+                            <a href="#"
+                                style="font-size: 15px;position: absolute;padding: 60px 20px;font-weight: 800;color: #000;word-spacing: 3px;">Celebrating,
+                                mentoring and creating with Pride</a> </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <div class="col-md-4"
+                            style="background-color: #fff;box-sizing: border-box;border: 1px solid #eaeaea;margin: 0;padding: 0;">
+                            <img src="images/111.jpg" style="width: 110px;height: 120px;"> <span
+                                style="font-size: 15px;position: absolute;padding: 30px 20px;font-weight: 800;color: #505050;">RESPONSIBILITY</span>
+                            <a href="#"
+                                style="font-size: 15px;position: absolute;padding: 60px 20px;font-weight: 800;color: #000;word-spacing: 3px;">Celebrating,
+                                mentoring and creating with Pride</a> </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="container" style="margin-top: 30px;">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img src="/images/home1a.jpg" alt="" style="width:100%">
+                            <div class="caption">
+                                <p>Adobe Premiere Pro now runs natively on M1 Macs</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="/images/home2.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Watch Ubisoft reveal a new Tom Clancy game at 2PM ET</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img src="/images/2.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>How to Make Plant-Based Protein Powder </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img src="images/home4b.jpg" alt="" style="width:100%">
+                            <div class="caption">
+                                <p>Elon Musk booked a trip to space with Virgin Galactic
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="/images/ho11.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p> Use the 1% Spending Rule to Save
+                                    Money
+                                     </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img src="/images/europa.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Evidence of Life Could Exist Just Beneath Europa's Icy Surface
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img src="images/corinne1.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>How to make Mindset & increase the Productivity
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="/images/home7.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>How AI is Transforming Affiliate Marketing
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img src="/images/h19.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>How to Build a Strong Inner Foundation for Your Life</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="thumbnail">
+                        <a href="/w3images/lights.jpg">
+                            <img src="/images/home8.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>7 Ways to Save Money at the Pump As Gas Prices Climb
+                                    
+                                    </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="/images/home9gh.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Google is making it easier to manage permissions in Chrome</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img src="/images/fitness.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Reddit's Beloved No-Weights Workout Is Famous for a Reason</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    
 
     </div>
-
 
     <div class="footer">
         <div class="container">
@@ -167,7 +869,7 @@
                     <div class="footer-box-info">
                         <a href="index.html">
                             <div class="heading">
-                              dream blogger
+                                dream blogger
                         </a><br><br>
                     </div>
                     <p class="parahover footer-info-text" style=" line-height: 23px;font-size: 17px;">
@@ -223,7 +925,7 @@
                             </div>
                             <!-- End contact Icon -->
                             <div class="contact-info">
-                                <span class="secondh" style="color:  #cbcbf8;">Delhi India</span>
+                                <span class="secondh" style="color:#fff;font-weight: 600;">Delhi India</span>
                                 <p class="parahover" style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a>
                                 </p>
                             </div>
@@ -237,7 +939,7 @@
                             </div>
                             <!-- End contact Icon -->
                             <div class="contact-info">
-                                <span class="thirdh" style="color:  #cbcbf8">96 498 4 5480</span>
+                                <span class="thirdh" style="color: #fff;font-weight: 600;">96 498 4 5480</span>
                                 <p class="parahover" style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a
                                         call</a></p>
                             </div>
@@ -253,7 +955,8 @@
                             <span class="heading4" id="head4">Useful Links</span>
                             <span>
                                 <hr align="left"
-                                    style="width: 135px;height:3px;background-color: #007bff;margin-left: 40px;border: transparent;margin-bottom: -3px;">
+                                    style="width: 135px;height:3px;background-color: #9a58b5
+;margin-left: 40px;border: transparent;margin-bottom: -3px;">
                             </span>
 
                             <ul type="none">
@@ -295,7 +998,8 @@
                         <span class="heading4">Subscribe</span>
                         <span>
                             <hr align="left"
-                                style="width: 110px;height:3px;background-color: #007bff;border: transparent;margin-bottom: -18px;">
+                                style="width: 110px;height:3px;background-color: #9a58b5
+;border: transparent;margin-bottom: -18px;">
                         </span>
                         <p class="parahover para2">
                             Reference site about Positivity,giving info of its origins, as well as.
@@ -351,5 +1055,25 @@
     </div>
 
 </body>
+<script>
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            offset:100,
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
 </script>
+
 </html>

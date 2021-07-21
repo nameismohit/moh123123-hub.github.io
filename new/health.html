@@ -12,6 +12,11 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
+    <!-- css for animated div -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- finish -->
+
+
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/stylefooter.css">
     <link rel="stylesheet" href="css/style1.css">
@@ -29,6 +34,19 @@
     <script src="js/sidebarNavigation.js"></script>
 
     <script src="js/search.js"></script>
+
+
+    <!-- animated div script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Finish -->
+
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
@@ -194,17 +212,19 @@
 
                     </button>
 
-                    
+
 
                     <div class="togglename">dream blogger</div>
-                  
+
 
                     <div class="uppersearch pull-right">
                         <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?" style="position:absolute ;">
-                            </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i class="fa fa-search" style="color: #fff;"></i></button>
-                      
+                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
+                                style="position:absolute ;">
+                        </form>
+                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
+                                class="fa fa-search" style="color: #fff;"></i></button>
+
                     </div>
 
 
@@ -214,27 +234,28 @@
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <div class="container">
-                    
+
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
                                 <form action="post">
-                                
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?" required="">
-                                
-                                </form>
-                                </li>
 
-                                
+                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
+                                        required="">
+
+                                </form>
+                            </li>
+
+
 
                             <li id="firstmenu"><a href="index.html">Home</a></li>
                             <li><a href="tech.html" target="_blank">Tech</a></li>
                             <li><a href="gaming.html" target="_blank">Gaming</a></li>
                             <li class="active"><a href="health.html" target="_blank"><span>Health</span> </a></li>
                             <li><a href="science.html" target="_blank">Science</a></li>
-                            <li ><a href="money.html" target="_blank">Money</a></li>
-                            <li><a href="self_development.html">Self Development </a></li>
-                            <li><a href="AI.html">AI  </a></li>
+                            <li><a href="money.html" target="_blank">Money</a></li>
+                            <li><a href="self_development.html"> Positivity </a></li>
+                            <li><a href="AI.html">AI </a></li>
                             <li><a href="about.html">About</a></li>
 
 
@@ -244,8 +265,10 @@
 
 
 
-                            <li><button type="button" class="triggersearch downsearch" style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i class="fa fa-search" style="color: #fff;"></i></button></li>
-                            
+                            <li><button type="button" class="triggersearch downsearch"
+                                    style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
+                                        class="fa fa-search" style="color: #fff;"></i></button></li>
+
                         </ul>
 
 
@@ -273,26 +296,46 @@
         <br>
 
         <div class="container">
-<center>
-            <img src="images/vitals.png" class="img-responsive" width="240px" style="margin-bottom:10px">
-</center>
+            <center>
+                <img src="images/vitals.png" class="img-responsive" width="240px" style="margin-bottom:10px">
+            </center>
 
-<p class="text-center">Everything about getting fitter, staying healthy, and understanding your body and mind</p>
-<div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 15px;"></div>
+            <p class="text-center">Everything about getting fitter, staying healthy, and understanding your body and
+                mind</p>
+            <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 15px;"></div>
 
 
 
             <div class="row">
-                <div class="col-md-4 col-xs-12"><figure><img class="img-responsive" src="images/fitness.jpg" style="margin-top: 40px;"> <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">FITNESS</a> <br> <a href="#" style="color: #000;font-weight:800;font-size: 19px;">Reddit's Beloved No-Weights Workout Is Famous for a Reason</a> </figcaption> </figure></div>
-                <div class="col-md-4 col-xs-12"><figure><img class="img-responsive" src="images/2.jpg" style="margin-top: 40px;" > <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">NUTRITION</a> <br> <a href="#"style="color: #000;font-weight:800;font-size: 19px;">How to Make Plant-Based Protein Powder </a> </figcaption> </figure></div>
-                <div class="col-md-4 col-xs-12"><figure><img class="img-responsive" src="images/3.jpg" style="margin-top: 40px;" > <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">NUTRITION</a> <br> <a href="#" style="color: #000;font-weight:800;font-size: 19px;">10 of the Best Cheap and Healthy Cold Lunches, Accrording to Reddit</a> </figcaption> </figure></div>
+                <div class="col-md-4 col-xs-12">
+                    <figure><img class="img-responsive" src="images/fitness.jpg" style="margin-top: 40px;">
+                        <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">FITNESS</a> <br> <a href="#"
+                                style="color: #000;font-weight:800;font-size: 19px;">Reddit's Beloved No-Weights Workout
+                                Is Famous for a Reason</a> </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <figure><img class="img-responsive" src="images/2.jpg" style="margin-top: 40px;">
+                        <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">NUTRITION</a> <br> <a
+                                href="#" style="color: #000;font-weight:800;font-size: 19px;">How to Make Plant-Based
+                                Protein Powder </a> </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <figure><img class="img-responsive" src="images/3.jpg" style="margin-top: 40px;">
+                        <figcaption> <a href="#" style="font-size: 15px;font-weight: 600;">NUTRITION</a> <br> <a
+                                href="#" style="color: #000;font-weight:800;font-size: 19px;">10 of the Best Cheap and
+                                Healthy Cold Lunches, Accrording to Reddit</a> </figcaption>
+                    </figure>
+                </div>
             </div>
 
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
 
             <div class="col-md-9">
 
-                <select name="All Sections" style="font-size: 15px;width: 100%;height: 37px;outline: 0;border:1px solid #dedede;border-radius: 4px;" >
+                <select name="All Sections"
+                    style="font-size: 15px;width: 100%;height: 37px;outline: 0;border:1px solid #dedede;border-radius: 4px;">
                     <option>
                         All Sections
                     </option>
@@ -335,11 +378,12 @@
                     </option>
 
 
-                    
+
                 </select>
 
-                
+
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Fitness</span>
@@ -350,23 +394,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h1.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> 16 Things Every Beginner Runner <br> Should Know, According to Reddit </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> 16 Things Every Beginner Runner <br>
+                                Should Know, According to Reddit </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h2.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">8 Sports You Can Still Compete<br> in If You're Old
+                            <figcaption style="font-size: 16px;font-weight: 600;">8 Sports You Can Still Compete<br> in
+                                If You're Old
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h3.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> What's the Difference Between <br> Flexibility and Mobility (and Why <br> Should You Care)? </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What's the Difference Between <br>
+                                Flexibility and Mobility (and Why <br> Should You Care)? </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+            </div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
@@ -374,6 +421,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Mental Health </span>
@@ -384,23 +432,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h4.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Summer Seasonal Affective <br> Disorder Is Real (and Here's How <br> to Manage It) </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Summer Seasonal Affective <br>
+                                Disorder Is Real (and Here's How <br> to Manage It) </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h5.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> The Different Types of Therapy <br> (and How They Work)
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The Different Types of Therapy <br>
+                                (and How They Work)
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h6.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Tell Whether You're <br> Stressed or Depressed </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Tell Whether You're <br>
+                                Stressed or Depressed </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -409,6 +460,8 @@
                     </option>
                 </select>
                 <br><br>
+      
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Covid-19 </span>
@@ -419,22 +472,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h7.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> What You Should Know About <br> Guillain-Barré Syndrome and <br> COVID Vaccines </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What You Should Know About <br>
+                                Guillain-Barré Syndrome and <br> COVID Vaccines </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h8.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Why You (Still) Shouldn't Expect a <br> COVID Vaccine Booster Anytime <br> Soon [Updated]
+                            <figcaption style="font-size: 16px;font-weight: 600;">Why You (Still) Shouldn't Expect a
+                                <br> COVID Vaccine Booster Anytime <br> Soon [Updated]
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h9.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Should Vaccinated People Mask <br> Up Against the Delta Variant?</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">Should Vaccinated People Mask <br> Up
+                                Against the Delta Variant?</figcaption>
                         </figure>
                     </a>
 
                 </div>
+</div>
+
 
 
 
@@ -444,6 +502,8 @@
                     </option>
                 </select>
                 <br><br>
+
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Social GPS </span>
@@ -454,23 +514,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h10.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Tell the Difference <br> Between Arrogance and <br> Confidence </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Tell the Difference <br>
+                                Between Arrogance and <br> Confidence </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h11.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Instead of Criticizing 'Wokeness,'<BR> Say What You Really Mean
+                            <figcaption style="font-size: 16px;font-weight: 600;">Instead of Criticizing 'Wokeness,'<BR>
+                                Say What You Really Mean
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h12.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How Being Ambivalent Can Help <br> You Make Better Decisions</figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">How Being Ambivalent Can Help <br> You
+                                Make Better Decisions</figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -479,6 +542,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Beauty </span>
@@ -489,24 +553,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h13.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Figure Out Your Face<br> Shape (and Why You Should) </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Figure Out Your Face<br> Shape
+                                (and Why You Should) </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h14.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Keep Your Tattoos Looking<br> New for Longer
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Keep Your Tattoos Looking<br>
+                                New for Longer
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h15.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How Much Money Is Your Hair <br> Worth?
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How Much Money Is Your Hair <br>
+                                Worth?
                             </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
                 <select name="All Sections" style="visibility: hidden;">
                     <option>
@@ -514,6 +581,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Body</span>
@@ -524,24 +592,27 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h16.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> TikTok's 'Dehydration Check' Is <br> Silly and Useless </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> TikTok's 'Dehydration Check' Is <br>
+                                Silly and Useless </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h17.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">How to Spot and Treat a Chlorine<br> Rash
+                            <figcaption style="font-size: 16px;font-weight: 600;">How to Spot and Treat a Chlorine<br>
+                                Rash
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h18.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Stop Worrying and Learn <br> to Love Germs Again </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Stop Worrying and Learn <br>
+                                to Love Germs Again </figcaption>
 
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -550,6 +621,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Self Improvement </span>
@@ -560,23 +632,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h19.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> The 7 Types of Rest, and How to <br> Get the Kind You Need </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> The 7 Types of Rest, and How to <br>
+                                Get the Kind You Need </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h20.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Ice Cream Deserves to Be Eaten <br> From a Mug
+                            <figcaption style="font-size: 16px;font-weight: 600;">Ice Cream Deserves to Be Eaten <br>
+                                From a Mug
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h21.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">  How to Use Metaphors to Keep <br> People Attentive and Engaged  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Use Metaphors to Keep <br>
+                                People Attentive and Engaged </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -585,6 +660,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Nutrition </span>
@@ -595,23 +671,26 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/3.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">10 of the Best Cheap and Healthy <br> Cold Lunches, According to Reddit  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;">10 of the Best Cheap and Healthy <br>
+                                Cold Lunches, According to Reddit </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/2.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Make Plant-Based Protein <br> Powder 
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Make Plant-Based Protein <br>
+                                Powder
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h24.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">  Why You Shouldn't Except <br> Chlorophyll Water to Help Treat <br> Your Acne  </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Why You Shouldn't Except <br>
+                                Chlorophyll Water to Help Treat <br> Your Acne </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -620,6 +699,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-left">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;">Sleep</span>
@@ -630,22 +710,25 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h25.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Fall Asleep Faster Using<br> 'Cognitive Shuffling' </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Fall Asleep Faster Using<br>
+                                'Cognitive Shuffling' </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h26.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Fall Asleep After Waking Up </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> How to Fall Asleep After Waking Up
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h27.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> Know Your Right Pillow Type <br> Based on These Sleep Habits </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> Know Your Right Pillow Type <br>
+                                Based on These Sleep Habits </figcaption>
                         </figure>
                     </a>
 
                 </div>
-
+</div>
 
 
                 <select name="All Sections" style="visibility: hidden;">
@@ -654,6 +737,7 @@
                     </option>
                 </select>
                 <br><br>
+                <div data-aos="fade-up-right">
                 <div class="container">
 
                     <span style="line-height: 0;font-size: 27px;font-weight: 600;"> Weed </span>
@@ -664,12 +748,14 @@
 
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h28.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;"> What's the Difference Between <br> Hemp and Weed? </figcaption>
+                            <figcaption style="font-size: 16px;font-weight: 600;"> What's the Difference Between <br>
+                                Hemp and Weed? </figcaption>
                         </figure>
                     </a>
                     <a href="#" style="color: #000;">
                         <figure> <img src="images/h29.jpg" width="240px">
-                            <figcaption style="font-size: 16px;font-weight: 600;">Earn Close to $1,000 per Month as <br> a Weed-Testing Intern
+                            <figcaption style="font-size: 16px;font-weight: 600;">Earn Close to $1,000 per Month as <br>
+                                a Weed-Testing Intern
                             </figcaption>
                         </figure>
                     </a>
@@ -681,7 +767,7 @@
                     </a>
 
                 </div>
-
+</div>
 
 
 
@@ -697,7 +783,7 @@
 
 
         </div>
-<br><br><br>
+        <br><br><br>
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-xs-12">
@@ -724,7 +810,7 @@
         <br>
 
 
-        <div align="center" class="container">
+        <!-- <div align="center" class="container">
             <div class="row">
 
                 <div class="col-md-3 col-xs-12">
@@ -772,7 +858,7 @@
             </div>
 
             <div style="border-bottom: 1.7px solid #dedede;margin-top: 20px;margin-bottom: 25px;"></div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -996,6 +1082,13 @@
 
     // function open()
     // document.getElementById("mysearch").style.display="block";
+
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+
+
 
 </script>
 
