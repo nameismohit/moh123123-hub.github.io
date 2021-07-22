@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
-    <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="stylesheet" href="css/homefooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,7 +18,6 @@
 
 
     <link rel="stylesheet" href="css/homenavstyle.css">
-    <link rel="stylesheet" href="css/stylefooter.css">
     <link rel="stylesheet" href="css/searchstyle.css">
 
     <!-- navbarslider css -->
@@ -54,14 +53,23 @@
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); */
 
 
+        .img:hover{
+            opacity: 0.8;
+        }
+
         @media (min-width:1024px){
         #myvideo{
               max-width: 100%;
               min-width: 100%;
+              overflow-x: hidden;
+              height:800px;
+              overflow-x:hidden;
+              object-fit:cover;
           }
           .myvidgroup{
               max-width: 100%;
-            
+              overflow-x: hidden;
+    
       }
       .btndiv{
         padding:2.1% 8%
@@ -92,29 +100,36 @@ font-size: 16px;
           #myvideo{
               max-width: 100%;
               min-width: 100%;
+              overflow-x: hidden;
           }
-          .myvidgroup{max-width: 100%;}
+          .myvidgroup{max-width: 100%;
+        overflow-x: hidden;
+        }
       }
       
-      @media screen and (min-width:768px) and (max-width:1024px){
+      @media screen and (min-width:768px) and (max-width:1023px){
         #myvideo{
-              max-width: 100%;
+            max-width: 100%;
               min-width: 100%;
+              height:950px;
+              object-fit: cover;             
+              overflow-x:hidden;
           }
           .myvidgroup{
-              max-width: 100%;
-            
+              width: 100%;
+              overflow-x:hidden;
       }
       .btndiv{
-        padding:2.3% 10%
+        padding:2.3% 10%;
+        
       }
 
       .homepara{
-padding-top: 275px;
+padding-top: 325px;
       }
       
       .homeheading{
-        padding-top: 140px;
+        padding-top: 220px;
         
       }
       .mywebname{
@@ -132,25 +147,30 @@ padding-top: 275px;
         #myvideo{
               max-width: 100%;
               min-width: 100%;
+              overflow-x:hidden;
+              object-fit: cover;
+              height: 960px;
+
           }
           .myvidgroup{
               max-width: 100%;
-            
+              overflow-x:hidden;
       }
       .btndiv{
-        padding:2.3% 10%
+        padding:2.3% 10%;
+        line-height: 1.7;
       }
 
       .homepara{
-padding-top: 225px;
+padding-top: 295px;
       }
       
       .homeheading{
-        padding-top: 90px;
+        padding-top: 190px;
         
       }
       .mywebname{
-        font-size: 21px;
+        font-size: 21px;line-height: 1.7;
       }
       .myanchor{
           padding: 5px 10px;
@@ -163,27 +183,32 @@ padding-top: 225px;
         #myvideo{
               max-width: 100%;
               min-width: 100%;
-              
+              object-fit: cover;
+              height:670px;
+              overflow-x:hidden;
+
           }
           .myvidgroup{
               max-width: 100%;
-              
+              overflow-x: hidden;
       }
       .btndiv{
-        padding:2.9% 13%
+        padding:2.6% 13%;
+        line-height:1.7;
       }
 
       .homepara{
-padding-top: 195px;
+padding-top: 260px;
 font-size: 14px;
       }
       
       .homeheading{
-        padding-top: 90px;
+        padding-top: 160px;
         
       }
       .mywebname{
         font-size: 21.5px;
+        line-height: 1.7;
       }
       .myanchor{
           padding: 5px 10px;
@@ -192,30 +217,35 @@ font-size: 14px;
     }
 
 
-    @media screen and (min-width:300px) and (max-width:450px){
+    /* @media screen and (min-width:300px) and (max-width:375px){
         #myvideo{
               max-width: 100%;
               min-width: 100%;
+              object-fit: cover;
+              height:600px;
+              overflow-x:hidden;
+              
           }
+          
           .myvidgroup{
               max-width: 100%;
-            
+              overflow-x:hidden;
       }
+
       .btndiv{
         padding:2% 14%;
         line-height: 1;
         margin-top:8px;
-        margin-right:15px;
-    
+        margin-right:15px;    
       }
 
       .homepara{
-padding-top: 160px;
-font-size: 13.5px;
+    margin-top: 70px;
+    font-size: 13.5px;
       }
       
       .homeheading{
-        padding-top: 70px;
+        margin-top:80px;
         font-size: 28px;
       }
       
@@ -225,34 +255,41 @@ font-size: 13.5px;
       }
 
       
-    }
+    } */
 
 
     @media screen and (min-width:370px) and (max-width:450px){
         #myvideo{
               max-width: 100%;
               min-width: 100%;
+              object-fit: cover;
+              height:640px;
+              overflow-x:hidden;
+
           }
           .myvidgroup{
               max-width: 100%;
-            
+              overflow-x:hidden;
       }
       .btndiv{
-        padding:2.3% 12%
+        padding:3.3% 14.5%
       }
 
       .homepara{
-padding-top: 160px;
-font-size: 14px;
+        padding-top: 260px;
+        font-size: 14px;
       }
       
       .homeheading{
-        padding-top: 70px;
+        padding-top: 170px;
         font-size: 28px;
       }
       a.myanchor{
           font-size: 10px;
           padding:5px 10px;
+      }
+      .mywebname{
+          line-height: 1.7;
       }
       
       
@@ -263,22 +300,26 @@ font-size: 14px;
         #myvideo{
               max-width: 100%;
               min-width: 100%;
-          }
+              overflow-x:hidden;
+              object-fit: cover;
+              height:600px;
+
+            }
           .myvidgroup{
               max-width: 100%;
-            
+              overflow-x:hidden;
       }
       .btndiv{
-        padding:3.3% 18%
+        padding:3.3% 20%
       }
 
       .homepara{
-padding-top: 130px;
+padding-top: 180px;
 font-size: 12px;
       }
       
       .homeheading{
-        padding-top: 60px;
+        padding-top: 110px;
         font-size: 23px;
       }
       a.myanchor{
@@ -434,6 +475,7 @@ font-size: 12px;
         #mybtn:hover {
             color: #fff;
             background-color: #505050;
+            transition: 0.6s;
         }
 
         #mybtn {
@@ -499,8 +541,8 @@ font-size: 12px;
     </style>
 </head>
 
-<body>
-    <div class="font-language" style="background-color:">
+<body style="overflow-x: hidden;">
+    <div class="font-language">
 
         <!-- <div class="logobox container">
             <span class="mylogo">
@@ -529,18 +571,7 @@ font-size: 12px;
 
 
 
-                    <!-- <div class="container togglename" style="position: absolute;">dream blogger</div> -->
 
-
-                    <!-- <div class="uppersearch pull-right">
-                        <form action="post">
-                            <input type="text" class="upsearchbox" placeholder="what are you searching for?"
-                                style="position:absolute ;">
-                        </form>
-                        <button class="uppertrigger" style="background-color: transparent;border: 0;"> <i
-                                class="fa fa-search" style="color: #fff;"></i></button>
-
-                    </div> -->
 
 
 
@@ -553,12 +584,7 @@ font-size: 12px;
                         <ul class="nav navbar-nav" style="font-size: 15px;">
 
                             <li>
-                                <form action="post">
-
-                                    <input class="searchbox" type="text" placeholder="what are you searching for ?"
-                                        required="">
-
-                                </form>
+                                
                             </li>
 
 
@@ -580,7 +606,7 @@ font-size: 12px;
 
 
 
-                            <li><button type="button" class="triggersearch downsearch"
+                            <li style="display: none;"><button type="button" class="triggersearch downsearch"
                                     style="height: 20px;width: 39px;background-color: transparent;border: transparent;"><i
                                         class="fa fa-search" style="color: #fff;"></i></button></li>
 
@@ -598,16 +624,16 @@ font-size: 12px;
             </div>
 
         </nav>
-<div style="background:#004995">
+<div style="background:#004995" style="overflow-x: hidden;">
         <h1 class="homeheading" style="position: absolute;left: 5%;color: #fff;font-family: 'Lato',sans-serif;font-weight: 800" data-aos="fade-up">Welcome to <br> dream blogger</h1>
 <p class="homepara" style="position: absolute;left: 5%;color: #fff;font-weight: 600;" data-aos="fade-down">we are here to share our exeperience and knowledge</p>
-<div class="myvidgroup">
-<video id="myvideo" autoplay muted loop ><source src="images/loop.webm"  type="video/webm" ></video>
+<div class="myvidgroup" style="overflow-x: hidden;overflow-y: hidden;">
+<video id="myvideo" autoplay muted loop  style="overflow-x: hidden;overflow-y: hidden;"><source src="images/loop.webm"  type="video/webm" ></video>
 </div>
 
 <div style="background-color: rgba(22,21,22,255);">
 <br><br>
-    <div class="container">
+    <div class="container" style="overflow-x: hidden;">
     <div class="row">
     <div class="col-md-6 col-xs-4" align="center" data-aos="fade-right"><video class="vdo" autoplay muted loop><source src="images/mail_loop.webm" type="video/webm"></video></div>
     <div class="col-md-6 col-xs-8" id="vdoheadgrp" data-aos="fade-left"><div class="vdohead" style="color:#fff;font-weight: 700;">Easily</div>
@@ -626,7 +652,7 @@ font-size: 12px;
 
 </div>
 
-<div class="animated-counter" data-aos="fade-in">
+<div class="animated-counter" data-aos="fade-in" style="overflow-x:hidden">
     <div class="row">
         <div class="col-md-3 sdsd" style="margin-top: 20px;margin-bottom: 20px;">
             <div id="shiva">
@@ -662,7 +688,7 @@ font-size: 12px;
     </div>
 </div>
 
-        <div style="background-color: #f4f4f4;" data-aos="fade-in">
+        <div style="background-color: #f4f4f4;overflow-x:hidden" data-aos="fade-in">
             <div class="container">
                 <h3 style="color: #000;font-weight: 600;">Create with Pride</h3>
                 <div class="row">
@@ -710,12 +736,12 @@ font-size: 12px;
             </div>
         </div>
 
-        <div class="container" style="margin-top: 30px;">
+        <div class="container" style="margin-top: 30px;overflow-x:hidden">
             <div class="row">
                 <div class="col-md-4" data-aos="fade-right">
                     <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
-                            <img src="/images/home1a.jpg" alt="" style="width:100%">
+                            <img class="img" src="/images/home1a.jpg" alt="" style="width:100%">
                             <div class="caption">
                                 <p>Adobe Premiere Pro now runs natively on M1 Macs</p>
                             </div>
@@ -725,7 +751,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-down">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="/images/home2.jpg" alt="Nature" style="width:100%">
+                            <img class="img" src="/images/home2.jpg" alt="Nature" style="width:100%">
                             <div class="caption">
                                 <p>Watch Ubisoft reveal a new Tom Clancy game at 2PM ET</p>
                             </div>
@@ -735,7 +761,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-left">
                     <div class="thumbnail">
                         <a href="/w3images/fjords.jpg">
-                            <img src="/images/2.jpg" alt="Fjords" style="width:100%">
+                            <img class="img" src="/images/2.jpg" alt="Fjords" style="width:100%">
                             <div class="caption">
                                 <p>How to Make Plant-Based Protein Powder </p>
                             </div>
@@ -749,7 +775,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-right">
                     <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
-                            <img src="images/home4b.jpg" alt="" style="width:100%">
+                            <img class="img" src="images/home4b.jpg" alt="" style="width:100%">
                             <div class="caption">
                                 <p>Elon Musk booked a trip to space with Virgin Galactic
                                 </p>
@@ -760,7 +786,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-down">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="/images/ho11.jpg" alt="Nature" style="width:100%">
+                            <img class="img" src="/images/ho11.jpg" alt="Nature" style="width:100%">
                             <div class="caption">
                                 <p> Use the 1% Spending Rule to Save
                                     Money
@@ -772,7 +798,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-left">
                     <div class="thumbnail">
                         <a href="/w3images/fjords.jpg">
-                            <img src="/images/europa.jpg" alt="Fjords" style="width:100%">
+                            <img class="img" src="/images/europa.jpg" alt="Fjords" style="width:100%">
                             <div class="caption">
                                 <p>Evidence of Life Could Exist Just Beneath Europa's Icy Surface
                                 </p>
@@ -787,7 +813,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-right">
                     <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
-                            <img src="images/corinne1.jpg" alt="Lights" style="width:100%">
+                            <img class="img" src="images/corinne1.jpg" alt="Lights" style="width:100%">
                             <div class="caption">
                                 <p>How to make Mindset & increase the Productivity
                                 </p>
@@ -798,7 +824,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-down">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="/images/home7.jpg" alt="Nature" style="width:100%">
+                            <img class="img" src="/images/home7.jpg" alt="Nature" style="width:100%">
                             <div class="caption">
                                 <p>How AI is Transforming Affiliate Marketing
                                 </p>
@@ -809,7 +835,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-left">
                     <div class="thumbnail">
                         <a href="/w3images/fjords.jpg">
-                            <img src="/images/h19.jpg" alt="Fjords" style="width:100%">
+                            <img class="img" src="/images/h19.jpg" alt="Fjords" style="width:100%">
                             <div class="caption">
                                 <p>How to Build a Strong Inner Foundation for Your Life</p>
                             </div>
@@ -823,7 +849,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-right">
                     <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
-                            <img src="/images/home8.jpg" alt="Lights" style="width:100%">
+                            <img class="img" src="/images/home8.jpg" alt="Lights" style="width:100%">
                             <div class="caption">
                                 <p>7 Ways to Save Money at the Pump As Gas Prices Climb
                                     
@@ -835,7 +861,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-down">
                     <div class="thumbnail">
                         <a href="/w3images/nature.jpg">
-                            <img src="/images/home9gh.jpg" alt="Nature" style="width:100%">
+                            <img class="img" src="/images/home9gh.jpg" alt="Nature" style="width:100%">
                             <div class="caption">
                                 <p>Google is making it easier to manage permissions in Chrome</p>
                             </div>
@@ -845,7 +871,7 @@ font-size: 12px;
                 <div class="col-md-4" data-aos="fade-left">
                     <div class="thumbnail">
                         <a href="/w3images/fjords.jpg">
-                            <img src="/images/fitness.jpg" alt="Fjords" style="width:100%">
+                            <img class="img" src="/images/fitness.jpg" alt="Fjords" style="width:100%">
                             <div class="caption">
                                 <p>Reddit's Beloved No-Weights Workout Is Famous for a Reason</p>
                             </div>
@@ -856,203 +882,27 @@ font-size: 12px;
 
         </div>
 
-
-
-    
-
     </div>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="footer-box-info">
-                        <a href="index.html">
-                            <div class="heading">
-                                dream blogger
-                        </a><br><br>
-                    </div>
-                    <p class="parahover footer-info-text" style=" line-height: 23px;font-size: 17px;">
-                        <a href="#">
-                            Reference site about Lorem Ipsum, giving information on its origins, as well as a random
-                            Lipsum generator.
-                        </a>
-                    </p><br>
-                    <div class="footer-social-link">
-                        <span class="firsth" style="color: #fff;">Follow us<span><br><br>
-                                <ul type="none">
-                                    <li>
-                                        <a href="https://www.facebook.com/">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/login">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://myaccount.google.com/intro/profile">
-                                            <i class="fa fa-google-plus"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/login">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/accounts/login/">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                    </div>
-                    <!-- End Social link -->
-                </div>
-                <!-- End Footer info -->
-                <div class="para">
-                    <p class="text-center">Best All Types Blogs 2021</p>
-                </div>
+   
 
-            </div>
-            <div class="col-md-12 col-lg-8">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="contact-us">
-                            <div class="contact-icon">
-                                <i class="glyphicon glyphicon-map-marker"></i>
-                            </div>
-                            <!-- End contact Icon -->
-                            <div class="contact-info">
-                                <span class="secondh" style="color:#fff;font-weight: 600;">Delhi India</span>
-                                <p class="parahover" style="color: #9b9b9b;font-size: 17px"><a href="#">Mira Road</a>
-                                </p>
-                            </div>
-                            <!-- End Contact Info -->
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contact-us contact-us-last">
-                            <div class="contact-icon">
-                                <i class="glyphicon glyphicon-phone"></i>
-                            </div>
-                            <!-- End contact Icon -->
-                            <div class="contact-info">
-                                <span class="thirdh" style="color: #fff;font-weight: 600;">96 498 4 5480</span>
-                                <p class="parahover" style="color: #9b9b9b;font-size: 17px;"><a href="#">Give us a
-                                        call</a></p>
-                            </div>
-                            <!-- End Contact Info -->
-                        </div>
-                    </div>
-                </div>
+<div class="footer">
+<br><br>
+<h1 class="text-center footerheading"><a href="index.html" style="text-decoration: none;color: #fff;">Lets Start Journey With Us</a></h1>
+<div align="center" class="sendemail"> <form action="post"><input id="sendinput" type="email" placeholder="Enter Your Email"  required><input id="sendsubmit" type="submit" value="Submit" ></form> </div>
+<div class="text-center sociallist">
 
-                <div class="row">
+   <a href=""> <i class="fa fa-facebook" id="facebook" ></i></a>
+   <a href=""> <i class="fa fa-instagram" id="instagram" ></i> </a>
+   <a href="">  <i class="fa fa-twitter" id="twitter" ></i> </a>
+   <a href="">  <i class="fa fa-pinterest" id="pinterest" ></i> </a>
+   <a href="">  <i class="fa fa-linkedin" id="linkedin" ></i> </a>
+   <a href="">  <i class="fa fa-youtube" id="youtube" ></i> </a>
 
-                    <div class=" col-md-12 col-lg-6">
-                        <div class="footer-widget footer-left-widget">
-                            <span class="heading4" id="head4">Useful Links</span>
-                            <span>
-                                <hr align="left"
-                                    style="width: 135px;height:3px;background-color: #9a58b5
-;margin-left: 40px;border: transparent;margin-bottom: -3px;">
-                            </span>
-
-                            <ul type="none">
-                                <li>
-                                    <a href="about.html">About us</a>
-                                </li>
-                                <li>
-                                    <a href="biographies.html">Biographies</a>
-                                </li>
-                                <li>
-                                    <a href="positive_quotes.html">Quotes</a>
-                                </li>
-                                <li>
-                                    <a href="img_gallary.html">Gallary</a>
-                                </li>
-                            </ul>
-
-                            <ul type="none">
-                                <li>
-                                    <a href="#">Contact us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Testimonials</a>
-                                </li>
-                                <li>
-                                    <a href="#">Faq</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-6">
-
-                        <span class="heading4">Subscribe</span>
-                        <span>
-                            <hr align="left"
-                                style="width: 110px;height:3px;background-color: #9a58b5
-;border: transparent;margin-bottom: -18px;">
-                        </span>
-                        <p class="parahover para2">
-                            Reference site about Positivity,giving info of its origins, as well as.
-                        </p>
-                        <form action="#">
-                            <div class="">
-                                <input type="email" class="emailsend" placeholder="Email Address">
-                                <button type="submit" class="sendme">
-                                    <i class="glyphicon glyphicon-send"></i>
-                                </button>
-                            </div>
-
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <span style="color: #9b9b9b;">Copyright © 2019, All Right Reserved</span>
-                </div>
-                <!-- End Col -->
-                <div class="col-md-6 col-xs-12">
-                    <div class="copyright-menu">
-                        <ul>
-                            <li>
-                                <a href="home.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="terms_service.html">Terms</a>
-                            </li>
-                            <li>
-                                <a href="privacy_policy.html">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="contact_us.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End col -->
-            </div>
-            <!-- End Row -->
-        </div>
-        <!-- End Copyright Container -->
-    </div>
+</div>
+<div class="text-center mycopyright" > Copyright &#169; 2021 dream blogger All rights reserved</div>
+<br>
+</div>
 
 </body>
 <script>
