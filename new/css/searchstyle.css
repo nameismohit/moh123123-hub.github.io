@@ -5,7 +5,7 @@ position: absolute;
 margin-top:0;
 width: 890px;
 /* background-color:#45474b; */
-background-color: #2b2d32;
+background-color: rgba(22,21,22,255);
 border: transparent;
 height: 71.4px;
 outline: 0;
@@ -43,7 +43,7 @@ font-weight: 200;
         width: 89%;
         float: left;
         margin-left: -89.5%;
-        background-color: #2b2d32;
+        background-color:rgba(22,21,22,255);
 border: transparent;
 height: 56px;
 outline: 0;
